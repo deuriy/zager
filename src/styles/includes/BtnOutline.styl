@@ -12,7 +12,9 @@
   letter-spacing 0.06em
   text-transform uppercase
   text-decoration none
-  @extend .transition
+
+  &, &::before, &::after
+    @extend .transition
   
   &:hover
     background $yellow
@@ -23,8 +25,17 @@
       content ''
       width 21px
       height 20px
-      background url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 1.25a8.75 8.75 0 1 0 .001 17.501A8.75 8.75 0 0 0 10.5 1.25Zm2.815 8.885-4.266 3.103a.157.157 0 0 1-.248-.127V6.908a.156.156 0 0 1 .248-.127l4.266 3.102a.155.155 0 0 1 .047.197.156.156 0 0 1-.047.055Z' fill='%23FEBD70'/%3E%3C/svg%3E") center center no-repeat
-      @extend .transition
+      background url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 1.25a8.75 8.75 0 1 0 .001 17.501A8.75 8.75 0 0 0 10.5 1.25Zm2.815 8.885-4.266 3.103a.157.157 0 0 1-.248-.127V6.908a.156.156 0 0 1 .248-.127l4.266 3.102a.155.155 0 0 1 .047.197.156.156 0 0 1-.047.055Z' fill='%23FEBD70'/%3E%3C/svg%3E") 0 0 no-repeat
     
     &:hover::before
       background-image url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 1.25a8.75 8.75 0 1 0 .001 17.501A8.75 8.75 0 0 0 10.5 1.25Zm2.815 8.885-4.266 3.103a.157.157 0 0 1-.248-.127V6.908a.156.156 0 0 1 .248-.127l4.266 3.102a.155.155 0 0 1 .047.197.156.156 0 0 1-.047.055Z' fill='%2313141a'/%3E%3C/svg%3E")
+  
+  &-more
+    &::after
+      content ''
+      width 20px
+      height 20px
+      background url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m11.578 3 7 7-7 7M1 10h16.5' stroke='%23FEBD70' stroke-width='2'/%3E%3C/svg%3E") 0 0 no-repeat
+    
+    &:hover::after
+      background-image url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m11.578 3 7 7-7 7M1 10h16.5' stroke='%2313141a' stroke-width='2'/%3E%3C/svg%3E")

@@ -48,8 +48,8 @@
     "yargs": "^17.1.1"
   },
   "optionalDependencies": {
-    "swiper": "^6.6.2",
-    "bootstrap": "5.0.1"
+    "bootstrap": "5.0.1",
+    "swiper": "^6.8.4"
   },
   "jshintConfig": {
     "maxerr": 99,
