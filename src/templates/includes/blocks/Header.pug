@@ -1,0 +1,33 @@
+.Header
+  .Header_top
+    .Container.Header_topWrapper
+      .Header_left
+        a(href="/" title="Home page").Header_logo
+          img(src="img/logo.svg", alt="Logo")
+      .Header_right
+        .Contacts.Header_contacts
+          ul.Contacts_list
+            li.Contacts_item
+              a(href="tel:+4027707747").ContactLink.Contacts_link
+                include ../../includes/SvgIco/phone
+                .ContactLink_text 402-770-7747
+            li.Contacts_item
+              a(href="mailto:help@zager.com").ContactLink.Contacts_link
+                include ../../includes/SvgIco/email
+                .ContactLink_text help@zager.com
+        a(href="/cart.html").CartBtn
+          include ../../includes/SvgIco/cart
+          span.CartBtn_text cart
+  .Header_bottom
+    .MainMenu
+      ul.MainMenu_menu
+        li.MainMenu_item
+          a(href="/guitars.html").MainMenu_link Guitars
+        li.MainMenu_item
+          a(href="/accessories.html").MainMenu_link Accessories
+        li.MainMenu_item
+          a(href="/artists.html").MainMenu_link Artists & Reviews
+        li.MainMenu_item
+          a(href="/about.html").MainMenu_link About &nbsp;us
+        li.MainMenu_item
+          a(href="/warranty.html").MainMenu_link Lifetime warranty
