@@ -1,0 +1,25 @@
+.BtnYellow
+  display inline-grid
+  grid-auto-flow column
+  align-items center
+  column-gap 9px
+  padding 16px 27px
+  font-weight bold
+  font-family $robotoSlab
+  border-radius 4px
+  background $yellow
+  color $dark
+  letter-spacing 0.06em
+  text-transform uppercase
+  text-decoration none
+  @extend .transition
+
+  &:hover
+    background darken($yellow, 15)
+  
+  &-guitar
+    &::before
+      content ''
+      width 21px
+      height 20px
+      background url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M9.652 7.198V3.945h2.513v3.253h.187a2.388 2.388 0 0 1 2.266 3.144l-.246.739a.424.424 0 0 0 .165.486l.053.034a4.026 4.026 0 0 1 1.752 3.92 5.13 5.13 0 0 1-5.08 4.405h-.708a5.13 5.13 0 0 1-5.08-4.406 4.026 4.026 0 0 1 1.753-3.919l.052-.034a.424.424 0 0 0 .166-.486l-.245-.74a2.388 2.388 0 0 1 2.264-3.143h.188Zm1.255 6.544a1.427 1.427 0 1 0 .001-2.855 1.427 1.427 0 0 0 0 2.854Zm1.42-10.577H9.463V1.137A.685.685 0 0 1 10.15.45l1.49.001a.685.685 0 0 1 .685.685V2.52l.001.646Z' fill='%2313141A'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' transform='translate(.5)' d='M0 0h20v20H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") center center no-repeat
