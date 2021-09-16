@@ -47,8 +47,6 @@ let productImgSwiper = new Swiper('.ProductImgSwiper', {
 
   on: {
     init: function () {
-      // console.log('swiper initialized')
-      // productImgFullScreenBtn.href
       let productImgActiveSlide = document.querySelector(`.ProductImgSwiper .swiper-slide-active`);
       productImgFullScreenBtn.href = productImgActiveSlide.querySelector('img').src;
     }
@@ -59,6 +57,5 @@ productImgSwiper.on('slideChange', function () {
   setTimeout(() => {
     let productImgActiveSlide = document.querySelector(`.ProductImgSwiper .swiper-slide-active`);
     productImgFullScreenBtn.href = productImgActiveSlide.querySelector('img').src;
-    console.log('slide change');
   }, 0);
 });
