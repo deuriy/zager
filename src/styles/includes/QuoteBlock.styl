@@ -1,12 +1,20 @@
 .QuoteBlock
+  display grid
+  justify-content end
   position relative
-  padding 107px 0
+  width 565px
+  max-width 100%
   
-  &_imgWrapper
-    position absolute
-    top -70px
-    right 0
+  &_img
+    display block
   
   &_quote
-    position relative
-    margin-left 82px
+    position absolute
+    top 50%
+    transform translateY(-48%)
+    left 83px
+  
+  &-textAndQuoteSection
+    .QuoteBlock_quote
+      left 79px
+      transform translateY(-64%)
