@@ -1,0 +1,34 @@
+.Testimonial
+  width 344px
+  max-width 100%
+  padding 19px 20px 13px
+  border-radius 4px
+  background $grey
+
+  &_text
+    min-height 86px
+    margin-bottom 21px
+    font-weight bold
+    font-style italic
+    line-height 1.5
+    letter-spacing 0.005em
+  
+  &_info
+    display grid
+    grid-template-columns repeat(2, auto)
+    justify-content space-between
+    align-items start
+
+    &-noAuthor
+      justify-content end
+  
+  &_author
+    display inline-grid
+    grid-template-columns auto 1fr
+    column-gap 3px
+    align-items center
+    font-size 14px
+    line-height 1.42857
+
+    &::before
+      content '-'

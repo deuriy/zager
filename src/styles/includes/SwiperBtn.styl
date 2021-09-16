@@ -1,0 +1,34 @@
+.SwiperBtn
+  display inline-grid
+  justify-content center
+  align-items center
+  width 48px
+  height 48px
+  border none
+  outline none
+  border-radius 50%
+  background $yellow
+  cursor pointer
+  @extend .transition
+
+  &-prev,
+  &-next
+    &::after
+      content ''
+      width 10px
+      height 16px
+      background url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m.816 1 7 7-7 7' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") 0 0 no-repeat
+
+  &-prev
+    &::after
+      transform rotate(180deg)
+  
+  &-transparentDarkBg
+    background rgba($dark, .5)
+
+    &.SwiperBtn-prev::after,
+    &.SwiperBtn-next::after
+      background-image url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m.816 1 7 7-7 7' stroke='%23FFFBF6' stroke-width='2'/%3E%3C/svg%3E")
+    
+    &:hover
+      background rgba($dark, .75)

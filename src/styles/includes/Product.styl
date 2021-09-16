@@ -1,0 +1,68 @@
+.Product
+  padding 40px 0 60px
+  background $lightBeige
+
+  &_salePeriod
+    margin-bottom 12px
+    margin-left 2px
+    color $brown
+    font-weight bold
+    font-size 20px
+    line-height 1.2
+  
+  &_wrapper
+    display grid
+    grid-template-columns auto 1fr
+    column-gap 48px
+    margin-bottom 60px
+  
+  &_right
+    padding-top 2px
+  
+  &_recommendation,
+  &_title
+    font-family $robotoSlab
+  
+  &_recommendation
+    display block
+    margin-bottom 30px
+    margin-left -3px
+    font-weight bold
+    font-size 14px
+    text-transform uppercase
+    letter-spacing 0.06em
+    color $dark2
+    text-decoration none
+  
+  &_title
+    margin-bottom 13px
+    font-size 23px
+    line-height 1.3913
+  
+  &_description
+    margin-right 10px
+    margin-bottom 20px
+    line-height 1.625
+  
+  &_categoryTags
+    list-style none
+    display grid
+    grid-auto-flow column
+    justify-content start
+    column-gap 9px
+    margin-bottom 33px
+  
+  &_prices
+    display grid
+    grid-auto-flow column
+    justify-content end
+    column-gap 4px
+    margin-bottom 33px
+  
+  &_buttons
+    list-style none
+    display grid
+    row-gap 8px
+  
+  &_btn
+    width 100%

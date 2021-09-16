@@ -28,6 +28,7 @@
     "prettier": "^2.4.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.4",
     "argv": "0.0.2",
     "autoprefixer": "^10.3.4",
     "gulp": "^4.0.2",
