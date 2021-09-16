@@ -1,0 +1,42 @@
+.TextBlock
+  display grid
+  grid-template-columns repeat(2, 1fr)
+  justify-content space-between
+  align-items center
+  column-gap 48px
+
+  &_title
+    margin-bottom 20px
+    font-size 23px
+    line-height 1.392
+    font-family $robotoSlab
+  
+  &_text
+    font-size 16px
+    line-height 1.625
+    letter-spacing 0.005em
+
+    & > p
+      margin-bottom 10px
+
+      &:last-child
+        margin-bottom 0
+
+  &_imgWrapper
+    display grid
+    justify-content end
+
+  &_img
+    display block
+  
+  &-reverse
+    .TextBlock_left
+      grid-column 2
+    
+    .TextBlock_title
+      font-size 24px
+      line-height 1.34
+    
+    .TextBlock_right
+      grid-column 1
+      grid-row 1
