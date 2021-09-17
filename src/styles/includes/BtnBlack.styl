@@ -1,0 +1,35 @@
+.BtnBlack
+  display inline-grid
+  padding 1em 1.75em
+  border-radius 4px
+  font-weight bold
+  font-family $robotoSlab
+  font-size 16px
+  line-height 1.25
+  color $white
+  background $dark
+  text-transform uppercase
+  letter-spacing 0.06em
+  text-decoration none
+  @extend .transition
+  
+  &:hover
+    background rgba($dark, 0.8)
+  
+  &-transparent
+    background rgba($dark, 0.5)
+  
+  &-fullScreen
+    grid-template-columns auto 1fr
+    column-gap 0.67em
+    align-items center
+    padding 0.67em 1.34em
+    font-size 12px
+    line-height 1.67
+    letter-spacing 0.04em
+    
+    &::before
+      content ''
+      width 1.34em
+      height 1.34em
+      background url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.24 12.64 0 10.4V16h5.6l-2.24-2.24 3.472-3.456-1.136-1.136L2.24 12.64Zm11.52-9.28L16 5.6V0h-5.6l2.24 2.24-3.472 3.456 1.136 1.136L13.76 3.36Zm-1.12 10.4L10.4 16H16v-5.6l-2.24 2.24-3.456-3.472-1.136 1.136 3.464 3.464.008-.008ZM3.36 2.24 5.6 0H0v5.6l2.24-2.24 3.456 3.472 1.136-1.136L3.36 2.24Z' fill='%23FFFBF6'/%3E%3C/svg%3E") 0 0 / cover no-repeat
