@@ -1,0 +1,30 @@
+.TextSection
+  padding 60px 0 80px
+  background $grey
+
+  &_wrapper
+    display grid
+    grid-template-columns repeat(2, 1fr)
+    column-gap 50px
+  
+  &_left
+    padding-top 20px
+  
+  &_title
+    margin-bottom 24px
+  
+  &_text
+    margin-bottom 40px
+    font-size 18px
+    line-height 1.78
+    letter-spacing -0.005em
+
+    & > p
+      margin-bottom 12px
+
+      &:last-child
+        margin-bottom 0
+  
+  &_imgWrapper
+    display grid
+    justify-content end
