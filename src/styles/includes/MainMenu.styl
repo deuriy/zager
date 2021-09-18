@@ -5,9 +5,31 @@
     justify-content center
     list-style none
   
+  &_item
+    &-hasChild
+      position relative
+
+      & > .MainMenu_link
+        display grid
+        grid-template-columns auto 1fr
+        align-items center
+        column-gap 4px
+
+        &::after
+          content ''
+          width 8px
+          height 4px
+          background url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.414 1h3.172L4 2.586 2.414 1Z' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") 0 0 no-repeat
+      
+      &:hover
+        .MainMenu_subMenu
+          top 100%
+          visibility visible
+          opacity 1
+  
   &_link
     display block
-    padding 11px 27px 12px
+    padding 11px 24px 12px
     font-weight bold
     font-size 14px
     font-family $robotoSlab
@@ -15,3 +37,19 @@
     letter-spacing 0.06em
     color $dark
     text-decoration none
+    transition all .2s ease-in-out
+
+    &:hover
+      background $grey
+  
+  &_subMenu
+    position absolute
+    z-index 100
+    top calc(100% + 15px)
+    left 0
+    min-width 200px
+    padding 5px 0
+    background $lightBeige
+    visibility hidden
+    opacity 0
+    transition all .2s ease-in-out
