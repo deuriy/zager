@@ -8,6 +8,7 @@
   font-weight bold
   font-family $robotoSlab
   font-size 16px
+  border none
   border-radius 4px
   background $yellow
   color $dark
@@ -15,6 +16,7 @@
   text-transform uppercase
   text-decoration none
   white-space nowrap
+  cursor pointer
   @extend .transition
 
   &:hover
@@ -35,3 +37,14 @@
   &-seriesSection
     padding-right 1.875em
     padding-left 1.875em
+  
+  &-email
+    padding-top 20px
+    padding-bottom 20px
+    justify-content center
+
+    &::before
+      content ''
+      width 18px
+      height 14px
+      background url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 0H2.167C1.25 0 .508.75.508 1.667l-.008 10c0 .916.75 1.666 1.667 1.666H15.5c.917 0 1.667-.75 1.667-1.666v-10C17.167.75 16.417 0 15.5 0Zm-.333 3.542L9.275 7.225a.843.843 0 0 1-.883 0L2.5 3.542a.708.708 0 1 1 .75-1.2l5.583 3.491 5.584-3.491a.708.708 0 1 1 .75 1.2Z' fill='%2313141A'/%3E%3C/svg%3E") 0 0 / cover no-repeat
