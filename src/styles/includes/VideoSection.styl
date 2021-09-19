@@ -3,6 +3,9 @@
   background linear-gradient(285.63deg, #372D25 0%, #563D34 100%)
   overflow-x hidden
 
+  @media $xs
+    padding 40px 0
+
   &_title
     width 700px
     max-width 100%
@@ -10,9 +13,20 @@
   
   &_swiper
     margin-bottom 48px
+
+    @media $xs
+      margin-bottom 56px
   
   &_bottom
     display grid
     grid-template-columns repeat(2, auto)
     justify-content space-between
     align-items center
+
+    @media $xs
+      grid-template-columns 100%
+      justify-content center
+  
+  &_pagination
+    @media $xs
+      margin-bottom 45px

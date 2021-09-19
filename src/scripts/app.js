@@ -52,7 +52,7 @@ import {
 new Swiper('.VideoSwiper', {
   modules: [Navigation, Pagination],
   slidesPerView: 'auto',
-  spaceBetween: 48,
+  spaceBetween: 20,
 
   pagination: {
     el: '.VideoSection_pagination',
@@ -63,6 +63,12 @@ new Swiper('.VideoSwiper', {
 
   navigation: {
     nextEl: '.VideoSwiper_next',
+  },
+
+  breakpoints: {
+    768: {
+      spaceBetween: 48
+    },
   },
 });
 

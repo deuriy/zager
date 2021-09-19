@@ -1,6 +1,20 @@
 .VideoBlock
+  width 344px
+  max-width 100%
+
+  @media $xs
+    width 280px
+
   &_video
     margin-bottom 22px
+
+    img,
+    iframe,
+    video
+      border-radius 4px
+
+    @media $xs
+      margin-bottom 12px
   
   &_title,
   &_description
@@ -10,8 +24,17 @@
     font-family $robotoSlab
     font-size 23px
     line-height 1.3913
+
+    @media $xs
+      margin-bottom 2px
+      font-size 20px
+      line-height 1.6
   
   &_description
     font-size 18px
     line-height 1.78
     letter-spacing -0.005em
+
+    @media $xs
+      font-size 16px
+      line-height 1.25
