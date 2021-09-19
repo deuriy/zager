@@ -1,3 +1,36 @@
+let menuHamburger = document.querySelector('.MenuHamburger');
+let mobileNavigation = document.querySelector('.MobileNavigation');
+let mobileMainMenu = document.querySelector('.MobileNavigation .MainMenu');
+let closeMobileNavigation = document.querySelector('.MobileNavigation_closeBtn');
+
+menuHamburger.addEventListener('click', function (e) {
+  mobileNavigation.classList.add('MobileNavigation-opened');
+});
+
+closeMobileNavigation.addEventListener('click', function (e) {
+  mobileNavigation.classList.remove('MobileNavigation-opened');
+});
+
+mobileMainMenu.addEventListener('click', function (e) {
+  let parentMenuLink = e.target.closest('.MainMenu_item-parent > .MainMenu_link');
+
+  if (!parentMenuLink) return;
+
+  let parentMenuItem = parentMenuLink.parentNode;
+  console.log(parentMenuItem.scrollHeight);
+  console.log(parentMenuItem.offsetHeight);
+  // console.log(parentMenuItem.maxHeight);
+
+  if (parentMenuItem.offsetHeight < parentMenuItem.scrollHeight) {
+    parentMenuItem.style.maxHeight = `${parentMenuItem.scrollHeight}px`;
+  } else {
+    parentMenuItem.style.cssText = '';
+  }
+  // parentMenuItem.classList.toggle('MainMenu_item-expanded');
+
+  e.preventDefault();
+});
+
 import Swiper, {
   Navigation,
   Pagination

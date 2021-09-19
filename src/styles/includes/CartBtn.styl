@@ -14,7 +14,22 @@
   letter-spacing 0.06em
   text-decoration none
   @extend .transition
+  
+  @media $xs
+    grid-template-columns 1fr
+    width 44px
+    height 44px
+    padding 10px
+    border 1px solid $grey
+  
+  &_text
+    @media $xs
+      display none
 
   &:hover
     background-color $dark
     color $lightBeige
+
+    @media $xs
+      background-color transparent
+      color $dark

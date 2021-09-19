@@ -5,11 +5,22 @@
     padding 15px 0 12px
     border-bottom 1px solid $grey
 
+    @media $xs
+      padding 13px 0
+      border-bottom none
+
   &_topWrapper
     display grid
     grid-template-columns repeat(2, auto)
     justify-content space-between
     align-items start
+
+    @media $xs
+      align-items center
+  
+  &_logoImg
+    @media $xs
+      width 65px
   
   &_right
     display grid
@@ -17,3 +28,7 @@
     align-items center
     column-gap 45px
     padding-top 3px
+
+    @media $xs
+      column-gap 10px
+      padding-top 0

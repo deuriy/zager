@@ -4,17 +4,22 @@
     grid-template-columns repeat(2, auto)
     list-style none
     column-gap 25px
+
+    @media $xs
+      grid-template-columns auto
+      row-gap 8px
   
   &_item
     position relative
     
     &::after
-      content '|'
-      position absolute
-      right -14px
-      font-weight 600
-      font-family $sourceSansPro
-      color $grey
+      @media $smPlus
+        content '|'
+        position absolute
+        right -14px
+        font-weight 600
+        font-family $sourceSansPro
+        color $grey
     
     &:last-child::after
       display none
