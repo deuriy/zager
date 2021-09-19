@@ -2,10 +2,28 @@
   padding 103px 0
   background $grey
 
+  @media $smMinus
+    padding 70px 0
+
+  @media $xs
+    padding 40px 0
+
   &_items
     display grid
-    grid-template-columns repeat(4, 1fr)
-    column-gap 46px
+    grid-template-columns repeat(auto-fit, minmax(246px, 1fr))
+    justify-items center
+    gap 46px
+
+    @media $smMinus
+      gap 30px
+
+    @media $xs
+      grid-template-columns repeat(auto-fit, minmax(152px, 1fr))
+      gap 20px
+
+    @media $xxs
+      grid-template-columns repeat(2, auto)
+      gap 21px
   
   &_buttons
     list-style none
@@ -14,3 +32,13 @@
     justify-content center
     column-gap 22px
     margin-top 60px
+
+    @media $xs
+      grid-auto-flow row
+      justify-content stretch
+      row-gap 10px
+      margin-top 27px
+  
+  &_btn
+    @media $xs
+      width 100%
