@@ -1,10 +1,30 @@
 .Banner
+  position relative
   padding 62px 0 90px
   background-position center 0
   background-repeat no-repeat
   background-size cover
+  
+  &::before
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    width 59.53%
+    background linear-gradient(90deg, #251305 0%, #251305 53.93%, rgba(37, 19, 5, 0) 100%)
+
+    @media $xs
+      width 100%
+      background linear-gradient(20.96deg, #251305 0%, #251305 46.4%, rgba(37, 19, 5, 0) 86.04%)
+      opacity 0.85
+
+  @media $xs
+    padding 50px 0
+    background-position 64.1% 0
 
   &_textWrapper
+    position relative
     width 640px
     max-width 100%
   
@@ -19,11 +39,19 @@
     letter-spacing 0.06em
     text-transform uppercase
 
+    @media $xs
+      margin-bottom 21px
+
   &_title
     margin-bottom 66px
     color $lightBeige
     font-size 32px
     line-height 1.625
+
+    @media $xs
+      margin-bottom 40px
+      font-size 28px
+      line-height 1.5
   
   &_buttons
     display grid
@@ -32,3 +60,12 @@
     justify-content start
     align-items center
     list-style none
+
+    @media $xxs
+      grid-auto-flow row
+      justify-content stretch
+      row-gap 10px
+  
+  &_btn
+    @media $xxs
+      width 100%
