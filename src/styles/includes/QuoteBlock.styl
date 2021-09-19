@@ -28,5 +28,17 @@
   
   &-textAndQuoteSection
     .QuoteBlock_quote
-      left 79px
+      left 11.7%
       transform translateY(-64%)
+
+      @media $xs
+        top 56%
+        left 7.6%
+    
+    .QuoteBlock_imgWrapper
+      @media $xs
+        transform scale(-1, 1)
+    
+    .QuoteBlock_img
+      @media $xs
+        margin-top -18%
