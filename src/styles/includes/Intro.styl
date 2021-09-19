@@ -3,10 +3,24 @@
 
   &_wrapper
     display grid
-    grid-template-columns repeat(2, 1fr)
+    grid-template-columns calc(50% - 15px) calc(50% - 15px)
+    align-items center
+    column-gap 30px
+
+    @media $xs
+      grid-template-columns 100%
+      padding-top 40px
+      padding-bottom 40px
   
   &_left
     padding 111px 0
+
+    @media $smMinus
+      padding 80px 0
+
+    @media $xs
+      grid-row 2
+      padding 25px 0 0
   
   &_textWrapper
     width 540px
@@ -18,12 +32,22 @@
     font-weight bold
     font-size 20px
     line-height 1.6
+
+    @media $xs
+      margin-bottom 25px
   
   &_text
     font-size 18px
     line-height 1.78
     letter-spacing -0.005em
+
+    @media $xs
+      margin-left -2px
   
   &_quoteBlock
-    margin-top -70px
+    margin-top -80px
     margin-bottom -70px
+
+    @media $xs
+      margin-top 0
+      margin-bottom 0

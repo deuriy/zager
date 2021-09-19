@@ -37,7 +37,6 @@ document.addEventListener('click', function (e) {
 
   let secondaryMenu = secondaryMenuTitle.closest('.SecondaryMenu');
   secondaryMenu.classList.toggle('SecondaryMenu-expanded');
-
   toggleShow(secondaryMenu);
 });
 

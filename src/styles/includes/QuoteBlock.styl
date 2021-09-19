@@ -4,15 +4,27 @@
   position relative
   width 565px
   max-width 100%
+  overflow hidden
+
+  @media $xs
+    max-height 86.7vw
+    justify-content start
   
   &_img
     display block
+
+    @media $xs
+      margin-top -14%
   
   &_quote
     position absolute
     top 50%
+    left 12.3%
     transform translateY(-48%)
-    left 83px
+    
+    @media $xs
+      top 46%
+      left 7.7%
   
   &-textAndQuoteSection
     .QuoteBlock_quote
