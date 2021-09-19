@@ -1,6 +1,10 @@
 .Product
   padding 40px 0 60px
   background $lightBeige
+  overflow-x hidden
+
+  @media $xs
+    padding-bottom 40px
 
   &_salePeriod
     margin-bottom 12px
@@ -9,12 +13,26 @@
     font-weight bold
     font-size 20px
     line-height 1.2
+
+    @media $xs
+      margin-bottom 15px
+      margin-left 0
+      font-size 18px
+      line-height 1.23
   
   &_wrapper
     display grid
-    grid-template-columns auto 1fr
+    grid-template-columns calc(100% - 395px) 347px
     column-gap 48px
     margin-bottom 60px
+
+    @media $smMinus
+      grid-template-columns 100%
+      margin-bottom 35px
+  
+  &_left
+    @media $xs
+      margin-bottom 25px
   
   &_right
     padding-top 2px
@@ -26,18 +44,23 @@
   &_recommendation
     display block
     margin-bottom 30px
-    margin-left -3px
     font-weight bold
     font-size 14px
     text-transform uppercase
     letter-spacing 0.06em
     color $dark2
     text-decoration none
+
+    @media $xs
+      margin-bottom 22px
   
   &_title
     margin-bottom 13px
     font-size 23px
     line-height 1.3913
+
+    @media $xs
+      margin-bottom 20px
   
   &_description
     margin-right 10px
@@ -51,6 +74,9 @@
     justify-content start
     column-gap 9px
     margin-bottom 33px
+
+    @media $xs
+      margin-bottom 31px
   
   &_prices
     display grid
@@ -58,11 +84,19 @@
     justify-content end
     column-gap 4px
     margin-bottom 33px
+
+    @media $xs
+      justify-content start
+      column-gap 5px
+      margin-bottom 30px
   
   &_buttons
     list-style none
     display grid
     row-gap 8px
+
+    @media $xs
+      row-gap 10px
   
   &_btn
     width 100%

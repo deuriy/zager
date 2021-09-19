@@ -1,8 +1,14 @@
 .ProductImgSwiper
+  height 400px
   overflow hidden
   
   &_img
     display block
+    margin-right auto
+    margin-left auto
+
+    @media $xs
+      max-width none
 
   &_prev,
   &_next
@@ -11,12 +17,21 @@
     top 0
     bottom 25px
     margin auto
+
+    @media $xs
+      bottom 0
   
   &_prev
     left 20px
+
+    @media $xs
+      left -16px
   
   &_next
     right 20px
+
+    @media $xs
+      right -16px
   
   .ProductImgSwiper_pagination
     position absolute

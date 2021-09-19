@@ -73,71 +73,94 @@ block content
               h3.VideoBlock_title Tom Bowes
               .VideoBlock_description
                 p Blood Sweat & Tears Tom Bowes
-        button(type="button").SwiperBtn.SwiperBtn-next.VideoSwiper_next
+        button(type="button").SwiperBtn.SwiperBtn-next.VideoSwiper_next.hidden-xs
       .VideoSection_bottom
         .SwiperPagination.VideoSection_pagination
         a(href="/artists.html").BtnOutline.BtnOutline-more See all artists reviews
-  //- .Product
-  //-   .Container
-  //-     .Product_salePeriod On sale for the next 23hrs 22 min
-  //-     .Product_wrapper
-  //-       .Product_left
-  //-         .ProductImg
-  //-           .ProductImgSwiper.ProductImg_swiper.swiper
-  //-             .swiper-wrapper
-  //-               .swiper-slide.ProductImgSwiper_slide
-  //-                 img(src="img/product.jpg", alt="Guitar product").ProductImgSwiper_img
-  //-               .swiper-slide.ProductImgSwiper_slide
-  //-                 img(src="img/product.jpg", alt="Guitar product").ProductImgSwiper_img
-  //-               .swiper-slide.ProductImgSwiper_slide
-  //-                 img(src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
-  //-             .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductImgSwiper_pagination
-  //-             button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImgSwiper_prev
-  //-             button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImgSwiper_next
-  //-           .ProductLabel.ProductImg_label special edition
-  //-           .ProductTag.ProductImg_tag On sale
-  //-           a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductImg_fullScreenBtn full screen
-  //-       .Product_right
-  //-         a(href="#").Product_recommendation #[span.HighlightedText #1 Recommended] Guitar. #[span.UnderlinedText 345 reviews]
-  //-         h2.Product_title 50th Anniversary Tobacco Sunburst edition ZAD 900
-  //-         .Product_description
-  //-           p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed
-  //-         ul.Product_categoryTags
-  //-           li.Product_categoryTag
-  //-             a(href="#").CategoryTag Accostic Electric
-  //-           li.Product_categoryTag
-  //-             a(href="#").CategoryTag Full size
-  //-         .Product_prices
-  //-           .OldPrice $2395.00
-  //-           .Price $1995.00
-  //-         ul.Product_buttons
-  //-           li.Product_btnItem
-  //-             a(href="#").BtnOutline.BtnOutline-product.Product_btn View options and features
-  //-           li.Product_btnItem
-  //-             a(href="#").BtnYellow.BtnYellow-product.Product_btn View total with shipping and case
-  //-   .Testimonials
-  //-     .Container
-  //-       .Testimonials_items
-  //-         .Testimonial.Testimonials_item
-  //-           .Testimonial_text
-  //-             p "I’m sure my husband will enjoy this guitar for years to come, and it will be much easier for him with his arthritis. Thank you, Denny Zager!”
-  //-           .Testimonial_info
-  //-             .Testimonial_author Theresa Childress
-  //-             .Testimonial_source
-  //-               img(src="img/testimonials/reseller_ratings.png", alt="Reseller Ratings")
-  //-         .Testimonial.Testimonials_item
-  //-           .Testimonial_text
-  //-             p “I've had a Martin DR for 25 years, but the Zager has a deeper and richer tone and, because of the fret/string distance, is easier to play” 
-  //-           .Testimonial_info
-  //-             .Testimonial_author David W.
-  //-             .Testimonial_source
-  //-               img(src="img/testimonials/sitejabber.png", alt="Reseller Ratings")
-  //-         .Testimonial.Testimonials_item
-  //-           .Testimonial_text
-  //-             p “The sound and action on this guitar are phenomenal and it is just gorgeous to look at”
-  //-           .Testimonial_info.Testimonial_info-noAuthor
-  //-             .Testimonial_source
-  //-               img(src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
+  .Product
+    .Container
+      .Product_salePeriod On sale for the next 23hrs 22 min
+      .Product_wrapper
+        .Product_left
+          .ProductImg
+            .ProductImgSwiper.ProductImg_swiper.swiper
+              .swiper-wrapper
+                .swiper-slide.ProductImgSwiper_slide
+                  img(src="img/product.jpg", alt="Guitar product").ProductImgSwiper_img
+                .swiper-slide.ProductImgSwiper_slide
+                  img(src="img/product.jpg", alt="Guitar product").ProductImgSwiper_img
+                .swiper-slide.ProductImgSwiper_slide
+                  img(src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
+              .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductImgSwiper_pagination.hidden-xs
+              button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImgSwiper_prev
+              button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImgSwiper_next
+            .ProductLabel.ProductImg_label special edition
+            .ProductTag.ProductImg_tag On sale
+            a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductImg_fullScreenBtn full screen
+        .Product_right
+          a(href="#").Product_recommendation #[span.HighlightedText #1 Recommended] Guitar. #[span.UnderlinedText 345 reviews]
+          h2.Product_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+          .Product_description
+            p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed
+          ul.Product_categoryTags
+            li.Product_categoryTag
+              a(href="#").CategoryTag Accostic Electric
+            li.Product_categoryTag
+              a(href="#").CategoryTag Full size
+          .Product_prices
+            .OldPrice $2395.00
+            .Price $1995.00
+          ul.Product_buttons
+            li.Product_btnItem
+              a(href="#").BtnOutline.BtnOutline-product.Product_btn View options and features
+            li.Product_btnItem
+              a(href="#").BtnYellow.BtnYellow-product.Product_btn View total with shipping and case
+      .Testimonials.hidden-xs
+        .Testimonials_items
+          .Testimonial.Testimonials_item
+            .Testimonial_text
+              p "I’m sure my husband will enjoy this guitar for years to come, and it will be much easier for him with his arthritis. Thank you, Denny Zager!”
+            .Testimonial_info
+              .Testimonial_author Theresa Childress
+              .Testimonial_source
+                img(src="img/testimonials/reseller_ratings.png", alt="Reseller Ratings")
+          .Testimonial.Testimonials_item
+            .Testimonial_text
+              p “I've had a Martin DR for 25 years, but the Zager has a deeper and richer tone and, because of the fret/string distance, is easier to play” 
+            .Testimonial_info
+              .Testimonial_author David W.
+              .Testimonial_source
+                img(src="img/testimonials/sitejabber.png", alt="Site jabber")
+          .Testimonial.Testimonials_item
+            .Testimonial_text
+              p “The sound and action on this guitar are phenomenal and it is just gorgeous to look at”
+            .Testimonial_info.Testimonial_info-noAuthor
+              .Testimonial_source
+                img(src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
+      .TestimonialsSwiper.swiper.hidden-smPlus
+        .swiper-wrapper
+          .swiper-slide.TestimonialsSwiper_slide
+            .Testimonial.Testimonial-small.TestimonialsSwiper_item
+              .Testimonial_source
+                img(src="img/testimonials/reseller_ratings.png", alt="Reseller Ratings")
+              .Testimonial_text
+                p "I’m sure my husband will enjoy this guitar for years to come, and it will be much easier for him with his arthritis. Thank you, Denny Zager!”
+              .Testimonial_info
+                .Testimonial_author Theresa Childress
+          .swiper-slide.TestimonialsSwiper_slide
+            .Testimonial.Testimonial-small.TestimonialsSwiper_item
+              .Testimonial_source
+                img(src="img/testimonials/sitejabber.png", alt="Site jabber")
+              .Testimonial_text
+                p “I've had a Martin DR for 25 years, but the Zager has a deeper and richer tone and, because of the fret/string distance, is easier to play” 
+              .Testimonial_info
+                .Testimonial_author David W.
+          .swiper-slide.TestimonialsSwiper_slide
+            .Testimonial.Testimonial-small.TestimonialsSwiper_item
+              .Testimonial_source
+                img(src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
+              .Testimonial_text
+                p “The sound and action on this guitar are phenomenal and it is just gorgeous to look at”
   //- .SeriesSection
   //-   .Container
   //-     .SeriesSection_items
