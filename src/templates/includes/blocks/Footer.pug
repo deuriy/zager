@@ -1,69 +1,70 @@
 .Footer
   .Footer_top
-    .Container.Footer_topContainer
-      .Footer_col
-        a(href="/").Footer_logo
-          img(src="img/footer_logo.svg", alt="Logo").Footer_logoImg
-      .Footer_col
-        .SecondaryMenu
-          h3.SecondaryMenu_title About us
-          ul.SecondaryMenu_menu
-            li.SecondaryMenu_item
-              a(href="/story.html").SecondaryMenu_link Story
-            li.SecondaryMenu_item
-              a(href="/foundation.html").SecondaryMenu_link Foundation
-            li.SecondaryMenu_item
-              a(href="/guarantee.html").SecondaryMenu_link Guarantee
-            li.SecondaryMenu_item
-              a(href="/faq.html").SecondaryMenu_link FAQs
-            li.SecondaryMenu_item
-              a(href="/contact.html").SecondaryMenu_link Contact
-      .Footer_col
-        .SecondaryMenu
-          h3.SecondaryMenu_title Guitars
-          ul.SecondaryMenu_menu
-            li.SecondaryMenu_item
-              a(href="/zad_900.html").SecondaryMenu_link ZAD 900 Series
-            li.SecondaryMenu_item
-              a(href="/zad_80.html").SecondaryMenu_link ZAD 80 Series
-            li.SecondaryMenu_item
-              a(href="/zad_50.html").SecondaryMenu_link ZAD 50 Series
-            li.SecondaryMenu_item
-              a(href="/zad_20.html").SecondaryMenu_link ZAD 20 Series
-            li.SecondaryMenu_item
-              a(href="/discount_vault.html").SecondaryMenu_link Discount Vault
-      .Footer_col
-        .SecondaryMenu
-          h3.SecondaryMenu_title Other
-          ul.SecondaryMenu_menu
-            li.SecondaryMenu_item
-              a(href="/accessories.html").SecondaryMenu_link Accessories
-            li.SecondaryMenu_item
-              a(href="/artists.html").SecondaryMenu_link Artists & Reviews
-            li.SecondaryMenu_item
-              a(href="/guitar_lessons.html").SecondaryMenu_link Guitar Lessons
-            li.SecondaryMenu_item
-              a(href="/lifetime_warrenty.html").SecondaryMenu_link Lifetime warrenty
-      .Footer_col
-        .SecondaryMenu
-          h3.SecondaryMenu_title Get in touch
-          ul.SecondaryMenu_menu
-            li.SecondaryMenu_item
-              a(href="tel:4027707747").SecondaryMenu_link 402-770-7747
-            li.SecondaryMenu_item
-              a(href="mailto:help@zager.com").SecondaryMenu_link help@zager.com
-        .SocIcons.Footer_socIcons
-          ul.SocIcons_list
-            li.SocIcons_item
-              a(href="http://fb.com").SocIcon.SocIcons_link
-                include ../SvgIco/socicons/fb
-            li.SocIcons_item
-              a(href="http://youtube.com").SocIcon.SocIcons_link
-                include ../SvgIco/socicons/youtube
-            li.SocIcons_item
-              a(href="http://instagram.com").SocIcon.SocIcons_link
-                include ../SvgIco/socicons/instagram
+    .Container
+      .Footer_topWrapper
+        .Footer_col.Footer_col-logo
+          a(href="/").Footer_logo
+            img(src="img/footer_logo.svg", alt="Logo").Footer_logoImg
+        .Footer_col.Footer_col-borderTop
+          .SecondaryMenu
+            h3.SecondaryMenu_title About us
+            ul.SecondaryMenu_menu
+              li.SecondaryMenu_item
+                a(href="/story.html").SecondaryMenu_link Story
+              li.SecondaryMenu_item
+                a(href="/foundation.html").SecondaryMenu_link Foundation
+              li.SecondaryMenu_item
+                a(href="/guarantee.html").SecondaryMenu_link Guarantee
+              li.SecondaryMenu_item
+                a(href="/faq.html").SecondaryMenu_link FAQs
+              li.SecondaryMenu_item
+                a(href="/contact.html").SecondaryMenu_link Contact
+        .Footer_col
+          .SecondaryMenu
+            h3.SecondaryMenu_title Guitars
+            ul.SecondaryMenu_menu
+              li.SecondaryMenu_item
+                a(href="/zad_900.html").SecondaryMenu_link ZAD 900 Series
+              li.SecondaryMenu_item
+                a(href="/zad_80.html").SecondaryMenu_link ZAD 80 Series
+              li.SecondaryMenu_item
+                a(href="/zad_50.html").SecondaryMenu_link ZAD 50 Series
+              li.SecondaryMenu_item
+                a(href="/zad_20.html").SecondaryMenu_link ZAD 20 Series
+              li.SecondaryMenu_item
+                a(href="/discount_vault.html").SecondaryMenu_link Discount Vault
+        .Footer_col
+          .SecondaryMenu
+            h3.SecondaryMenu_title Other
+            ul.SecondaryMenu_menu
+              li.SecondaryMenu_item
+                a(href="/accessories.html").SecondaryMenu_link Accessories
+              li.SecondaryMenu_item
+                a(href="/artists.html").SecondaryMenu_link Artists & Reviews
+              li.SecondaryMenu_item
+                a(href="/guitar_lessons.html").SecondaryMenu_link Guitar Lessons
+              li.SecondaryMenu_item
+                a(href="/lifetime_warrenty.html").SecondaryMenu_link Lifetime warrenty
+        .Footer_col
+          .SecondaryMenu
+            h3.SecondaryMenu_title Get in touch
+            ul.SecondaryMenu_menu
+              li.SecondaryMenu_item
+                a(href="tel:4027707747").SecondaryMenu_link 402-770-7747
+              li.SecondaryMenu_item
+                a(href="mailto:help@zager.com").SecondaryMenu_link help@zager.com
+          .SocIcons.Footer_socIcons
+            ul.SocIcons_list
+              li.SocIcons_item
+                a(href="http://fb.com").SocIcon.SocIcons_link
+                  include ../SvgIco/socicons/fb
+              li.SocIcons_item
+                a(href="http://youtube.com").SocIcon.SocIcons_link
+                  include ../SvgIco/socicons/youtube
+              li.SocIcons_item
+                a(href="http://instagram.com").SocIcon.SocIcons_link
+                  include ../SvgIco/socicons/instagram
   .Footer_bottom
-    .Container.Footer_container
+    .Container
       .Footer_copyright
         p Copyright © Zager &nbsp;|&nbsp; All rights reserved 2021

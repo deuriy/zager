@@ -1,12 +1,38 @@
 .SecondaryMenu
+  @extend .transition
+
+  @media $xs
+    max-height 50px
+    border-bottom 1px solid rgba($lightBeige, .15)
+    overflow hidden
+
   &_title
-    margin-bottom 14px
     color rgba($lightBeige, .35)
     font-family $robotoSlab
     font-size 16px
     line-height 1.25
     letter-spacing 0.06em
     text-transform uppercase
+
+    @media $xs
+      display grid
+      grid-template-columns 1fr 14px
+      align-items center
+      padding-top 15px
+      padding-bottom 15px
+
+      &::after
+        content ''
+        height 9px
+        background url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='.35' d='M13 1 7 7 1 1' stroke='%23FFFBF6' stroke-width='2'/%3E%3C/svg%3E") right center no-repeat
+        @extend .transition
+  
+  &_menu
+    margin-top 14px
+
+    @media $xs
+      margin-top 5px
+      margin-bottom 15px
   
   &_link
     color $lightBeige
@@ -15,7 +41,16 @@
     letter-spacing 0.005em
     text-decoration none
     @extend .transition
+    
+    @media $xs
+      display block
+      padding-top 2px
+      padding-bottom 2px
 
     &:hover
-      // color darken($lightBeige, 10)
       color $yellow
+  
+  &-expanded
+    @media $xs
+      .SecondaryMenu_title::after
+        transform rotate(180deg)

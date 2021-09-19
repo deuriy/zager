@@ -3,6 +3,14 @@ let mobileNavigation = document.querySelector('.MobileNavigation');
 let mobileMainMenu = document.querySelector('.MobileNavigation .MainMenu');
 let closeMobileNavigation = document.querySelector('.MobileNavigation_closeBtn');
 
+function toggleShow(elem) {
+  if (elem.offsetHeight < elem.scrollHeight) {
+    elem.style.maxHeight = `${elem.scrollHeight}px`;
+  } else {
+    elem.style.cssText = '';
+  }
+}
+
 menuHamburger.addEventListener('click', function (e) {
   mobileNavigation.classList.add('MobileNavigation-opened');
 });
@@ -17,18 +25,20 @@ mobileMainMenu.addEventListener('click', function (e) {
   if (!parentMenuLink) return;
 
   let parentMenuItem = parentMenuLink.parentNode;
-  console.log(parentMenuItem.scrollHeight);
-  console.log(parentMenuItem.offsetHeight);
-  // console.log(parentMenuItem.maxHeight);
 
-  if (parentMenuItem.offsetHeight < parentMenuItem.scrollHeight) {
-    parentMenuItem.style.maxHeight = `${parentMenuItem.scrollHeight}px`;
-  } else {
-    parentMenuItem.style.cssText = '';
-  }
-  // parentMenuItem.classList.toggle('MainMenu_item-expanded');
-
+  toggleShow(parentMenuItem);
   e.preventDefault();
+});
+
+document.addEventListener('click', function (e) {
+  let secondaryMenuTitle = e.target.closest('.SecondaryMenu_title');
+
+  if (!secondaryMenuTitle) return;
+
+  let secondaryMenu = secondaryMenuTitle.closest('.SecondaryMenu');
+  secondaryMenu.classList.toggle('SecondaryMenu-expanded');
+
+  toggleShow(secondaryMenu);
 });
 
 import Swiper, {

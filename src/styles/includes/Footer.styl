@@ -5,9 +5,30 @@
     padding 71px 0 69px
     border-bottom 1px solid rgba($lightBeige, .15)
 
-  &_topContainer
+    @media $lgMinus
+      padding 50px 0
+
+    @media $xs
+      padding 40px 0
+
+  &_topWrapper
     display grid
     grid-template-columns 29.3% 17.8% 19.1% 20.6% 1fr
+
+    @media $lgMinus
+      grid-template-columns calc(22.5% - 15px) calc(17.8% - 15px) calc(19.1% - 15px) calc(20.6% - 15px) 1fr
+      column-gap 15px
+
+    @media $xs
+      grid-template-columns 1fr
+  
+  &_col
+    @media $xs
+      &-logo
+        margin-bottom 54px
+      
+      &-borderTop
+        border-top 1px solid rgba($lightBeige, .15)
   
   &_logo,
   &_logoImg
@@ -15,9 +36,24 @@
   
   &_logo
     margin-top 17px
+
+    @media $xs
+      margin-top 0
+  
+  &_logoImg
+    @media $lgMinus
+      width 130px
+
+    @media $xs
+      width 107px
+      margin-right auto
+      margin-left auto
   
   &_socIcons
     margin-top 20px
+
+    @media $xs
+      margin-top 40px
   
   &_bottom
     padding 10px 0
