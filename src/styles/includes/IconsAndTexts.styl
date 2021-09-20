@@ -1,4 +1,9 @@
 .IconsAndTexts
   display grid
   grid-template-columns repeat(4, 1fr)
+  column-gap 44px
   justify-items center
+
+  @media $xs
+    grid-template-columns 100%
+    row-gap 27px

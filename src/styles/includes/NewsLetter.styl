@@ -2,12 +2,20 @@
   padding 80px 0 60px
   background linear-gradient(0deg, rgba(59, 48, 42, 0.5), rgba(59, 48, 42, 0.5))
 
+  @media $xs
+    padding 60px 0
+
+  @media $xxs
+    padding 40px 0
+
   &_title
     margin-bottom 40px
+
+    @media $xs
+      margin-bottom 25px
   
   &_form
     margin 0 auto 60px
-  
-  &_iconsAndTexts
-    margin-right -23px
-    margin-left -23px
+
+    @media $xs
+      margin-bottom 50px
