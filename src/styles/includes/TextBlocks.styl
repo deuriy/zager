@@ -37,3 +37,16 @@
 
     @media $xs
       row-gap 51px
+  
+  &_item
+    @media $xs
+      position relative
+      
+      &::after
+        content ''
+        position absolute
+        right 0
+        bottom 0
+        left 0
+        height 1px
+        background $lightBeige

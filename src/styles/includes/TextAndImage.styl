@@ -3,25 +3,57 @@
 
   &_wrapper
     display grid
-    grid-template-columns 1fr 640px
+    grid-template-columns calc(46% - 25px) calc(54% - 25px)
+    align-items center
     column-gap 50px
+
+    @media $smMinus
+      grid-template-columns calc(46% - 10px) calc(54% - 10px)
+      column-gap 20px
+    
+    @media $xs
+      grid-template-columns 100%
+      padding-bottom 40px
   
   &_left
     display grid
-    justify-content end
-    // padding 20px 0
-    padding 102px 0 0
+    padding 50px 0
+
+    @media $lgPlus
+      justify-items end
+    
+    @media $xs
+      padding 40px 0 35px
   
   &_textWrapper
-    width 514px
-    max-width 100%
+    @media $lgPlus
+      width 488px
+      max-width 100%
   
   &_title
     margin-bottom 35px
+
+    @media $xs
+      margin-bottom 25px
+  
+  &_btn
+    @media $xxs
+      width 100%
   
   &_imgWrapper
     display grid
-    justify-content end
+
+    @media $smPlus
+      justify-content end
+    
+    @media $xxs
+      display grid
+      place-content center
+      max-height 86.7vw
+      overflow hidden
   
   &_img
     display block
+
+    @media $xxs
+      max-width 134vw
