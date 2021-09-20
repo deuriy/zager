@@ -5,38 +5,58 @@
   align-items center
   column-gap 48px
 
+  @media $xs
+    grid-template-columns 100%
+    justify-content stretch
+
   &_title
     margin-bottom 20px
     font-size 23px
     line-height 1.392
     font-family $robotoSlab
+
+    @media $xs
+      margin-bottom 26px
   
   &_text
     font-size 16px
     line-height 1.625
     letter-spacing 0.005em
 
+    @media $xs
+      font-size 18px
+      line-height 1.78
+      letter-spacing -0.005em
+
     & > p
       margin-bottom 10px
 
       &:last-child
         margin-bottom 0
+  
+  &_right
+    @media $xs
+      order -1
+      margin-bottom 25px
 
   &_imgWrapper
     display grid
-    justify-content end
+    
+    @media $smPlus
+      justify-content end
 
   &_img
     display block
   
   &-reverse
-    .TextBlock_left
-      grid-column 2
-    
-    .TextBlock_title
-      font-size 24px
-      line-height 1.34
-    
-    .TextBlock_right
-      grid-column 1
-      grid-row 1
+    @media $smPlus
+      .TextBlock_left
+        grid-column 2
+      
+      .TextBlock_title
+        font-size 24px
+        line-height 1.34
+      
+      .TextBlock_right
+        grid-column 1
+        grid-row 1

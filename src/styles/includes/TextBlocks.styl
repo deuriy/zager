@@ -2,25 +2,38 @@
   padding 140px 0 80px
   background $grey
 
+  @media $xs
+    padding 40px 0
+
   &_title,
   &_description
     max-width 100%
     margin-right auto
     margin-left auto
-    text-align center
   
   &_title
     width 900px
     margin-bottom 20px
-    font-size 36px
+
+    @media $xs
+      margin-bottom 25px
   
   &_description
-    width 540px
     margin-bottom 60px
     font-size 18px
     line-height 1.78
     letter-spacing -0.005em
+
+    @media $smPlus
+      width 540px
+      text-align center
+    
+    @media $xs
+      margin-bottom 51px
   
   &_items
     display grid
     row-gap 60px
+
+    @media $xs
+      row-gap 51px
