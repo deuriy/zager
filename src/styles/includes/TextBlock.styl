@@ -4,6 +4,7 @@
   justify-content space-between
   align-items center
   column-gap 48px
+  overflow hidden
 
   @media $xs
     grid-template-columns 100%
@@ -41,12 +42,24 @@
 
   &_imgWrapper
     display grid
+    overflow hidden
     
     @media $smPlus
       justify-content end
+    
+    @media $xxs
+      max-height 60vw
 
   &_img
     display block
+
+    @media $xxs
+      position relative
+      // right 23px
+      // bottom 20px
+      right 17%
+      bottom 2.6%
+      max-width 124vw
   
   &-reverse
     @media $smPlus
