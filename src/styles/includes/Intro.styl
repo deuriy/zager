@@ -3,51 +3,36 @@
 
   &_wrapper
     display grid
-    grid-template-columns calc(50% - 15px) calc(50% - 15px)
-    align-items center
-    column-gap 30px
+    grid-template-columns repeat(2, 1fr)
+    gap 17px 30px
+    padding 10px 0
+
+    @media $smMinus
+      padding 30px 0
 
     @media $xs
       grid-template-columns 100%
-      padding-top 40px
-      padding-bottom 40px
-  
-  &_left
-    padding 111px 0
-
-    @media $smMinus
-      padding 80px 0
-
-    @media $xs
-      grid-row 2
-      padding 25px 0 0
-  
-  &_textWrapper
-    width 540px
-    max-width 100%
-    margin-left 2px
+      row-gap 25px
+      padding 40px 0
   
   &_emphasis
-    margin-bottom 17px
+    align-self end
     font-weight bold
     font-size 20px
     line-height 1.6
 
-    @media $xs
-      margin-bottom 25px
+    @media $smPlus
+      padding-right 10px
   
   &_text
+    align-self start
     font-size 18px
     line-height 1.78
     letter-spacing -0.005em
-
-    @media $xs
-      margin-left -2px
   
   &_quoteBlock
-    margin-top -80px
-    margin-bottom -70px
-
-    @media $xs
-      margin-top 0
-      margin-bottom 0
+    @media $smPlus
+      grid-row 1 / 3
+      grid-column 2 / 3
+      margin-top -80px
+      margin-bottom -70px
