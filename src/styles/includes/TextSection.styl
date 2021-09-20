@@ -1,5 +1,5 @@
 .TextSection
-  padding 60px 0 80px
+  padding 80px 0
   background $grey
 
   @media $xs
@@ -7,34 +7,18 @@
 
   &_wrapper
     display grid
-    grid-template-columns repeat(2, 1fr)
-    align-items center
-    column-gap 50px
-
-    @media $smMinus
-      column-gap 30px
+    gap 24px 50px
     
-    @media $xs
-      grid-template-columns 100%
-  
-  &_left
-    padding-top 20px
-
-    @media $xs
-      grid-row 2
-      padding-top 0
-  
-  &_title
-    margin-bottom 24px
+    @media $smPlus
+      grid-template-columns repeat(2, 1fr)
   
   &_text
-    margin-bottom 40px
     font-size 18px
     line-height 1.78
     letter-spacing -0.005em
 
-    @media $xs
-      margin-bottom 25px
+    @media $smPlus
+      margin-bottom 15px
 
     & > p
       margin-bottom 12px
@@ -45,18 +29,17 @@
   &_btn
     @media $xxs
       width 100%
-  
-  &_right
-    @media $xs
-      margin-bottom 24px
+    
+    @media $xxsPlus
+      justify-self start
   
   &_imgWrapper
     display grid
-    justify-content end
-    margin-top -13px
+    align-items center
 
-    @media $xs
-      margin-top 0
+    @media $smPlus
+      grid-row span 3
+      margin-top -30px
     
     @media $xxs
       max-height 87vw
@@ -68,6 +51,6 @@
 
     @media $xxs
       position relative
+      right 10%
       bottom 12%
-      left 8.7%
       max-width 106.2vw
