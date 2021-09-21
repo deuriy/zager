@@ -1,7 +1,7 @@
 extends layouts/base
 
 block content
-  .Banner(style="background-image: url('img/bg_banner.jpg')")
+  .Banner(style="background-image: url('img/bg_banner.webp')")
     .Container
       .Banner_textWrapper
         .Banner_intro Easy Play Accoustic Guitars by Denny Zager.
@@ -17,7 +17,7 @@ block content
         .Intro_emphasis
           p Zager Guitars is a #[span.HighlightedText family-owned] and operated business of guitar experts, builders, lovers.
         .QuoteBlock.Intro_quoteBlock
-          img(src="img/guitar.jpg" alt="Guitar").QuoteBlock_img
+          img(loading="lazy", src="img/guitar.jpg" alt="Guitar").QuoteBlock_img
           .Quote.QuoteBlock_quote
             .Quote_text The Beatles would be jealous
             .Quote_author Time Magazine
@@ -32,7 +32,7 @@ block content
             .VideoBlock
               .VideoBlock_video
                 //- <iframe width="344" height="193" src="https://www.youtube.com/embed/wQMaPG7iH7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                img(src="https://via.placeholder.com/344x193", alt="")
+                img(loading="lazy", src="https://via.placeholder.com/344x193", alt="")
               h3.VideoBlock_title Tommy Emmanuel
               .VideoBlock_description
                 p The Best Acoustic Guitarist in the World
@@ -40,7 +40,7 @@ block content
             .VideoBlock
               .VideoBlock_video
                 //- <iframe width="344" height="193" src="https://www.youtube.com/embed/wQMaPG7iH7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                img(src="https://via.placeholder.com/344x193", alt="")
+                img(loading="lazy", src="https://via.placeholder.com/344x193", alt="")
               h3.VideoBlock_title Tom Bowes
               .VideoBlock_description
                 p Blood Sweat & Tears Tom Bowes
@@ -48,7 +48,7 @@ block content
             .VideoBlock
               .VideoBlock_video
                 //- <iframe width="344" height="193" src="https://www.youtube.com/embed/wQMaPG7iH7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                img(src="https://via.placeholder.com/344x193", alt="")
+                img(loading="lazy", src="https://via.placeholder.com/344x193", alt="")
               h3.VideoBlock_title Tom Bowes
               .VideoBlock_description
                 p Blood Sweat & Tears Tom Bowes
@@ -56,7 +56,7 @@ block content
             .VideoBlock
               .VideoBlock_video
                 //- <iframe width="344" height="193" src="https://www.youtube.com/embed/wQMaPG7iH7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                img(src="https://via.placeholder.com/344x193", alt="")
+                img(loading="lazy", src="https://via.placeholder.com/344x193", alt="")
               h3.VideoBlock_title Tom Bowes
               .VideoBlock_description
                 p Blood Sweat & Tears Tom Bowes
@@ -64,7 +64,7 @@ block content
             .VideoBlock
               .VideoBlock_video
                 //- <iframe width="344" height="193" src="https://www.youtube.com/embed/wQMaPG7iH7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                img(src="https://via.placeholder.com/344x193", alt="")
+                img(loading="lazy", src="https://via.placeholder.com/344x193", alt="")
               h3.VideoBlock_title Tom Bowes
               .VideoBlock_description
                 p Blood Sweat & Tears Tom Bowes
@@ -81,11 +81,11 @@ block content
             .ProductImgSwiper.ProductImg_swiper.swiper
               .swiper-wrapper
                 .swiper-slide.ProductImgSwiper_slide
-                  img(src="img/product.jpg", alt="Guitar product").ProductImgSwiper_img
+                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
                 .swiper-slide.ProductImgSwiper_slide
-                  img(src="img/product.jpg", alt="Guitar product").ProductImgSwiper_img
+                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
                 .swiper-slide.ProductImgSwiper_slide
-                  img(src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
+                  img(loading="lazy", src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
               .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductImgSwiper_pagination.hidden-xs
               button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImgSwiper_prev
               button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImgSwiper_next
@@ -118,26 +118,26 @@ block content
             .Testimonial_info
               .Testimonial_author Theresa Childress
               .Testimonial_source
-                img(src="img/testimonials/reseller_ratings.png", alt="Reseller Ratings")
+                img(loading="lazy", src="img/testimonials/reseller_ratings.png", alt="Reseller Ratings")
           .Testimonial.Testimonials_item
             .Testimonial_text
               p “I've had a Martin DR for 25 years, but the Zager has a deeper and richer tone and, because of the fret/string distance, is easier to play” 
             .Testimonial_info
               .Testimonial_author David W.
               .Testimonial_source
-                img(src="img/testimonials/sitejabber.png", alt="Site jabber")
+                img(loading="lazy", src="img/testimonials/sitejabber.png", alt="Site jabber")
           .Testimonial.Testimonials_item
             .Testimonial_text
               p “The sound and action on this guitar are phenomenal and it is just gorgeous to look at”
             .Testimonial_info.Testimonial_info-noAuthor
               .Testimonial_source
-                img(src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
+                img(loading="lazy", src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
       .TestimonialsSwiper.swiper.hidden-smPlus
         .swiper-wrapper
           .swiper-slide.TestimonialsSwiper_slide
             .Testimonial.Testimonial-small.TestimonialsSwiper_item
               .Testimonial_source
-                img(src="img/testimonials/reseller_ratings.png", alt="Reseller Ratings")
+                img(loading="lazy", src="img/testimonials/reseller_ratings.png", alt="Reseller Ratings")
               .Testimonial_text
                 p "I’m sure my husband will enjoy this guitar for years to come, and it will be much easier for him with his arthritis. Thank you, Denny Zager!”
               .Testimonial_info
@@ -145,7 +145,7 @@ block content
           .swiper-slide.TestimonialsSwiper_slide
             .Testimonial.Testimonial-small.TestimonialsSwiper_item
               .Testimonial_source
-                img(src="img/testimonials/sitejabber.png", alt="Site jabber")
+                img(loading="lazy", src="img/testimonials/sitejabber.png", alt="Site jabber")
               .Testimonial_text
                 p “I've had a Martin DR for 25 years, but the Zager has a deeper and richer tone and, because of the fret/string distance, is easier to play” 
               .Testimonial_info
@@ -153,7 +153,7 @@ block content
           .swiper-slide.TestimonialsSwiper_slide
             .Testimonial.Testimonial-small.TestimonialsSwiper_item
               .Testimonial_source
-                img(src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
+                img(loading="lazy", src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
               .Testimonial_text
                 p “The sound and action on this guitar are phenomenal and it is just gorgeous to look at”
   .SeriesSection
@@ -164,25 +164,25 @@ block content
           h3.SeriesBlock_title ZAD 900 Series
           .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
           .SeriesBlock_imgWrapper
-            img(src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
         .SeriesBlock.SeriesSection_item
           .ProductLabel.ProductLabel-seriesBlock.SeriesBlock_label Professional
           h3.SeriesBlock_title ZAD 80 Series
           .SeriesBlock_description Indian rosewood & Western Caedar Guitars
           .SeriesBlock_imgWrapper
-            img(src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
         .SeriesBlock.SeriesSection_item
           .ProductLabel.ProductLabel-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
           h3.SeriesBlock_title ZAD 50 Series
           .SeriesBlock_description Mahogany and Sitka Spruce Guitars
           .SeriesBlock_imgWrapper
-            img(src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
         .SeriesBlock.SeriesSection_item
           .ProductLabel.ProductLabel-seriesBlock.SeriesBlock_label Solid wood
           h3.SeriesBlock_title ZAD 20 Series
           .SeriesBlock_description Mahogany and Sitka Spruce Guitars
           .SeriesBlock_imgWrapper
-            img(src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
       ul.SeriesSection_buttons
         li.SeriesSection_btnItem
           a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn Shop all guitars
@@ -194,7 +194,7 @@ block content
         h2.SectionTitle.TextAndQuote_title You can try our guitars at your home, risk-free
         .QuoteBlock.QuoteBlock-textAndQuoteSection.TextAndQuote_quoteBlock
           .QuoteBlock_imgWrapper
-            img(src="img/guitar2.jpg" alt="Guitar").QuoteBlock_img
+            img(loading="lazy", src="img/guitar2.webp" alt="Guitar").QuoteBlock_img
           .Quote.Quote-textAndQuoteSection.QuoteBlock_quote
             .Quote_text.Quote_text-greyBg #[span.Quote_textInner Denny Zager is a guitar genius] 
             .Quote_author.Quote_author-greyBg #[span The New Yorker]
@@ -213,31 +213,31 @@ block content
           .TextBlock_text
             p Any guitar builder can lower strings, but if that if string height is too low it destroys sound quality. &nbsp;If you look closely at Zager guitars you’ll notice low string heights on frets 1-10 where players spend the majority of their time, but action rises over the sound hole for better tone and easier picking with the right hand.
           .TextBlock_imgWrapper
-            img(src="img/textblock_img1.jpg", alt="").TextBlock_img
+            img(loading="lazy", src="img/textblock_img1.jpg", alt="").TextBlock_img
         .TextBlock.TextBlock-reverse.TextBlocks_item
           h3.TextBlock_title Custom string spacing for easier chords that ring true
           .TextBlock_text
             p Have you ever tried to form a chord and no matter how you adjusted your fingers they were leaning on adjacent strings causing buzzes and rattles? Denny solves this problem by using custom string spacing on his guitars. This 1/32 of an inch is hard to see, but when you play it you'll immediately feel chords that were hard or impossible to play are now easy and ring true
           .TextBlock_imgWrapper
-            img(src="img/textblock_img2.jpg", alt="").TextBlock_img
+            img(loading="lazy", src="img/textblock_img2.jpg", alt="").TextBlock_img
         .TextBlock.TextBlocks_item
           h3.TextBlock_title Perfect quality control and no retail costs
           .TextBlock_text
             p When you buy your guitar direct from the builder not only do you save money avoiding the middle man retail price mark up (usually about 50%), but quality control is higher because your guitar isn't being sent through dealer networks going through multiple hands in the retail stores. When you buy your guitar from Zager it goes straight from Mr. Zagers hands to you with a 100% money back guarantee
           .TextBlock_imgWrapper
-            img(src="img/textblock_img3.jpg", alt="").TextBlock_img
+            img(loading="lazy", src="img/textblock_img3.jpg", alt="").TextBlock_img
         .TextBlock.TextBlock-reverse.TextBlocks_item
           h3.TextBlock_title Lower string pressure to play longer without sore fingers
           .TextBlock_text
             p When you barely have to press to form chords it makes a world of difference. New players with no muscle in their fingers are suddenly forming chords with ease as 50% less pressure is needed to make chords ring true. Advanced players no longer have to “muscle” chords and are able to play longer sets with much greater speed and accuracy. Denny achieves this using a lighter bracing system which actually flexes in the face as you press each string
           .TextBlock_imgWrapper
-            img(src="img/textblock_img1.jpg", alt="").TextBlock_img
+            img(loading="lazy", src="img/textblock_img1.jpg", alt="").TextBlock_img
         .TextBlock.TextBlocks_item
           h3.TextBlock_title Custom neck design that feels natural for all hand size
           .TextBlock_text
             p When you buy your guitar direct from the builder not only do you save money avoiding the middle man retail price mark up (usually about 50%), but quality control is higher because your guitar isn't being sent through dealer networks going through multiple hands in the retail stores. When you buy your guitar from Zager it goes straight from Mr. Zagers hands to you with a 100% money back guarantee
           .TextBlock_imgWrapper
-            img(src="img/textblock_img2.jpg", alt="").TextBlock_img
+            img(loading="lazy", src="img/textblock_img2.jpg", alt="").TextBlock_img
   .CTASection
     .Container
       h2.SectionTitle.CTASection_title Find your last guitar.
@@ -245,13 +245,13 @@ block content
       .CTASection_btnWrapper
         a(href="/guitars.html").BtnYellow.BtnYellow-guitar.CTASection_btn Shop all guitars
     .CTASection_imgWrapper
-      img(src="img/all_guitars.png", alt="All guitars").CTASection_img
+      img(loading="lazy", src="img/all_guitars.webp", alt="All guitars").CTASection_img
   .TextSection
     .Container
       .TextSection_wrapper
         h2.SectionTitle.TextSection_title Learn to play guitar like the pros from a Master using the easiest guitar system in the world
         .TextSection_imgWrapper
-          img(src="img/text_section_img.jpg", alt="").TextSection_img
+          img(loading="lazy", src="img/text_section_img.webp", alt="").TextSection_img
         .TextSection_text
           p Look at the best guitar players in the world and you'll notice they have one thing in common. They play their guitar by ear.
           p Since 1969, Denny Zager’s taught millions of people to play guitar using his internationally acclaimed “Play-By-Ear” guitar method that shows you how to tap into that part of your brain scientists say we rarely use and “Play-By-Ear” like the pros do.
@@ -266,7 +266,7 @@ block content
             a(href="#").BtnBlack.TextAndImage_btn See how you can help
         .TextAndImage_right
           .TextAndImage_imgWrapper
-            img(src="img/charity.jpg", alt="Charity").TextAndImage_img
+            img(loading="lazy", src="img/charity.webp", alt="Charity").TextAndImage_img
   .NewsLetter
     .Container
       h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
@@ -276,21 +276,21 @@ block content
       .IconsAndTexts.NewsLetter_iconsAndTexts
         .IconAndText.IconsAndTexts_item
           .CircleIcon.IconAndText_icon
-            img(src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
           h3.IconAndText_title Easier playability
           .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
         .IconAndText.IconsAndTexts_item
           .CircleIcon.IconAndText_icon
-            img(src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
           h3.IconAndText_title Lower price save 50%
           .IconAndText_text buying direct from the builder avoiding the retail store price mark up
         .IconAndText.IconsAndTexts_item
           .CircleIcon.IconAndText_icon
-            img(src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
           h3.IconAndText_title #1 rated components
           .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
         .IconAndText.IconsAndTexts_item
           .CircleIcon.IconAndText_icon
-            img(src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
           h3.IconAndText_title 100% money back guarantee
           .IconAndText_text including shipping both ways meaning you can try 1 risk free.
