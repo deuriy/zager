@@ -45,9 +45,9 @@ import Swiper, {
   Pagination
 } from '../../node_modules/swiper/swiper-bundle';
 
-// import {
-//   Fancybox
-// } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
+import {
+  Fancybox
+} from "@fancyapps/ui/src/Fancybox/Fancybox.js";
 
 new Swiper('.VideoSwiper', {
   modules: [Navigation, Pagination],
