@@ -1,0 +1,67 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-guitars(style="background-image: url('img/bg_banner_guitars.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text All guitars
+      .Banner_textWrapper
+        h1.Banner_title Easy play guitars that will last you generations.
+        .Banner_buttons
+          a(href="/compare-models.html").BtnYellow.BtnYellow-video.Banner_btn Watch The Video
+      .IconsAndTextsSwiper.swiper.Banner_iconsAndTextsSwiper.hidden-smPlus
+        .swiper-wrapper
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+              h3.IconAndText_title Easier playability
+              .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+              h3.IconAndText_title Lower price save 50%
+              .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+              h3.IconAndText_title #1 rated components
+              .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+              h3.IconAndText_title 100% money back guarantee
+              .IconAndText_text including shipping both ways meaning you can try 1 risk free
+    .IconsAndTexts.IconsAndTexts-highlighted.Banner_iconsAndTexts.hidden-xs
+      .Container
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free
+
+block page_bottom
+  script(src="/js/guitars.js")

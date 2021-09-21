@@ -1,0 +1,27 @@
+.Breadcrumbs
+  &_list
+    display grid
+    grid-auto-flow column
+    justify-content start
+    column-gap 5px
+    list-style none
+
+  &_item
+    font-size 14px
+    line-height 1.142857em
+
+  &_link
+    display inline-grid
+    grid-template-columns auto 6px
+    align-items center
+    column-gap 5px
+    color $lightBeige
+    text-decoration none
+
+    &::after
+      content ''
+      height 8px
+      background url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 1.2 4.2 4 1.4 6.8' stroke='%23FFFBF6' stroke-width='2'/%3E%3C/svg%3E") 0 0 no-repeat
+  
+  &_text
+    color rgba($lightBeige, .7)

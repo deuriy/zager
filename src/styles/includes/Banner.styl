@@ -1,7 +1,7 @@
 .Banner
   position relative
-  padding 62px 0 90px
-  background-position center 0
+  padding 50px 0 49px
+  background-position 64.1% 0
   background-repeat no-repeat
   background-size cover
   
@@ -19,9 +19,16 @@
       background linear-gradient(20.96deg, #251305 0%, #251305 46.4%, rgba(37, 19, 5, 0) 86.04%)
       opacity 0.85
 
-  @media $xs
-    padding 50px 0 49px
-    background-position 64.1% 0
+  @media $smPlus
+    padding 62px 0 90px
+    background-position center 0
+  
+  &_breadcrumbs
+    position relative
+    margin-bottom 20px
+
+    @media $smPlus
+      margin-bottom 25px
 
   &_textWrapper
     position relative
@@ -69,3 +76,37 @@
   &_btn
     @media $xxs
       width 100%
+  
+  &_iconsAndTexts
+    position relative
+  
+  &-guitars
+    padding-bottom 28px
+    overflow hidden
+
+    @media $smPlus
+      padding-top 41px
+      padding-bottom 0
+
+    &::before
+      @media $smPlus
+        display none
+    
+    .Banner_textWrapper
+      @media $smPlus
+        width 740px
+
+    .Banner_title
+      font-size 32px
+      line-height 1.375
+
+      @media $smPlus
+        margin-bottom 40px
+        font-size 48px
+        line-height 1.25
+    
+    .Banner_buttons
+      margin-bottom 44px
+
+      @media $smPlus
+        margin-bottom 90px

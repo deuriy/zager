@@ -1,8 +1,14 @@
 .IconsAndTexts
-  display grid
-  grid-template-columns repeat(4, 1fr)
-  column-gap 44px
+  &_wrapper
+    display grid
+    grid-template-columns repeat(4, 1fr)
+    column-gap 44px
 
-  @media $xs
-    grid-template-columns 100%
-    row-gap 27px
+    @media $xs
+      grid-template-columns 100%
+      row-gap 27px
+  
+  &-highlighted
+    padding 40px 0
+    background rgba(0, 0, 0, 0.35)
+    backdrop-filter blur(10px)
