@@ -1,3 +1,7 @@
+import {
+  Fancybox
+} from "@fancyapps/ui/src/Fancybox/Fancybox.js";
+
 import Swiper, {
   Navigation,
   Pagination
