@@ -50,9 +50,15 @@
           width 0.571428em
           height 0.2857em
           background url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.414 1h3.172L4 2.586 2.414 1Z' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") 0 0 / cover no-repeat
+          @extend .transition
 
           @media $xs
             margin-top 2px
+    
+    &-expanded
+      & > .MainMenu_link
+        &::after
+          transform rotate(180deg)
   
   &_link
     display block

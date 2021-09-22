@@ -26,6 +26,7 @@ mobileMainMenu.addEventListener('click', function (e) {
 
   let parentMenuItem = parentMenuLink.parentNode;
 
+  parentMenuItem.classList.toggle('MainMenu_item-expanded');
   slideToggle(parentMenuItem);
   e.preventDefault();
 });

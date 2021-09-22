@@ -5,14 +5,23 @@
   border-radius 4px
   background $grey
   color $dark
-  font-size 20px
-  line-height 1.2
+  font-size 16px
+  line-height 1.5
   text-decoration none
+  white-space nowrap
   @extend .transition
   
-  @media $xs
-    font-size 16px
-    line-height 1.5
+  @media $smPlus
+    font-size 20px
+    line-height 1.2
 
   &:hover
     background $beige
+  
+  &-productCard
+    padding-top 2px
+    padding-bottom 2px
+    line-height 1.375
+
+    @media $smPlus
+      font-size 16px

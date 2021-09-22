@@ -1,0 +1,67 @@
+.Series
+  padding 40px 0
+  background linear-gradient(180deg, #ECE2D6 0%, $grey 100%)
+  overflow hidden
+
+  @media $smPlus
+    padding 60px 0
+  
+  &_wrapper
+    @media $smPlus
+      display grid
+      grid-template-columns 1fr 338px
+      column-gap 30px
+      margin-bottom 60px
+    
+    @media $mdPlus
+      column-gap 63px
+
+  &_title
+    margin-bottom 12px
+
+    @media $smPlus
+      margin-bottom 20px
+  
+  &_tags
+    margin-bottom 25px
+
+    @media $smPlus
+      grid-column 1
+      margin-bottom 30px
+    
+    @media $xs
+      &::after
+        content ''
+        display block
+        width 100%
+        height 2px
+        margin-top 17px
+        background $lightBeige
+  
+  &_quote
+    @media $xs
+      margin-bottom 52px
+
+    @media $smPlus
+      grid-row 1 / 4
+      grid-column 2 / 3
+      margin-top 10px
+  
+  &_description
+    font-size 18px
+    line-height 1.78
+    letter-spacing -0.005em
+
+    @media $xs
+      margin-bottom 25px
+
+    @media $smPlus
+      font-size 16px
+      line-height 1.625
+      letter-spacing 0.005em
+
+    & > p
+      margin-bottom 12px
+
+      &:last-child
+        margin-bottom 0
