@@ -11,13 +11,15 @@
     top 0
     bottom 0
     left 0
-    width 59.53%
-    background linear-gradient(90deg, #251305 0%, #251305 53.93%, rgba(37, 19, 5, 0) 100%)
-
+    width 100%
+    background linear-gradient(20.96deg, #251305 0%, #251305 46.4%, rgba(37, 19, 5, 0) 86.04%)
+    
     @media $xs
-      width 100%
-      background linear-gradient(20.96deg, #251305 0%, #251305 46.4%, rgba(37, 19, 5, 0) 86.04%)
       opacity 0.85
+
+    @media $smPlus
+      width 59.53%
+      background linear-gradient(90deg, #251305 0%, #251305 53.93%, rgba(37, 19, 5, 0) 100%)
 
   @media $smPlus
     padding 62px 0 90px
@@ -114,3 +116,34 @@
 
       @media $smPlus
         margin-bottom 90px
+  
+  &-short
+    padding-bottom 64px
+    background-position 0 center
+
+    @media $smPlus
+      padding 31px 0 99px
+
+    &::before
+      @media $xs
+        background linear-gradient(20.96deg, rgba(37, 19, 5, 0.65) 0%, rgba(37, 19, 5, 0.65) 46.4%, rgba(37, 19, 5, 0) 86.04%)
+      
+      @media $smPlus
+        display none
+    
+    .Banner_breadcrumbs
+      @media $smPlus
+        margin-bottom 35px
+    
+    .Banner_textWrapper
+      @media $smPlus
+        width 720px
+    
+    .Banner_title
+      margin-bottom 0
+      font-size 32px
+      line-height 1.375
+
+      @media $smPlus
+        font-size 48px
+        line-height 1.25
