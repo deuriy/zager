@@ -1,0 +1,55 @@
+:root
+  --plyr-audio-control-color $yellow
+  --plyr-audio-controls-background $yellow
+  --plyr-audio-control-background-hover transparent
+  --plyr-audio-control-color-hover $yellow
+  --plyr-range-fill-background $dark
+  --plyr-range-thumb-height 10px
+  --plyr-range-track-height 4px
+  --plyr-control-icon-size 6px
+  --plyr-font-size-time 14px
+  --plyr-range-thumb-background $dark
+  --plyr-audio-progress-buffered-background $chocolate
+
+.plyr--audio
+  border-radius 100px
+
+  .plyr__controls
+    padding-top 12px
+    padding-bottom 9px
+
+    .plyr__controls__item
+      &:first-child
+        margin-left 14px
+      
+      &[data-plyr="play"]
+        padding 6px
+        border-radius 50%
+        background $dark
+      
+      &.plyr__progress__container
+        display flex
+        align-items center
+        margin-left 10px
+
+        &::before
+          content 'Listen'
+          margin-right 23px
+          font-weight bold
+          font-family $robotoSlab
+          font-size 14px
+          line-height 20px
+          text-transform uppercase
+          letter-spacing 0.06em
+          color $dark
+      
+      &.plyr__time
+        margin-right 6px
+        margin-left 10px
+        color $dark
+  
+  .plyr__progress
+    flex-grow 1
+
+    input[type=range]
+      cursor pointer

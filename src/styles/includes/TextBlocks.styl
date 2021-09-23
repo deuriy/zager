@@ -1,9 +1,9 @@
 .TextBlocks
-  padding 140px 0 80px
+  padding 40px 0
   background $grey
 
-  @media $xs
-    padding 40px 0
+  @media $smPlus
+    padding 140px 0 80px
 
   &_title,
   &_description
@@ -13,30 +13,28 @@
   
   &_title
     width 900px
-    margin-bottom 20px
+    margin-bottom 25px
 
-    @media $xs
-      margin-bottom 25px
+    @media $smPlus
+      margin-bottom 20px
   
   &_description
-    margin-bottom 60px
+    margin-bottom 51px
     font-size 18px
     line-height 1.78
     letter-spacing -0.005em
 
     @media $smPlus
       width 540px
+      margin-bottom 60px
       text-align center
-    
-    @media $xs
-      margin-bottom 51px
   
   &_items
     display grid
-    row-gap 60px
+    row-gap 24px
 
-    @media $xs
-      row-gap 24px
+    @media $smPlus
+      row-gap 60px
   
   &_item
     @media $xs
@@ -57,3 +55,12 @@
 
         &::after
           display none
+  
+  &-guitarsPage
+    background $lightBeige
+
+    @media $smPlus
+      padding 60px 0
+
+    @media $mdPlus
+      padding 80px 0

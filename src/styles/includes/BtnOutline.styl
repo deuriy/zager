@@ -16,7 +16,9 @@
   text-decoration none
   white-space nowrap
 
-  &, &::before, &::after
+  &,
+  &::before,
+  &::after
     @extend .transition
   
   &:hover
@@ -74,3 +76,21 @@
   
   &-lightBeigeBg
     background rgba($lightBeige, .45)
+  
+  &-arrowLeft
+    &::before
+      content ''
+      width 20px
+      height 16px
+      background url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1 2 8l7 7M19.578 8h-16.5' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") 0 0 no-repeat
+  
+  &-arrowRight
+    &::after
+      content ''
+      width 19px
+      height 16px
+      background url("data:image/svg+xml,%3Csvg width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m10.578 1 7 7-7 7M0 8h16.5' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") 0 0 no-repeat
+  
+  &-disabled
+    opacity 0.45
+    pointer-events none

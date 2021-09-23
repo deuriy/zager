@@ -25,12 +25,12 @@
     "gulp-run-command": "0.0.10",
     "jshint": "^2.13.0",
     "nodemon": "^2.0.12",
-    "prettier": "^2.4.0"
+    "prettier": "^2.4.1"
   },
   "dependencies": {
-    "@fancyapps/ui": "^4.0.4",
+    "@fancyapps/ui": "^4.0.5",
     "argv": "0.0.2",
-    "autoprefixer": "^10.3.4",
+    "autoprefixer": "^10.3.5",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.3",
     "gulp-clean-css": "^4.3.0",
@@ -43,7 +43,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-stylus": "^2.7.0",
     "gulp-touch-fd": "^2.0.0",
-    "postcss": "^8.3.6",
+    "plyr": "^3.6.8",
+    "postcss": "^8.3.7",
     "stylelint": "^13.13.1",
     "stylus-supremacy": "^2.15.0",
     "yargs": "^17.1.1"

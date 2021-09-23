@@ -1,0 +1,50 @@
+.QA
+  &_items
+    position relative
+    @extend .transition
+    
+    @media $xs
+      max-height 144px
+      margin-bottom -28px
+      overflow hidden
+
+      &::after
+        content ''
+        position absolute
+        z-index 1
+        right 0
+        bottom 0
+        left 0
+        height 117px
+        background linear-gradient(180deg, rgba($lightBeige, 0) 0%, rgba($lightBeige, 0.98) 45.83%)
+        pointer-events none
+      
+      &-expanded
+        margin-bottom 10px
+        
+        &::after
+          display none
+
+  &_item
+    margin-bottom 12px
+    font-size 16px
+    line-height 1.625
+    letter-spacing 0.005em
+
+    &:last-child
+      margin-bottom 0
+
+  &_answer
+    margin-bottom 4px
+    font-weight bold
+  
+  // &_moreLinkWrapper
+  //   position relative
+  //   z-index 1
+  //   text-align center
+  
+  &_moreLink
+    position relative
+    z-index 1
+    width 100%
+    margin-bottom -12px

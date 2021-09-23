@@ -1,33 +1,31 @@
 .TextBlock
   display grid
-  grid-template-columns repeat(2, 1fr)
-  justify-content space-between
-  column-gap 48px
   overflow hidden
 
-  @media $xs
-    grid-template-columns 100%
-    justify-content stretch
+  @media $smPlus
+    grid-template-columns repeat(2, 1fr)
+    justify-content space-between
+    column-gap 48px
 
   &_title
     align-self end
-    margin-bottom 20px
+    margin-bottom 26px
     font-size 23px
     line-height 1.392
     font-family $robotoSlab
 
-    @media $xs
-      margin-bottom 26px
+    @media $smPlus
+      margin-bottom 20px
   
   &_text
-    font-size 16px
-    line-height 1.625
-    letter-spacing 0.005em
+    font-size 18px
+    line-height 1.78
+    letter-spacing -0.005em
 
-    @media $xs
-      font-size 18px
-      line-height 1.78
-      letter-spacing -0.005em
+    @media $smPlus
+      font-size 16px
+      line-height 1.625
+      letter-spacing 0.005em
 
     & > p
       margin-bottom 10px

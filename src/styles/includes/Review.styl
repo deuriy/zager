@@ -1,0 +1,59 @@
+.Review
+  padding 20px
+  border-radius 4px
+  background $lightBeige
+
+  @media $smPlus
+    display grid
+    grid-template-columns 344px 1fr
+    column-gap 30px
+    padding 40px
+  
+  @media $mdPlus
+    column-gap 60px
+    padding 60px
+
+  &_author
+    margin-bottom 30px
+
+    @media $smPlus
+      margin-bottom 40px
+  
+  &_info
+    font-size 14px
+    line-height 22px
+    text-align center
+    
+    @media $xs
+      margin-bottom 31px
+      padding 3px 0
+      border-top 2px solid $grey
+      border-bottom 2px solid $grey
+    
+    @media $smPlus
+      grid-row 3 / 4
+      grid-column 1 / 2
+      margin-top 42px
+  
+  &_location
+    margin-bottom -2px
+    font-weight bold
+
+    @media $smPlus
+      margin-bottom 4px
+  
+  &_date
+    color $chocolate
+    opacity 0.8
+  
+  &_audio
+    margin-bottom 29px
+
+    @media $smPlus
+      grid-column 1 / 2
+      margin-bottom 46px
+  
+  &_qa
+    @media $smPlus
+      grid-row 1 / 4
+      grid-column 2 / 3
