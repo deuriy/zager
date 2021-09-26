@@ -7,6 +7,15 @@
 
   @media $xs
     padding 40px 0
+  
+  &_title
+    margin-bottom 25px
+
+    @media $smPlus
+      margin-bottom 63px
+
+    @media $mdPlus
+      margin-bottom 103px
 
   &_items
     display grid
@@ -42,3 +51,15 @@
   &_btn
     @media $xs
       width 100%
+  
+  &-gradientBg
+    background linear-gradient(180deg, #ECE2D6 0%, $grey 100%)
+
+  &-accessories
+    @media $mdPlus
+      padding-top 80px
+      padding-bottom 103px
+
+    .SeriesSection_buttons
+      @media $xs
+        margin-top 23px

@@ -13,10 +13,12 @@ function slideToggle(elem) {
 
 menuHamburger.addEventListener('click', function (e) {
   mobileNavigation.classList.add('MobileNavigation-opened');
+  document.body.style.overflow = 'hidden';
 });
 
 closeMobileNavigation.addEventListener('click', function (e) {
   mobileNavigation.classList.remove('MobileNavigation-opened');
+  document.body.style.overflow = '';
 });
 
 mobileMainMenu.addEventListener('click', function (e) {

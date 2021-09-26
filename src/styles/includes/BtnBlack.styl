@@ -1,5 +1,7 @@
 .BtnBlack
   display inline-grid
+  align-items center
+  justify-content center
   padding 1em 1.75em
   border-radius 4px
   font-weight bold
@@ -41,3 +43,12 @@
       width 1.34em
       height 1.34em
       background url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.24 12.64 0 10.4V16h5.6l-2.24-2.24 3.472-3.456-1.136-1.136L2.24 12.64Zm11.52-9.28L16 5.6V0h-5.6l2.24 2.24-3.472 3.456 1.136 1.136L13.76 3.36Zm-1.12 10.4L10.4 16H16v-5.6l-2.24 2.24-3.456-3.472-1.136 1.136 3.464 3.464.008-.008ZM3.36 2.24 5.6 0H0v5.6l2.24-2.24 3.456 3.472 1.136-1.136L3.36 2.24Z' fill='%23FFFBF6'/%3E%3C/svg%3E") 0 0 / cover no-repeat
+  
+  &-guitar
+    grid-template-columns 12px auto
+    gap 12px
+
+    &::before
+      content ''
+      height 20px
+      background url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.652 7.198V3.945h2.513v3.253h.187a2.388 2.388 0 0 1 2.266 3.144l-.246.739a.424.424 0 0 0 .165.486l.053.034a4.026 4.026 0 0 1 1.752 3.92 5.13 5.13 0 0 1-5.08 4.405h-.708a5.13 5.13 0 0 1-5.08-4.406 4.026 4.026 0 0 1 1.753-3.919l.052-.034a.424.424 0 0 0 .166-.486l-.245-.74a2.388 2.388 0 0 1 2.264-3.143h.188Zm1.255 6.544a1.427 1.427 0 1 0 .001-2.855 1.427 1.427 0 0 0 0 2.854Zm1.42-10.577H4.463V1.137A.685.685 0 0 1 5.15.45l1.49.001a.685.685 0 0 1 .685.685V2.52l.001.646Z' fill='%23FFFBF6'/%3E%3C/svg%3E") 0 0 no-repeat

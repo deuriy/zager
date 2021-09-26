@@ -1,0 +1,41 @@
+.Checkbox
+	position relative
+	display flex
+	font-size 14px
+	line-height 1.42857
+	
+	&:hover
+		.Checkbox_label::before
+			border-color $chocolate
+	
+	&_input
+		position absolute
+		clip rect(0, 0, 0, 0)
+		
+		&:checked ~ .Checkbox_label::before
+			border-color $dark
+			background-color $dark
+			background-image url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.277 10.302a1 1 0 0 0 1.418.003l7.594-7.594A1 1 0 0 0 13.3 1.31l-.015-.016a1 1 0 0 0-1.426-.012L4.984 8.156 2.127 5.3A.997.997 0 0 0 .714 6.705l3.563 3.597Z' fill='%23FEBD70'/%3E%3C/svg%3E")
+	
+	&_label
+		display flex
+		align-items center
+		column-gap 11px
+		flex-grow 1
+		cursor pointer
+		
+		&::before
+			content ""
+			flex-shrink 0
+			width 14px
+			height 14px
+			margin-top -2px
+			border 2px solid rgba($chocolate, .2)
+			border-radius 2px
+			background-color $white
+			background-position center center
+			background-repeat no-repeat
+			@extend .transition
+	
+	&_number
+		color rgba($chocolate, .7)

@@ -1,0 +1,19 @@
+.LoadingPosts
+  @media $smPlus
+    display grid
+    grid-template-columns repeat(2, auto)
+    align-items center
+    justify-content space-between
+  
+  @media $sm
+    justify-content center
+  
+  &_btn
+    @media $xs
+      width 100%
+  
+  &-accessories
+    @media $md
+      grid-template-columns 100%
+      gap 30px
+      justify-items center

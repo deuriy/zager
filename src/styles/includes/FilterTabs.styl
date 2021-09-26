@@ -28,6 +28,7 @@
     cursor pointer
     @extend .transition
 
+    &:hover,
     &-active
       background-color $yellow
       border-color $yellow
@@ -45,16 +46,16 @@
     @media $smPlus
       margin-bottom 40px
   
-  &_bottom
-    @media $smPlus
-      display grid
-      grid-template-columns repeat(2, auto)
-      align-items center
-      justify-content space-between
+  // &_bottom
+  //   @media $smPlus
+  //     display grid
+  //     grid-template-columns repeat(2, auto)
+  //     align-items center
+  //     justify-content space-between
     
-    @media $sm
-      justify-content center
+  //   @media $sm
+  //     justify-content center
   
-  &_loadMoreBtn
-    @media $xs
-      width 100%
+  // &_loadMoreBtn
+  //   @media $xs
+  //     width 100%

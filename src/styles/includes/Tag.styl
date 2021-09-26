@@ -38,3 +38,22 @@
     font-size 13px
     line-height 20px
     letter-spacing 0.06em
+
+  &-accessoryCard
+    @extend .Tag-stars
+      
+    @media $xs
+      grid-template-columns auto
+      padding 4px 6px 4px 12px
+      font-weight normal
+      font-size 13px
+      line-height 20px
+      letter-spacing 0.06em
+
+      &::before,
+      &::after
+        display none
+      
+    @media $smPlus
+      column-gap 5px
+      font-size 14px

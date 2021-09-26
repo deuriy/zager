@@ -1,0 +1,65 @@
+.AccessoryCard
+  display grid
+  grid-template-rows auto 1fr
+  width 158px
+
+  @media $smPlus
+    width 248px
+
+  &_imgWrapper
+    position relative
+    display grid
+    place-content center
+    border-top-right-radius 4px
+    border-top-left-radius 4px
+    overflow hidden
+  
+  &_img
+    display block
+    max-width none
+  
+  &_tag
+    position absolute
+    top 0
+    left 0
+
+  &_textWrapper
+    display grid
+    grid-template-rows 1fr minmax(33px, auto) auto
+    align-items end
+    padding 15px
+    border-bottom-right-radius 4px
+    border-bottom-left-radius 4px
+    background $lightBeige
+
+    @media $smPlus
+      padding 24px
+  
+  &_title,
+  &_price
+    margin-bottom 15px
+    font-weight bold
+    font-family $robotoSlab
+    font-size 16px
+    line-height 19px
+  
+  &_title
+    align-self center
+    
+    @media $smPlus
+      margin-bottom 20px
+      font-size 19px
+      line-height 24px
+  
+  &_price
+    @media $smPlus
+      margin-bottom 24px
+      font-size 18px
+      line-height 22px
+  
+  &_btn
+    width 100%
+
+    &-addToCart
+      @media $smPlus
+        margin-bottom 8px

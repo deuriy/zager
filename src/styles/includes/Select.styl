@@ -1,0 +1,23 @@
+.Select
+  appearance none
+  display inline-grid
+  padding 3px 24px 4px 11px
+  border 2px solid $yellow
+  outline none
+  border-radius 4px
+  background rgba($lightBeige, .45) url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.414 9h3.172L10 10.586 8.414 9Z' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") calc(100% - 5px) center no-repeat
+  cursor pointer
+  font-weight bold
+  font-size 14px
+  line-height 22px
+  font-family $baseFont
+  @extend .transition
+
+  &:focus
+    border-color darken($yellow, 15)
+  
+  &::after
+    content ''
+    width 20px
+    height 20px
+    
