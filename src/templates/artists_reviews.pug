@@ -1,0 +1,266 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-artists(style="background-image: url('img/bg_banner_guitars.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text Artists and reviews
+      .Banner_textWrapper
+        h1.Banner_title As thousands of reviews have been written about Zager guitars over the last 51 years, we have captured the most prominent and posted them here
+  .CTASection
+    .Container
+      h2.SectionTitle.CTASection_title Find your last guitar.
+      h3.CTASection_subTitle The guitar that you can pass onto your children
+      .CTASection_btnWrapper
+        a(href="/guitars.html").BtnYellow.BtnYellow-guitar.CTASection_btn Shop all guitars
+    .CTASection_imgWrapper
+      img(loading="lazy", src="img/all_guitars.webp", alt="All guitars").CTASection_img
+  .FeedbackSection
+    .Container
+      h2.SectionTitle.SectionTitle-center.SectionTitle-feedbackSection.FeedbackSection_title Our Buyers feedback
+      .FeedbackSection_description
+        p Something about over the last 52 years , satisfied customers
+      .FilterTabs
+        .FilterTabsListSwiper.swiper.FilterTabs_listWrapper.hidden-smPlus
+          .swiper-wrapper
+            .swiper-slide.FilterTabsListSwiper_slide
+              li.FilterTabs_item.FilterTabs_item-active(data-review-category-filter="all") All reviews
+            .swiper-slide.FilterTabsListSwiper_slide
+              li.FilterTabs_item(data-review-category-filter="zad_900") ZAD 900
+            .swiper-slide.FilterTabsListSwiper_slide
+              li.FilterTabs_item(data-review-category-filter="zad_80") ZAD 80
+            .swiper-slide.FilterTabsListSwiper_slide
+              li.FilterTabs_item(data-review-category-filter="zad_50") ZAD 50
+            .swiper-slide.FilterTabsListSwiper_slide
+              li.FilterTabs_item(data-review-category-filter="zad_20") ZAD 20
+            .swiper-slide.FilterTabsListSwiper_slide
+              li.FilterTabs_item(data-review-category-filter="others") Others
+        .FilterTabs_listWrapper.hidden-xs
+          ul.FilterTabs_list
+            li.FilterTabs_item.FilterTabs_item-active(data-review-category-filter="all") All reviews
+            li.FilterTabs_item(data-review-category-filter="zad_900") ZAD 900
+            li.FilterTabs_item(data-review-category-filter="zad_80") ZAD 80
+            li.FilterTabs_item(data-review-category-filter="zad_50") ZAD 50
+            li.FilterTabs_item(data-review-category-filter="zad_20") ZAD 20
+            li.FilterTabs_item(data-review-category-filter="others") Others
+        .FilterTabs_reviews
+          .Review.FilterTabs_review(data-review-category-id="zad_900")
+            .Author.Review_author
+              .Author_photo
+                img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
+              .Author_name Name Surname
+              .Author_productSeries ZAD 900
+            .Review_info
+              .Review_location Garden Grove, California
+              .Review_date 16 days ago
+            .Review_audio
+              audio(controls id="reviewaudio")
+                source(src="/audio/voicemail-66.mp3" type="audio/mp3")
+            .QA.Review_qa
+              .QA_items
+                .QA_item
+                  .QA_answer How does this guitar compare with your old guitar, other guitars, or guitars you've tried in stores?
+                  .QA_question Much easier to finger, both chords and note picking. My hands don't get as tired
+                .QA_item
+                  .QA_answer What's your favorite part about this guitar?
+                  .QA_question Craftsmanship and sound quality
+                .QA_item
+                  .QA_answer If you didn't know the price of this guitar what would you estimate the price to be?
+                  .QA_question $1,000+
+                .QA_item
+                  .QA_answer How would you rate customer support?
+                  .QA_question Excellent! Polite, responsive and informative
+                .QA_item
+                  .QA_answer Would you recommend this guitar to others...if so why?
+                  .QA_question Without a doubt. There would be no disappointment. It really has a “wow” factor in SO many areas.
+                .QA_item
+                  .QA_answer Additional comments:
+                  .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
+              .QA_moreLinkWrapper.hidden-smPlus
+                a(href="#").ArrowLink.QA_moreLink read more
+          .Review.FilterTabs_review(data-review-category-id="zad_80")
+            .Author.Review_author
+              .Author_photo
+                img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
+              .Author_name Name Surname
+              .Author_productSeries ZAD 80
+            .Review_info
+              .Review_location Garden Grove, California
+              .Review_date 16 days ago
+            .Review_audio
+              audio(controls id="reviewaudio")
+                source(src="/audio/voicemail-66.mp3" type="audio/mp3")
+            .QA.Review_qa
+              .QA_items
+                .QA_item
+                  .QA_answer How does this guitar compare with your old guitar, other guitars, or guitars you've tried in stores?
+                  .QA_question Much easier to finger, both chords and note picking. My hands don't get as tired
+                .QA_item
+                  .QA_answer What's your favorite part about this guitar?
+                  .QA_question Craftsmanship and sound quality
+                .QA_item
+                  .QA_answer If you didn't know the price of this guitar what would you estimate the price to be?
+                  .QA_question $1,000+
+                .QA_item
+                  .QA_answer How would you rate customer support?
+                  .QA_question Excellent! Polite, responsive and informative
+                .QA_item
+                  .QA_answer Would you recommend this guitar to others...if so why?
+                  .QA_question Without a doubt. There would be no disappointment. It really has a “wow” factor in SO many areas.
+                .QA_item
+                  .QA_answer Additional comments:
+                  .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
+              .QA_moreLinkWrapper.hidden-smPlus
+                a(href="#").ArrowLink.QA_moreLink read more
+          .Review.FilterTabs_review(data-review-category-id="zad_50")
+            .Author.Review_author
+              .Author_photo
+                img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
+              .Author_name Name Surname
+              .Author_productSeries ZAD 50
+            .Review_info
+              .Review_location Garden Grove, California
+              .Review_date 16 days ago
+            .Review_audio
+              audio(controls id="reviewaudio")
+                source(src="/audio/voicemail-66.mp3" type="audio/mp3")
+            .QA.Review_qa
+              .QA_items
+                .QA_item
+                  .QA_answer How does this guitar compare with your old guitar, other guitars, or guitars you've tried in stores?
+                  .QA_question Much easier to finger, both chords and note picking. My hands don't get as tired
+                .QA_item
+                  .QA_answer What's your favorite part about this guitar?
+                  .QA_question Craftsmanship and sound quality
+                .QA_item
+                  .QA_answer If you didn't know the price of this guitar what would you estimate the price to be?
+                  .QA_question $1,000+
+                .QA_item
+                  .QA_answer How would you rate customer support?
+                  .QA_question Excellent! Polite, responsive and informative
+                .QA_item
+                  .QA_answer Would you recommend this guitar to others...if so why?
+                  .QA_question Without a doubt. There would be no disappointment. It really has a “wow” factor in SO many areas.
+                .QA_item
+                  .QA_answer Additional comments:
+                  .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
+              .QA_moreLinkWrapper.hidden-smPlus
+                a(href="#").ArrowLink.QA_moreLink read more
+          .Review.FilterTabs_review(data-review-category-id="zad_20")
+            .Author.Review_author
+              .Author_photo
+                img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
+              .Author_name Name Surname
+              .Author_productSeries ZAD 20
+            .Review_info
+              .Review_location Garden Grove, California
+              .Review_date 16 days ago
+            .Review_audio
+              audio(controls id="reviewaudio")
+                source(src="/audio/voicemail-66.mp3" type="audio/mp3")
+            .QA.Review_qa
+              .QA_items
+                .QA_item
+                  .QA_answer How does this guitar compare with your old guitar, other guitars, or guitars you've tried in stores?
+                  .QA_question Much easier to finger, both chords and note picking. My hands don't get as tired
+                .QA_item
+                  .QA_answer What's your favorite part about this guitar?
+                  .QA_question Craftsmanship and sound quality
+                .QA_item
+                  .QA_answer If you didn't know the price of this guitar what would you estimate the price to be?
+                  .QA_question $1,000+
+                .QA_item
+                  .QA_answer How would you rate customer support?
+                  .QA_question Excellent! Polite, responsive and informative
+                .QA_item
+                  .QA_answer Would you recommend this guitar to others...if so why?
+                  .QA_question Without a doubt. There would be no disappointment. It really has a “wow” factor in SO many areas.
+                .QA_item
+                  .QA_answer Additional comments:
+                  .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
+              .QA_moreLinkWrapper.hidden-smPlus
+                a(href="#").ArrowLink.QA_moreLink read more
+        .LoadingPosts
+          .Pagination.hidden-smMinus
+            a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowLeft.BtnOutline-disabled.Pagination_prev Previous
+            ul.Pagination_list
+              li.Pagination_item.Pagination_item-current
+                a(href="#").Pagination_link 1
+              li.Pagination_item
+                a(href="#").Pagination_link 2
+              li.Pagination_item
+                a(href="#").Pagination_link 3
+              li.Pagination_item-more ...
+              li.Pagination_item
+                a(href="#").Pagination_link 35
+            a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowRight.Pagination_next next
+          a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
+  .SeriesSection.SeriesSection-gradientBg.SeriesSection-accessories
+    .Container
+      h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Why are more pro guitarists choosing Zager hand #[br]made guitars over Martin, Taylor, Fender and Gibson?
+      .SeriesSection_items
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+          h3.SeriesBlock_title ZAD 900 Series
+          .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Professional
+          h3.SeriesBlock_title ZAD 80 Series
+          .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
+          h3.SeriesBlock_title ZAD 50 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
+          h3.SeriesBlock_title ZAD 20 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+      ul.SeriesSection_buttons
+        li.SeriesSection_btnItem
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn.hidden-smPlus Shop all guitars
+          a(href="#").BtnBlack.BtnBlack-guitar.BtnBlack-seriesSection.SeriesSection_btn.hidden-xs Shop all guitars
+        li.SeriesSection_btnItem
+          a(href="#").BtnOutline.BtnOutline-more.BtnOutline-darkText.BtnOutline-seriesSection.SeriesSection_btn compare guitars
+  .NewsLetter
+    .Container
+      h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
+      form.SubscribeForm.NewsLetter_form
+        input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
+        button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      .IconsAndTexts.NewsLetter_iconsAndTexts
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free.
+
+block page_bottom
+  script(src="/js/accessories.js")
