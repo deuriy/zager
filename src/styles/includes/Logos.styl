@@ -1,0 +1,24 @@
+.Logos
+  padding 40px 0
+  background $lightBeige
+
+  &_title
+    margin-bottom 25px
+    font-size 16px
+    line-height 20px
+    font-family $robotoSlab
+    letter-spacing 0.06em
+    text-transform uppercase
+    text-align center
+
+    @media $smPlus
+      margin-bottom 32px
+
+  &_items
+    display grid
+    grid-template-columns repeat(auto-fit, 50px)
+    gap 25px 41px
+
+    @media $smPlus
+      grid-template-columns repeat(auto-fit, 70px)
+      column-gap 77px

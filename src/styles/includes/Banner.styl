@@ -133,7 +133,9 @@
         background linear-gradient(20.96deg, rgba(37, 19, 5, 0.65) 0%, rgba(37, 19, 5, 0.65) 46.4%, rgba(37, 19, 5, 0) 86.04%)
       
       @media $smPlus
-        display none
+        &::before
+          width 100%
+          background linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
     
     .Banner_breadcrumbs
       @media $smPlus
@@ -162,6 +164,11 @@
     
     @media $smPlus
       padding 39px 0 62px
+      background-position center center
+
+      &::before
+        width 100%
+        background linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
     
     .Banner_textWrapper
       width 720px
