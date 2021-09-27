@@ -1,0 +1,23 @@
+.VideoReviews
+  &_title
+    margin-bottom 27px
+    font-size 23px
+    line-height 1.392
+    font-family $robotoSlab
+
+    @media $smPlus
+      margin-bottom 58px
+      font-size 28px
+      line-height 1.142857
+  
+  &_items
+    display grid
+    grid-template-columns repeat(auto-fit, minmax(325px, 1fr))
+    justify-items center
+    gap 21px
+    margin-bottom 40px
+
+    @media $smPlus
+      grid-template-columns repeat(auto-fit, minmax(344px, 1fr))
+      gap 59px 48px
+      margin-bottom 59px

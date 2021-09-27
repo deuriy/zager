@@ -1,0 +1,57 @@
+.ArtistReview
+  position relative
+  padding 40px 25px
+  border-radius 4px
+  background $lightBeige
+
+  @media $mdPlus
+    display grid
+    grid-template-columns 1fr 46%
+    column-gap 29px
+    padding-right 39px
+    padding-bottom 50px
+    padding-left 39px
+
+  &_tag
+    position absolute
+    top -14px
+
+    @media $mdPlus
+      left 39px
+  
+  &_author,
+  &_title
+    font-weight bold
+    font-family $robotoSlab
+  
+  &_author
+    margin-bottom 6px
+    font-size 28px
+    line-height 32px
+  
+  &_title
+    margin-bottom 25px
+    font-size 18px
+    line-height 22px
+
+    @media $mdPlus
+      margin-bottom 19px
+  
+  &_imgWrapper
+    margin-bottom 23px
+
+    @media $mdPlus
+      display grid
+      justify-content end
+      grid-row 1 / 4
+      grid-column 2 / 3
+      align-self center
+      margin-bottom -11px
+  
+  &_img
+    display block
+  
+  &_text
+    font-size 16px
+    line-height 1.625
+    letter-spacing 0.005em
