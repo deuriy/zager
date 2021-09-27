@@ -4,6 +4,29 @@
   max-width 100%
   border-radius 4px
 
+  &_prev,
+  &_next
+    position absolute
+    z-index 1
+    top 0
+    bottom 25px
+    margin auto
+
+    @media $xs
+      bottom 0
+  
+  &_prev
+    left 20px
+
+    @media $xs
+      left -16px
+  
+  &_next
+    right 20px
+
+    @media $xs
+      right -16px
+
   &_label,
   &_tag,
   &_fullScreenBtn

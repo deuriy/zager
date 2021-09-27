@@ -26,7 +26,7 @@ block content
   .VideoSection
     .Container
       h2.SectionTitle.SectionTitle-lightBeige.VideoSection_title +135,000 ecstatic players joined the Zager family and never looked back
-      .VideoSwiper.VideoSection_swiper.swiper
+      .VideoSwiper.VideoSection_swiper.swiper-container
         .swiper-wrapper
           .swiper-slide.VideoSwiper_slide
             .VideoBlock
@@ -73,7 +73,7 @@ block content
       .Product_wrapper
         .Product_left
           .ProductImg
-            .ProductImgSwiper.ProductImg_swiper.swiper
+            .ProductImgSwiper.ProductImg_swiper.swiper-container
               .swiper-wrapper
                 .swiper-slide.ProductImgSwiper_slide
                   img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
@@ -82,8 +82,8 @@ block content
                 .swiper-slide.ProductImgSwiper_slide
                   img(loading="lazy", src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
               .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductImgSwiper_pagination.hidden-xs
-              button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImgSwiper_prev
-              button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImgSwiper_next
+            button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImg_prev
+            button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImg_next
             .Label.ProductImg_label special edition
             .Tag.Tag-stars.ProductImg_tag On sale
             a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductImg_fullScreenBtn full screen
@@ -127,7 +127,7 @@ block content
             .Testimonial_info.Testimonial_info-noAuthor
               .Testimonial_source
                 img(loading="lazy", src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
-      .TestimonialsSwiper.swiper.hidden-smPlus
+      .TestimonialsSwiper.Product_testimonialsSwiper.swiper-container.hidden-smPlus
         .swiper-wrapper
           .swiper-slide.TestimonialsSwiper_slide
             .Testimonial.Testimonial-small.TestimonialsSwiper_item

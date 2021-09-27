@@ -46,14 +46,15 @@ document.addEventListener('click', function (e) {
 import Swiper, {
   Navigation,
   Pagination
-} from '../../node_modules/swiper/swiper-bundle';
+} from 'swiper';
+
+Swiper.use([Navigation, Pagination]);
 
 import {
   Fancybox
-} from "@fancyapps/ui/src/Fancybox/Fancybox.js";
+} from "@fancyapps/ui";
 
 new Swiper('.VideoSwiper', {
-  modules: [Navigation, Pagination],
   slidesPerView: 'auto',
   spaceBetween: 20,
 
@@ -77,7 +78,6 @@ new Swiper('.VideoSwiper', {
 
 let productImgFullScreenBtn = document.querySelector('.ProductImg_fullScreenBtn');
 let productImgSwiper = new Swiper('.ProductImgSwiper', {
-  modules: [Navigation, Pagination],
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
@@ -91,8 +91,8 @@ let productImgSwiper = new Swiper('.ProductImgSwiper', {
   },
 
   navigation: {
-    prevEl: '.ProductImgSwiper_prev',
-    nextEl: '.ProductImgSwiper_next',
+    prevEl: '.ProductImg_prev',
+    nextEl: '.ProductImg_next',
   },
 
   on: {
@@ -111,7 +111,6 @@ productImgSwiper.on('slideChange', function () {
 });
 
 new Swiper('.TestimonialsSwiper', {
-  modules: [Navigation, Pagination],
   slidesPerView: 'auto',
   spaceBetween: 20,
   autoHeight: true,

@@ -1,0 +1,135 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-series(style="background-image: url('img/bg_banner_series_page.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text Accessories
+      .Banner_textWrapper
+        h1.Banner_title ZAD 900 SERIES
+        .Banner_text
+          p Our flagship guitar. Mr. Zager designed what many are calling the best acoustic on the market today. We've had players put this guitar up against the best from Taylor, Martin, Gibson, Fender, Santa Cruz, Bourgeois, and we never get them back, even with our 100% money back guarantee.
+      .IconsAndTextsSwiper.swiper-container.Banner_iconsAndTextsSwiper.hidden-smPlus
+        .swiper-wrapper
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+              h3.IconAndText_title Easier playability
+              .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+              h3.IconAndText_title Lower price save 50%
+              .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+              h3.IconAndText_title #1 rated components
+              .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+              h3.IconAndText_title 100% money back guarantee
+              .IconAndText_text including shipping both ways meaning you can try 1 risk free
+    .IconsAndTexts.IconsAndTexts-highlighted.IconsAndTexts-series.Banner_iconsAndTexts.hidden-xs
+      .Container
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free
+  .TextBlocks
+    .Container
+      h2.SectionTitle.SectionTitle-textBlocks.SectionTitle-center.TextBlocks_title Why this series are so amazing?
+      .TextBlocks_items
+        .TextBlock.TextBlocks_item
+          h3.TextBlock_title Woods and sound
+          .TextBlock_text
+            p Any guitar builder can lower strings, but if that if string height is too low it destroys sound quality. &nbsp;If you look closely at Zager guitars you’ll notice low string heights on frets 1-10 where players spend the majority of their time, but action rises over the sound hole for better tone and easier picking with the right hand.
+          .TextBlock_imgWrapper
+            img(loading="lazy", src="img/textblock_img1.jpg", alt="").TextBlock_img
+        .TextBlock.TextBlock-reverse.TextBlocks_item
+          h3.TextBlock_title Custom string spacing for easier chords that ring true
+          .TextBlock_text
+            p Have you ever tried to form a chord and no matter how you adjusted your fingers they were leaning on adjacent strings causing buzzes and rattles? Denny solves this problem by using custom string spacing on his guitars. This 1/32 of an inch is hard to see, but when you play it you'll immediately feel chords that were hard or impossible to play are now easy and ring true
+          .TextBlock_imgWrapper
+            img(loading="lazy", src="img/textblock_img2.jpg", alt="").TextBlock_img
+        .TextBlock.TextBlocks_item
+          h3.TextBlock_title Perfect quality control and no retail costs
+          .TextBlock_text
+            p When you buy your guitar direct from the builder not only do you save money avoiding the middle man retail price mark up (usually about 50%), but quality control is higher because your guitar isn't being sent through dealer networks going through multiple hands in the retail stores. When you buy your guitar from Zager it goes straight from Mr. Zagers hands to you with a 100% money back guarantee
+          .TextBlock_imgWrapper
+            img(loading="lazy", src="img/textblock_img3.jpg", alt="").TextBlock_img
+        .TextBlock.TextBlock-reverse.TextBlocks_item
+          h3.TextBlock_title Lower string pressure to play longer without sore fingers
+          .TextBlock_text
+            p When you barely have to press to form chords it makes a world of difference. New players with no muscle in their fingers are suddenly forming chords with ease as 50% less pressure is needed to make chords ring true. Advanced players no longer have to “muscle” chords and are able to play longer sets with much greater speed and accuracy. Denny achieves this using a lighter bracing system which actually flexes in the face as you press each string
+          .TextBlock_imgWrapper
+            img(loading="lazy", src="img/textblock_img1.jpg", alt="").TextBlock_img
+        .TextBlock.TextBlocks_item
+          h3.TextBlock_title Custom neck design that feels natural for all hand size
+          .TextBlock_text
+            p When you buy your guitar direct from the builder not only do you save money avoiding the middle man retail price mark up (usually about 50%), but quality control is higher because your guitar isn't being sent through dealer networks going through multiple hands in the retail stores. When you buy your guitar from Zager it goes straight from Mr. Zagers hands to you with a 100% money back guarantee
+          .TextBlock_imgWrapper
+            img(loading="lazy", src="img/textblock_img2.jpg", alt="").TextBlock_img
+  .SeriesSection.SeriesSection-lightBeige.SeriesSection-accessories
+    .Container
+      h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Why are more pro guitarists choosing Zager hand #[br]made guitars over Martin, Taylor, Fender and Gibson?
+      .SeriesSection_items
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+          h3.SeriesBlock_title ZAD 900 Series
+          .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Professional
+          h3.SeriesBlock_title ZAD 80 Series
+          .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
+          h3.SeriesBlock_title ZAD 50 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
+          h3.SeriesBlock_title ZAD 20 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+      ul.SeriesSection_buttons
+        li.SeriesSection_btnItem
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn.hidden-smPlus Shop all guitars
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn.hidden-xs Shop all guitars
+        li.SeriesSection_btnItem
+          a(href="#").BtnOutline.BtnOutline-more.BtnOutline-darkText.BtnOutline-seriesSection.SeriesSection_btn compare guitars
+
+block page_bottom
+  script(src="/js/series_page.js")

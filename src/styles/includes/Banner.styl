@@ -66,6 +66,18 @@
       font-size 28px
       line-height 1.5
   
+  &_text
+    margin-bottom 18px
+    color $lightBeige
+    text-shadow 0 1px 0 rgba(0, 0, 0, 0.25), 0 0 3px #3A261F
+    font-size 18px
+    line-height 1.56
+    letter-spacing -0.005em
+
+    @media $smPlus
+      margin-bottom 39px
+      line-height 1.78
+  
   &_buttons
     display grid
     column-gap 8px
@@ -86,9 +98,12 @@
   &_iconsAndTexts
     position relative
   
+  &_iconsAndTextsSwiper
+    @media $xs
+      margin-right -25px
+  
   &-guitars
     padding-bottom 28px
-    overflow hidden
 
     @media $xs
       background-position 26.5% 0
@@ -172,3 +187,30 @@
     
     .Banner_textWrapper
       width 720px
+  
+  &-series
+    @media $xs
+      padding-bottom 23px
+      background-position 44% 30%
+      background-size auto
+
+      &::before
+        background linear-gradient(20.96deg, rgba(37, 19, 5, 0.65) 0%, rgba(37, 19, 5, 0.65) 46.4%, rgba(37, 19, 5, 0) 86.04%)
+    
+    @media $smPlus
+      padding-top 40px
+      padding-bottom 0
+
+    .Banner_title
+      margin-bottom 20px
+      font-size 32px
+      line-height 1.375
+
+      @media $smPlus
+        margin-bottom 27px
+        font-size 48px
+        line-height 1.25
+    
+    .Banner_textWrapper
+      @media $smPlus
+        width 550px

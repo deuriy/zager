@@ -1,11 +1,13 @@
 import {
   Fancybox
-} from "@fancyapps/ui/src/Fancybox/Fancybox.js";
+} from "@fancyapps/ui";
 
 import Swiper, {
   Navigation,
   Pagination
-} from '../../node_modules/swiper/swiper-bundle';
+} from 'swiper';
+
+Swiper.use([Navigation, Pagination]);
 
 import Plyr from 'plyr';
 
@@ -30,7 +32,6 @@ new Swiper('.IconsAndTextsSwiper, .ProductsSwiper', {
 new Swiper('.FilterTabsListSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 8,
-  autoHeight: true,
 });
 
 document.addEventListener('click', function (e) {
