@@ -23,7 +23,7 @@ function slideToggle(elem) {
   }
 }
 
-new Swiper('.IconsAndTextsSwiper, .ProductsSwiper', {
+new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
   autoHeight: true,

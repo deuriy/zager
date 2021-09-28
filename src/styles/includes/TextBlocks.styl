@@ -56,11 +56,31 @@
         &::after
           display none
   
-  &-guitarsPage
+  &-lightBeigeBg
     background $lightBeige
-
+  
+  &-guitarsPage
     @media $smPlus
       padding 60px 0
 
     @media $mdPlus
       padding 80px 0
+  
+  &-seriesPage
+    padding-bottom 132px
+    
+    @media $smPlus
+      // padding 79px 0 80px
+      padding 79px 0 174px
+
+    .TextBlocks_title
+      margin-bottom 52px
+
+      @media $smPlus
+        margin-bottom 72px
+    
+    .TextBlocks_items
+      row-gap 38px
+
+      @media $smPlus
+        row-gap 50px

@@ -55,6 +55,9 @@
   &_description
     font-size 16px
     line-height 1.625
+
+    @media $xs
+      margin-bottom 19px
   
   &_tags
     margin-bottom 20px
@@ -97,3 +100,38 @@
       
       .ProductCard_title
         margin-bottom 6px
+  
+  &-twoColumn
+    @media $smPlus
+      width 100%
+      grid-template-columns auto 1fr
+      grid-template-rows auto
+      background $lightBeige
+
+      .ProductCard_imgWrapper
+        display block
+        border-radius 4px 0 0 4px
+      
+      .ProductCard_img
+        max-width 100%
+
+      .ProductCard_textWrapper
+        grid-template-rows auto
+        padding 47px 49px 25px
+      
+      .ProductCard_title
+        margin-bottom 12px
+      
+      .ProductCard_description
+        margin-bottom 20px
+      
+      .ProductCard_tags
+        margin-bottom 23px
+      
+      .ProductCard_prices
+        justify-content end
+        margin-bottom 12px
+      
+      .ProductCard_btn
+        justify-self end
+        margin-right -3px

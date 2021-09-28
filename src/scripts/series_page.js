@@ -9,7 +9,7 @@ import {
   Fancybox
 } from "@fancyapps/ui";
 
-new Swiper('.IconsAndTextsSwiper', {
+new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
   autoHeight: true,

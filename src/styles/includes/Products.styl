@@ -1,25 +1,24 @@
 .Products
-  &_wrapper
+  padding 118px 0 40px
+  background $grey
+
+  @media $smPlus
+    padding-bottom 78px
+
+  &_infoLine
+    position relative
+    z-index 10
+    margin-top -209px
+    margin-bottom 40px
+
+    @media $smPlus
+      margin-top -174px
+      margin-bottom 80px
+  
+  &_cardsSwiper
+    @media $xs
+      margin-right -25px
+  
+  &_items
     display grid
-    grid-template-columns repeat(auto-fit, minmax(280px, 1fr))
-    gap 48px
-  
-  &_title
-    margin-bottom 24px
-
-    @media $smPlus
-      margin-bottom 40px
-
-    @media $mdPlus
-      margin-bottom 60px
-  
-  &-fullWidth
-    padding 41px 0
-    background linear-gradient(180deg, #ECE2D6 0%, $grey 100%)
-    overflow hidden
-
-    @media $smPlus
-      padding 60px 0
-
-    @media $mdPlus
-      padding 80px 0
+    gap 60px
