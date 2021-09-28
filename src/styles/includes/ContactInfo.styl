@@ -1,0 +1,33 @@
+.ContactInfo
+  font-size 18px
+  line-height 32px
+  letter-spacing -0.005em
+
+  @media $xs
+    width 208px
+  
+  @media $smPlus
+    display grid
+    grid-template-columns 134px 1fr
+    align-items start
+    gap 55px
+  
+  &_location
+    margin-bottom 15px
+    font-weight bold
+
+    @media $xs
+      width 160px
+  
+  &_list
+    list-style none
+  
+  &_link
+    font-weight bold
+    font-size 14px
+    line-height 20px
+    font-family $robotoSlab
+    text-transform uppercase
+    letter-spacing 0.06em
+    color $dark
+    text-decoration none

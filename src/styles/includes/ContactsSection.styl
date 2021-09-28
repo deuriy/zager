@@ -1,0 +1,39 @@
+.ContactsSection
+  padding 40px 0
+  background $lightBeige
+
+  @media $smPlus
+    padding 60px 0
+  
+  &_wrapper
+    @media $smPlus
+      display grid
+      grid-template-columns repeat(2, 1fr)
+      gap 24px 50px
+
+  &_title
+    @media $xs
+      margin-bottom 25px
+    
+    @media $smPlus
+      margin-top 13px
+  
+  &_text
+    font-size 18px
+    line-height 32px
+    letter-spacing -0.005em
+
+    @media $xs
+      margin-bottom 25px
+    
+    @media $smPlus
+      margin-top -7px
+      margin-bottom -7px
+  
+  &_info
+    margin-bottom 35px
+  
+  &_form
+    @media $smPlus
+      grid-row 1 / 4
+      grid-column 2 / 3
