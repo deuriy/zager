@@ -1,18 +1,11 @@
-import {
-  Fancybox
-} from "@fancyapps/ui";
-
 import Swiper, {
   Navigation,
   Pagination
 } from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
-
-import Plyr from 'plyr';
-
-const players = Plyr.setup('audio', {
-  controls: ['play-large', 'play', 'progress', 'duration', 'captions', 'pip', 'airplay']
+new Swiper('.FilterTabsListSwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 8,
 });
 
 function slideToggle(elem) {
@@ -22,17 +15,6 @@ function slideToggle(elem) {
     elem.style.maxHeight = '';
   }
 }
-
-new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 20,
-  autoHeight: true,
-});
-
-new Swiper('.FilterTabsListSwiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 8,
-});
 
 document.addEventListener('click', function (e) {
   let filterTabsMenuItem = e.target.closest('.FilterTabsMenu_item');
@@ -72,25 +54,11 @@ document.addEventListener('click', function (e) {
 });
 
 document.addEventListener('click', function (e) {
-  let qaMoreLink = e.target.closest('.QA_moreLink');
+  let accordionPanelTitle = e.target.closest('.AccordionPanel_title');
 
-  if (!qaMoreLink) return;
+  if (!accordionPanelTitle) return;
 
-  let qa = qaMoreLink.closest('.QA');
-
-  if (!qa) return;
-
-  let qaItems = qa.querySelector('.QA_items');
-
-  qaItems.classList.toggle('QA_items-expanded');
-  qaMoreLink.classList.toggle('ArrowLink-arrowTop');
-  slideToggle(qaItems);
-
-  if (qaMoreLink.classList.contains('ArrowLink-arrowTop')) {
-    qaMoreLink.textContent = 'Read Less';
-  } else {
-    qaMoreLink.textContent = 'Read More';
-  }
-
-  e.preventDefault();
+  let accordionPanel = accordionPanelTitle.closest('.AccordionPanel');
+  accordionPanel.classList.toggle('AccordionPanel-expanded');
+  slideToggle(accordionPanel);
 });

@@ -121,30 +121,30 @@ block content
       .FeedbackSection_description
         p Something about over the last 52 years , satisfied customers
       .FilterTabs
-        .FilterTabsListSwiper.swiper-container.FilterTabs_listWrapper.FilterTabs_listWrapper-swiper.hidden-smPlus
+        .FilterTabsListSwiper.swiper-container.FilterTabsMenu.FilterTabs_menu.FilterTabs_menu-swiper.hidden-smPlus
           .swiper-wrapper
             .swiper-slide.FilterTabsListSwiper_slide
-              li.FilterTabs_item.FilterTabs_item-active(data-review-category-filter="all") All reviews
+              .FilterTabsMenu_item.FilterTabsMenu_item-active(data-filter="all") All reviews
             .swiper-slide.FilterTabsListSwiper_slide
-              li.FilterTabs_item(data-review-category-filter="zad_900") ZAD 900
+              .FilterTabsMenu_item(data-filter="zad_900") ZAD 900
             .swiper-slide.FilterTabsListSwiper_slide
-              li.FilterTabs_item(data-review-category-filter="zad_80") ZAD 80
+              .FilterTabsMenu_item(data-filter="zad_80") ZAD 80
             .swiper-slide.FilterTabsListSwiper_slide
-              li.FilterTabs_item(data-review-category-filter="zad_50") ZAD 50
+              .FilterTabsMenu_item(data-filter="zad_50") ZAD 50
             .swiper-slide.FilterTabsListSwiper_slide
-              li.FilterTabs_item(data-review-category-filter="zad_20") ZAD 20
+              .FilterTabsMenu_item(data-filter="zad_20") ZAD 20
             .swiper-slide.FilterTabsListSwiper_slide
-              li.FilterTabs_item(data-review-category-filter="others") Others
-        .FilterTabs_listWrapper.hidden-xs
-          ul.FilterTabs_list
-            li.FilterTabs_item.FilterTabs_item-active(data-review-category-filter="all") All reviews
-            li.FilterTabs_item(data-review-category-filter="zad_900") ZAD 900
-            li.FilterTabs_item(data-review-category-filter="zad_80") ZAD 80
-            li.FilterTabs_item(data-review-category-filter="zad_50") ZAD 50
-            li.FilterTabs_item(data-review-category-filter="zad_20") ZAD 20
-            li.FilterTabs_item(data-review-category-filter="others") Others
-        .FilterTabs_reviews
-          .Review.FilterTabs_review(data-review-category-id="zad_900")
+              .FilterTabsMenu_item(data-filter="others") Others
+        .FilterTabsMenu.FilterTabs_menu.hidden-xs
+          ul.FilterTabsMenu_list
+            li.FilterTabsMenu_item.FilterTabsMenu_item-active(data-filter="all") All reviews
+            li.FilterTabsMenu_item(data-filter="zad_900") ZAD 900
+            li.FilterTabsMenu_item(data-filter="zad_80") ZAD 80
+            li.FilterTabsMenu_item(data-filter="zad_50") ZAD 50
+            li.FilterTabsMenu_item(data-filter="zad_20") ZAD 20
+            li.FilterTabsMenu_item(data-filter="others") Others
+        .Reviews.FilterTabs_items
+          .Review.Reviews_item.FilterTabs_item(data-item-name="zad_900")
             .Author.Review_author
               .Author_photo
                 img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
@@ -178,7 +178,7 @@ block content
                   .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
               .QA_moreLinkWrapper.hidden-smPlus
                 a(href="#").ArrowLink.QA_moreLink read more
-          .Review.FilterTabs_review(data-review-category-id="zad_80")
+          .Review.Reviews_item.FilterTabs_item(data-item-name="zad_80")
             .Author.Review_author
               .Author_photo
                 img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
@@ -212,7 +212,7 @@ block content
                   .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
               .QA_moreLinkWrapper.hidden-smPlus
                 a(href="#").ArrowLink.QA_moreLink read more
-          .Review.FilterTabs_review(data-review-category-id="zad_50")
+          .Review.Reviews_item.FilterTabs_item(data-item-name="zad_50")
             .Author.Review_author
               .Author_photo
                 img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
@@ -246,7 +246,7 @@ block content
                   .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
               .QA_moreLinkWrapper.hidden-smPlus
                 a(href="#").ArrowLink.QA_moreLink read more
-          .Review.FilterTabs_review(data-review-category-id="zad_20")
+          .Review.Reviews_item.FilterTabs_item(data-item-name="zad_20")
             .Author.Review_author
               .Author_photo
                 img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg

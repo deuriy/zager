@@ -29,18 +29,39 @@ new Swiper('.FilterTabsListSwiper', {
 });
 
 document.addEventListener('click', function (e) {
-  let filterTabsItem = e.target.closest('.FilterTabs_item');
+  let filterTabsMenuItem = e.target.closest('.FilterTabsMenu_item');
 
-  if (!filterTabsItem) return;
+  if (!filterTabsMenuItem) return;
 
-  let filterTabsListWrapper = filterTabsItem.closest('.FilterTabs_listWrapper');
-  let activeFilterTabsItem = filterTabsListWrapper.querySelector('.FilterTabs_item-active');
+  let filterTabsMenu = filterTabsMenuItem.closest('.FilterTabsMenu');
+  let activeFilterTabsMenuItem = filterTabsMenu.querySelector('.FilterTabsMenu_item-active');
 
-  if (activeFilterTabsItem) {
-    activeFilterTabsItem.classList.remove('FilterTabs_item-active');
+  if (activeFilterTabsMenuItem) {
+    activeFilterTabsMenuItem.classList.remove('FilterTabsMenu_item-active');
   }
 
-  filterTabsItem.classList.add('FilterTabs_item-active');
+  filterTabsMenuItem.classList.add('FilterTabsMenu_item-active');
+  e.preventDefault();
+});
+
+document.addEventListener('click', function (e) {
+  let filterTabsMenuItem = e.target.closest('.FilterTabsMenu_item');
+
+  if (!filterTabsMenuItem) return;
+
+  let filterName = filterTabsMenuItem.dataset.filter;
+  let filterTabs = filterTabsMenuItem.closest('.FilterTabs');
+
+  filterTabs.querySelectorAll('.FilterTabs_item').forEach(item => {
+    let itemName = item.dataset.itemName;
+
+    if (itemName != filterName && filterName != 'all') {
+      item.style.display = 'none';
+    } else {
+      item.style.display = '';
+    }
+  });
+
   e.preventDefault();
 });
 
@@ -65,26 +86,5 @@ document.addEventListener('click', function (e) {
     qaMoreLink.textContent = 'Read More';
   }
 
-  e.preventDefault();
-});
-
-document.addEventListener('click', function (e) {
-  let filterTabsItem = e.target.closest('.FilterTabs_item');
-
-  if (!filterTabsItem) return;
-
-  let reviewCategoryFilter = filterTabsItem.dataset.reviewCategoryFilter;
-
-  document.querySelectorAll('.FilterTabs_review').forEach(review => {
-    let id = review.dataset.reviewCategoryId;
-
-    if (id != reviewCategoryFilter && reviewCategoryFilter != 'all') {
-      review.style.display = 'none';
-    } else {
-      review.style.display = '';
-    }
-  });
-
-  countSearchResults();
   e.preventDefault();
 });

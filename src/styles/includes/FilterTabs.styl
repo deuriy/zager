@@ -1,5 +1,5 @@
 .FilterTabs
-  &_listWrapper
+  &_menu
     margin-bottom 40px
 
     @media $smPlus
@@ -8,44 +8,8 @@
     &-swiper
       @media $xs
         margin-right -25px
-
-  &_list
-    display flex
-    flex-wrap wrap
-    justify-content center
-    align-items center
-    gap 12px
-
-  &_item
-    padding 10px 26px
-    border 2px solid #F3B25D
-    border-radius 100px
-    background-color rgba($lightBeige, 0.45)
-    font-weight bold
-    font-family $robotoSlab
-    font-size 14px
-    line-height 1.42857em
-    list-style none
-    letter-spacing 0.06em
-    text-transform uppercase
-    white-space nowrap
-    cursor pointer
-    @extend .transition
-
-    &:hover,
-    &-active
-      background-color $yellow
-      border-color $yellow
   
-  &_reviews
-    @media $smPlus
-      margin-bottom 30px
-
-    @media $mdPlus
-      margin-bottom 60px
-  
-  &_review
-    margin-bottom 20px
-
-    @media $smPlus
-      margin-bottom 40px
+  &-accordionSection
+    .FilterTabs_menu
+      @media $smPlus
+        margin-bottom 40px

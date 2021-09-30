@@ -1,0 +1,165 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-faq(style="background-image: url('img/bg_banner_guitars.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            a(href="/about.html").Breadcrumbs_link About us
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text FAQs
+      .Banner_textWrapper
+        h1.Banner_title Frequently Asked Questions
+  .AccordionSection
+    .Container
+      .FilterTabs.FilterTabs-accordionSection
+        .FilterTabsListSwiper.swiper-container.FilterTabsMenu.FilterTabsMenu-accordionSection.FilterTabs_menu.FilterTabs_menu-swiper.hidden-smPlus
+          .swiper-wrapper
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item.FilterTabsMenu_item-active(data-filter="popular") Popular
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item(data-filter="about_zager") About zager
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item(data-filter="shipping") Shipping
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item(data-filter="payment") Payment
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item(data-filter="guarantee") Guarantee
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item(data-filter="strings") Strings
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item(data-filter="cases") Cases
+            .swiper-slide.FilterTabsListSwiper_slide
+              .FilterTabsMenu_item(data-filter="miscellaneous") Miscellaneous
+        .FilterTabsMenu.FilterTabsMenu-accordionSection.FilterTabs_menu.hidden-xs
+          ul.FilterTabsMenu_list
+            li.FilterTabsMenu_item.FilterTabsMenu_item-active(data-filter="popular") Popular
+            li.FilterTabsMenu_item(data-filter="about_zager") About zager
+            li.FilterTabsMenu_item(data-filter="shipping") Shipping
+            li.FilterTabsMenu_item(data-filter="payment") Payment
+            li.FilterTabsMenu_item(data-filter="guarantee") Guarantee
+            li.FilterTabsMenu_item(data-filter="strings") Strings
+            li.FilterTabsMenu_item(data-filter="cases") Cases
+            li.FilterTabsMenu_item(data-filter="miscellaneous") Miscellaneous
+        .Accordion.FilterTabs_items
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title Are cases included?
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title 100% Money Back Guarantee
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title What's included?
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title Choosing the right size
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title Do you do custom builds? (video) 
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title Do you build left handed models?
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title Where can I try a Zager? (video)
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title International, Alaska, Hawaii, APO orders
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+          .AccordionPanel.Accordion_item.FilterTabs_item
+            h3.AccordionPanel_title If I order today when will #[br.hidden-smPlus]it arrive?
+            .AccordionPanel_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+  .CTASection
+    .Container
+      h2.SectionTitle.CTASection_title Find your last guitar.
+      h3.CTASection_subTitle The guitar that you can pass onto your children
+      .CTASection_btnWrapper
+        a(href="/guitars.html").BtnYellow.BtnYellow-guitar.CTASection_btn Shop all guitars
+    .CTASection_imgWrapper
+      img(loading="lazy", src="img/all_guitars.webp", alt="All guitars").CTASection_img
+  .SeriesSection
+    .Container
+      h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Why are more pro guitarists choosing Zager hand #[br]made guitars over Martin, Taylor, Fender and Gibson?
+      .SeriesSection_items
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+          h3.SeriesBlock_title ZAD 900 Series
+          .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Professional
+          h3.SeriesBlock_title ZAD 80 Series
+          .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
+          h3.SeriesBlock_title ZAD 50 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
+          h3.SeriesBlock_title ZAD 20 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+      ul.SeriesSection_buttons
+        li.SeriesSection_btnItem
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn.hidden-smPlus Shop all guitars
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn.hidden-xs Shop all guitars
+        li.SeriesSection_btnItem
+          a(href="#").BtnOutline.BtnOutline-more.BtnOutline-darkText.BtnOutline-seriesSection.SeriesSection_btn compare guitars
+  .NewsLetter
+    .Container
+      h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
+      form.SubscribeForm.NewsLetter_form
+        input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
+        button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      .IconsAndTexts.NewsLetter_iconsAndTexts
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free.
+
+block page_bottom
+  script(src="/js/faq.js")
