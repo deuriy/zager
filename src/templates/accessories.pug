@@ -11,8 +11,8 @@ block content
             span.Breadcrumbs_text Accessories
       .Banner_textWrapper
         h1.Banner_title Easy play guitars that will last you generations.
-  .Accessories
-    .Accessories_left.hidden-xs
+  .ProductsWrapper
+    .LeftSidebar.ProductsWrapper_left.hidden-xs
       form.Filter
         h3.Filter_title Filter by
         h4.Filter_label Type
@@ -49,21 +49,21 @@ block content
             input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
             label(for="replacement_parts").Checkbox_label Replacement parts
             .Checkbox_number 25
-    .Accessories_right
-      .Accessories_header
-        ul.Accessories_buttons.hidden-smPlus
-          li.Accessories_btnItem
-            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.Accessories_btn Filter by
-          li.Accessories_btnItem
-            a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.Accessories_btn Sort by
-        h2.SectionTitle.Accessories_title Accessories
-        .Sorting.Accessories_sorting.hidden-xs
+    .ProductsWrapper_content
+      .ProductsWrapper_header
+        ul.ProductsWrapper_buttons.hidden-smPlus
+          li.ProductsWrapper_btnItem
+            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
+          li.ProductsWrapper_btnItem
+            a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
+        h2.SectionTitle.ProductsWrapper_title Accessories
+        .Sorting.ProductsWrapper_sorting.hidden-xs
           .Sorting_label Sort by:
           select(name="sorting").Select
             option(value="popularity") Popularity
             option(value="newest") Newest
             option(value="older") Older
-      .Accessories_items
+      .Accessories.ProductsWrapper_accessories
         .AccessoryCard.Accessories_item
           .AccessoryCard_imgWrapper
             img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
@@ -139,7 +139,7 @@ block content
             .AccessoryCard_price $39.00
             a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
             a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-      .LoadingPosts.LoadingPosts-accessories
+      .LoadingPosts.LoadingPosts-productsWrapper
         .Pagination.hidden-smMinus
           a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowLeft.BtnOutline-disabled.Pagination_prev Previous
           ul.Pagination_list

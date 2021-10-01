@@ -18,6 +18,10 @@
   
   &_tag
     right 0
+
+    &-topLeft
+      right auto
+      left 0
   
   &_imgWrapper
     position relative
@@ -39,7 +43,8 @@
 
     @media $smPlus
       display grid
-      grid-template-rows 1fr 100px auto auto
+      // grid-template-rows 1fr 100px auto auto
+      grid-template-rows 1fr minmax(100px, auto) auto auto
       padding 24px 24px
   
   &_title
@@ -56,7 +61,7 @@
     font-size 16px
     line-height 1.625
 
-    @media $xs
+    @media $smMinus
       margin-bottom 19px
   
   &_tags
@@ -101,9 +106,9 @@
       .ProductCard_title
         margin-bottom 6px
   
-  &-twoColumn
-    @media $smPlus
-      width 100%
+  &-twoColumnMd
+    @media $mdPlus
+      width auto
       grid-template-columns auto 1fr
       grid-template-rows auto
       background $lightBeige
@@ -134,4 +139,42 @@
       
       .ProductCard_btn
         justify-self end
+        align-self end
+        margin-right -3px
+  
+  &-twoColumnLg
+    @media $lgPlus
+      width auto
+      grid-template-columns auto 1fr
+      grid-template-rows auto
+      background $lightBeige
+
+      .ProductCard_imgWrapper
+        display block
+        border-radius 4px 0 0 4px
+      
+      .ProductCard_img
+        max-width 100%
+
+      .ProductCard_textWrapper
+        grid-template-rows auto
+        padding 36px 49px 39px
+      
+      .ProductCard_title
+        margin-bottom 8px
+      
+      .ProductCard_description
+        margin-bottom 12px
+      
+      .ProductCard_tags
+        margin-bottom 15px
+      
+      .ProductCard_prices
+        justify-content end
+        margin-bottom 12px
+      
+      .ProductCard_btn
+        justify-self end
+        align-self end
+        width auto
         margin-right -3px

@@ -1,66 +1,11 @@
 .Accessories
-  background $grey
-
-  @media $xs
-    padding 40px 25px
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(156px, 1fr))
+  gap 15px 10px
 
   @media $smPlus
-    display grid
-    grid-template-columns 280px 1fr
+    grid-template-columns repeat(auto-fit, minmax(246px, 1fr))
+    gap 30px
 
   @media $mdPlus
-    grid-template-columns 355px 1fr
-  
-  &_left
-    // padding 98px 48px 40px 75px
-    padding 50px 48px 40px 35px
-    background $lightBeige
-
-    @media $mdPlus
-      display grid
-      justify-content end
-  
-  &_right
-    @media $smPlus
-      padding 40px
-
-    @media $mdPlus
-      padding 59px 48px 68px
-  
-  &_header
-    max-width 834px
-    column-gap 20px
-  
-  &_header
-    margin-bottom 15px
-
-    @media $smPlus
-      display grid
-      grid-template-columns repeat(2, auto)
-      justify-content space-between
-      align-items center
-      margin-bottom 40px
-
-  &_buttons
-    display grid
-    grid-template-columns repeat(2, 1fr)
-    column-gap 10px
-    list-style none
-    margin-bottom 26px
-  
-  &_btn
-    width 100%
-  
-  &_items
-    display grid
-    grid-template-columns repeat(auto-fit, minmax(auto, 156px))
-    gap 15px 10px
-    margin-bottom 30px
-
-    @media $smPlus
-      grid-template-columns repeat(auto-fit, minmax(auto, 246px))
-      gap 30px
-
-    @media $mdPlus
-      gap 60px 46px
-      margin-bottom 60px
+    gap 60px 46px

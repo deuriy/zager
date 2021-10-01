@@ -18,7 +18,17 @@
   &_cardsSwiper
     @media $xs
       margin-right -25px
+
+    // @media $smPlus
+    //   margin-right -20px
   
   &_items
     display grid
     gap 60px
+  
+  &-productsWrapper
+    padding 0
+      
+    .Products_items
+      @media $smPlus
+        gap 40px

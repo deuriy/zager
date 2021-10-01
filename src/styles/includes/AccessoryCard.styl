@@ -1,21 +1,20 @@
 .AccessoryCard
   display grid
   grid-template-rows auto 1fr
-  width 158px
-
-  @media $smPlus
-    width 248px
 
   &_imgWrapper
     position relative
-    display grid
-    place-content center
     border-top-right-radius 4px
     border-top-left-radius 4px
-    overflow hidden
+
+    @media $xs
+      display grid
+      place-content center
+      overflow hidden
   
   &_img
     display block
+    width 100%
     max-width none
   
   &_tag

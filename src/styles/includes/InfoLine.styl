@@ -50,3 +50,13 @@
   
   &-halfOverlapBottom
     transform translateY(50%)
+  
+  &-alignIconTop
+    @media $smPlus
+      &::before
+        align-self start
+  
+  &-productsWrapper
+    @media $smPlus
+      gap 15px
+      padding-left 49px

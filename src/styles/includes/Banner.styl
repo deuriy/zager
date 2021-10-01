@@ -86,6 +86,9 @@
     align-items center
     list-style none
 
+    &:last-child
+      margin-bottom 0
+
     @media $xxs
       grid-auto-flow row
       justify-content stretch
@@ -108,7 +111,6 @@
 
     @media $xs
       background-position 26.5% 0
-      background-size auto 107%
 
     @media $smPlus
       padding-top 41px
@@ -263,5 +265,8 @@
     @media $smPlus
       background-position center
 
-      .Banner_title
+    .Banner_title
+      margin-bottom 40px
+
+      @media $smPlus
         margin-bottom 74px

@@ -62,8 +62,8 @@ block content
               img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
             h3.IconAndText_title 100% money back guarantee
             .IconAndText_text including shipping both ways meaning you can try 1 risk free
-  .Accessories
-    .Accessories_left.hidden-xs
+  .ProductsWrapper
+    .LeftSidebar.ProductsWrapper_left.hidden-xs
       form.Filter
         h3.Filter_title Filter by
         h4.Filter_label Type
@@ -100,97 +100,180 @@ block content
             input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
             label(for="replacement_parts").Checkbox_label Replacement parts
             .Checkbox_number 25
-    .Accessories_right
-      .Accessories_header
-        ul.Accessories_buttons.hidden-smPlus
-          li.Accessories_btnItem
-            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.Accessories_btn Filter by
-          li.Accessories_btnItem
-            a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.Accessories_btn Sort by
-        h2.SectionTitle.Accessories_title Accessories
-        .Sorting.Accessories_sorting.hidden-xs
+    .ProductsWrapper_content
+      .ProductsWrapper_header
+        ul.ProductsWrapper_buttons.hidden-smPlus
+          li.ProductsWrapper_btnItem
+            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
+          li.ProductsWrapper_btnItem
+            a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
+        h2.SectionTitle.ProductsWrapper_title Zager hand built guitars
+        .Sorting.ProductsWrapper_sorting.hidden-xs
           .Sorting_label Sort by:
           select(name="sorting").Select
             option(value="popularity") Popularity
             option(value="newest") Newest
             option(value="older") Older
-      .Accessories_items
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
-            span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title Zager Professional Capo
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title 1/4 inch Amplifier Cable
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
-            span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title Zager Professional Capo
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title 1/4 inch Amplifier Cable
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
-            span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title Zager Professional Capo
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-        .AccessoryCard.Accessories_item
-          .AccessoryCard_imgWrapper
-            img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
-          .AccessoryCard_textWrapper
-            h3.AccessoryCard_title 1/4 inch Amplifier Cable
-            .AccessoryCard_price $39.00
-            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
-            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
-      .LoadingPosts.LoadingPosts-accessories
+      .Products.Products-productsWrapper.ProductsWrapper_products
+        .ProductCardsSwiper.Products_cardsSwiper.swiper-container.hidden-smPlus
+          .swiper-wrapper
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_imgWrapper
+                  img(src="img/product_block_img.webp").ProductCard_img
+                  span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+                .ProductCard_textWrapper
+                  h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                  .ProductCard_description
+                    p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed 
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+                  .ProductCard_prices
+                    .OldPrice.OldPrice-productCard from $2395
+                    .Price.Price-productCard from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_imgWrapper
+                  img(src="img/product_block_img.webp").ProductCard_img
+                  span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+                .ProductCard_textWrapper
+                  h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                  .ProductCard_description
+                    p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed 
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+                  .ProductCard_prices
+                    .OldPrice.OldPrice-productCard from $2395
+                    .Price.Price-productCard from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_imgWrapper
+                  img(src="img/product_block_img.webp").ProductCard_img
+                  span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+                .ProductCard_textWrapper
+                  h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                  .ProductCard_description
+                    p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed 
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+                  .ProductCard_prices
+                    .OldPrice.OldPrice-productCard from $2395
+                    .Price.Price-productCard from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+        .Products_items.hidden-xs
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+              span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+      .LoadingPosts.LoadingPosts-productsWrapper
         .Pagination.hidden-smMinus
           a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowLeft.BtnOutline-disabled.Pagination_prev Previous
           ul.Pagination_list
@@ -201,40 +284,54 @@ block content
               a(href="#").Pagination_link 35
           a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowRight.Pagination_next next
         a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
-  .SeriesSection.SeriesSection-gradientBg.SeriesSection-accessories.SeriesSection-smallPTDesktop
+      .InfoLine.InfoLine-discount.InfoLine-centerDesktop.InfoLine-alignIconTop.InfoLine-productsWrapper.ProductsWrapper_infoLine
+        p 30-day 100% money back guarantee that includes shipping fees both ways.
+  .TextAndVideo
     .Container
-      h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Why are more pro guitarists choosing Zager hand #[br]made guitars over Martin, Taylor, Fender and Gibson?
-      .SeriesSection_items
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
-          h3.SeriesBlock_title ZAD 900 Series
-          .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label Professional
-          h3.SeriesBlock_title ZAD 80 Series
-          .SeriesBlock_description Indian rosewood & Western Caedar Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
-          h3.SeriesBlock_title ZAD 50 Series
-          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
-          h3.SeriesBlock_title ZAD 20 Series
-          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
-      ul.SeriesSection_buttons
-        li.SeriesSection_btnItem
-          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn.hidden-smPlus Shop all guitars
-          a(href="#").BtnBlack.BtnBlack-guitar.BtnBlack-seriesSection.SeriesSection_btn.hidden-xs Shop all guitars
-        li.SeriesSection_btnItem
-          a(href="#").BtnOutline.BtnOutline-more.BtnOutline-darkText.BtnOutline-seriesSection.SeriesSection_btn compare guitars
+      .TextAndVideo_wrapper
+        h2.SectionTitle.SectionTitle-lightBeige.TextAndVideo_title Not sure which model is for you? Watch this!
+        .TextAndVideo_imgWrapper
+          a(href="https://www.youtube.com/watch?v=-OhTBzpd1yo&feature=emb_title" data-fancybox)
+            img(loading="lazy", src="img/video_img.webp", alt="Video").TextAndVideo_img
+        a(href="/compare_models.html").BtnYellow.BtnYellow-guitar.TextAndVideo_btn Compare models
+  .Product
+    .Container
+      .Product_salePeriod On sale for the next 23hrs 22 min
+      .Product_wrapper
+        .Product_left
+          .ProductImg
+            .ProductImgSwiper.ProductImg_swiper.swiper-container
+              .swiper-wrapper
+                .swiper-slide.ProductImgSwiper_slide
+                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
+                .swiper-slide.ProductImgSwiper_slide
+                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
+                .swiper-slide.ProductImgSwiper_slide
+                  img(loading="lazy", src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
+              .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductImgSwiper_pagination.hidden-xs
+            button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImg_prev
+            button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImg_next
+            .Label.ProductImg_label special edition
+            .Tag.Tag-stars.ProductImg_tag On sale
+            a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductImg_fullScreenBtn full screen
+        .Product_right
+          a(href="#").Product_recommendation #[span.HighlightedText #1 Recommended] Guitar. #[span.UnderlinedText 345 reviews]
+          h2.Product_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+          .Product_description
+            p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed
+          ul.Product_categoryTags
+            li.Product_categoryTag
+              a(href="#").CategoryTag Accostic Electric
+            li.Product_categoryTag
+              a(href="#").CategoryTag Full size
+          .Product_prices
+            .OldPrice $2395.00
+            .Price $1995.00
+          ul.Product_buttons
+            li.Product_btnItem
+              a(href="#").BtnOutline.BtnOutline-product.Product_btn View options and features
+            li.Product_btnItem
+              a(href="#").BtnYellow.BtnYellow-product.Product_btn View total with shipping and case
   .NewsLetter
     .Container
       h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
@@ -309,4 +406,4 @@ block content
             button(type="reset").Filter_resetBtn Cancel
 
 block page_bottom
-  script(src="/js/accessories.js")
+  script(src="/js/all_guitars.js")
