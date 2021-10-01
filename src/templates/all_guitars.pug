@@ -1,0 +1,312 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-allGuitars(style="background-image: url('img/bg_banner_guitars.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            a(href="/all_guitars.html").Breadcrumbs_link Guitars
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text All guitars
+      .Banner_textWrapper
+        h1.Banner_title Easy play guitars that will last you generations.
+      .IconsAndTextsSwiper.swiper-container.Banner_iconsAndTextsSwiper.hidden-smPlus
+        .swiper-wrapper
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+              h3.IconAndText_title Easier playability
+              .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+              h3.IconAndText_title Lower price save 50%
+              .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+              h3.IconAndText_title #1 rated components
+              .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+              h3.IconAndText_title 100% money back guarantee
+              .IconAndText_text including shipping both ways meaning you can try 1 risk free
+    .IconsAndTexts.IconsAndTexts-highlighted.IconsAndTexts-allGuitarsBanner.Banner_iconsAndTexts.hidden-xs
+      .Container
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free
+  .Accessories
+    .Accessories_left.hidden-xs
+      form.Filter
+        h3.Filter_title Filter by
+        h4.Filter_label Type
+        .CheckboxList.Filter_checkboxList
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="cases" id="cases").Checkbox_input
+            label(for="cases").Checkbox_label Cases
+            .Checkbox_number 25
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="ez_play_strings" id="ez_play_strings").Checkbox_input
+            label(for="ez_play_strings").Checkbox_label EZ-play Strings
+            .Checkbox_number 25
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="flex_tip_picks" id="flex_tip_picks").Checkbox_input
+            label(for="flex_tip_picks").Checkbox_label Flex tip picks
+            .Checkbox_number 25
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="straps" id="straps").Checkbox_input
+            label(for="straps").Checkbox_label Straps
+            .Checkbox_number 25
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="capos" id="capos").Checkbox_input
+            label(for="capos").Checkbox_label Capos
+            .Checkbox_number 25
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="tuners" id="tuners").Checkbox_input
+            label(for="tuners").Checkbox_label Tuners
+            .Checkbox_number 25
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="t_shirts" id="t_shirts").Checkbox_input
+            label(for="t_shirts").Checkbox_label T-shirts
+            .Checkbox_number 25
+          .Checkbox.CheckboxList_item
+            input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
+            label(for="replacement_parts").Checkbox_label Replacement parts
+            .Checkbox_number 25
+    .Accessories_right
+      .Accessories_header
+        ul.Accessories_buttons.hidden-smPlus
+          li.Accessories_btnItem
+            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.Accessories_btn Filter by
+          li.Accessories_btnItem
+            a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.Accessories_btn Sort by
+        h2.SectionTitle.Accessories_title Accessories
+        .Sorting.Accessories_sorting.hidden-xs
+          .Sorting_label Sort by:
+          select(name="sorting").Select
+            option(value="popularity") Popularity
+            option(value="newest") Newest
+            option(value="older") Older
+      .Accessories_items
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
+            span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title Zager Professional Capo
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title 1/4 inch Amplifier Cable
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
+            span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title Zager Professional Capo
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title 1/4 inch Amplifier Cable
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
+            span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title Zager Professional Capo
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        .AccessoryCard.Accessories_item
+          .AccessoryCard_imgWrapper
+            img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
+          .AccessoryCard_textWrapper
+            h3.AccessoryCard_title 1/4 inch Amplifier Cable
+            .AccessoryCard_price $39.00
+            a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+            a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+      .LoadingPosts.LoadingPosts-accessories
+        .Pagination.hidden-smMinus
+          a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowLeft.BtnOutline-disabled.Pagination_prev Previous
+          ul.Pagination_list
+            li.Pagination_item.Pagination_item-current
+              a(href="#").Pagination_link 1
+            li.Pagination_item-more ...
+            li.Pagination_item
+              a(href="#").Pagination_link 35
+          a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowRight.Pagination_next next
+        a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
+  .SeriesSection.SeriesSection-gradientBg.SeriesSection-accessories.SeriesSection-smallPTDesktop
+    .Container
+      h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Why are more pro guitarists choosing Zager hand #[br]made guitars over Martin, Taylor, Fender and Gibson?
+      .SeriesSection_items
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+          h3.SeriesBlock_title ZAD 900 Series
+          .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Professional
+          h3.SeriesBlock_title ZAD 80 Series
+          .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
+          h3.SeriesBlock_title ZAD 50 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
+          h3.SeriesBlock_title ZAD 20 Series
+          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+      ul.SeriesSection_buttons
+        li.SeriesSection_btnItem
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn.hidden-smPlus Shop all guitars
+          a(href="#").BtnBlack.BtnBlack-guitar.BtnBlack-seriesSection.SeriesSection_btn.hidden-xs Shop all guitars
+        li.SeriesSection_btnItem
+          a(href="#").BtnOutline.BtnOutline-more.BtnOutline-darkText.BtnOutline-seriesSection.SeriesSection_btn compare guitars
+  .NewsLetter
+    .Container
+      h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
+      form.SubscribeForm.NewsLetter_form
+        input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
+        button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      .IconsAndTexts.NewsLetter_iconsAndTexts
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free.
+  .MobilePopup#MobilePopupFilter
+    .MobilePopup_overlay
+    .MobilePopup_wrapper
+      button(type="button" data-action="closeMobilePopup").CloseButton.MobilePopup_closeBtn
+      .MobilePopup_body
+        form.Filter
+          h3.Filter_title Filter by
+          h4.Filter_label Type
+          .CheckboxList.Filter_checkboxList
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="cases" id="cases").Checkbox_input
+              label(for="cases").Checkbox_label Cases
+              .Checkbox_number 25
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="ez_play_strings" id="ez_play_strings").Checkbox_input
+              label(for="ez_play_strings").Checkbox_label EZ-play Strings
+              .Checkbox_number 25
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="flex_tip_picks" id="flex_tip_picks").Checkbox_input
+              label(for="flex_tip_picks").Checkbox_label Flex tip picks
+              .Checkbox_number 25
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="straps" id="straps").Checkbox_input
+              label(for="straps").Checkbox_label Straps
+              .Checkbox_number 25
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="capos" id="capos").Checkbox_input
+              label(for="capos").Checkbox_label Capos
+              .Checkbox_number 25
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="tuners" id="tuners").Checkbox_input
+              label(for="tuners").Checkbox_label Tuners
+              .Checkbox_number 25
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="t_shirts" id="t_shirts").Checkbox_input
+              label(for="t_shirts").Checkbox_label T-shirts
+              .Checkbox_number 25
+            .Checkbox.CheckboxList_item
+              input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
+              label(for="replacement_parts").Checkbox_label Replacement parts
+              .Checkbox_number 25
+          .Filter_actions
+            button(type="submit").BtnYellow.Filter_applyBtn Apply
+            button(type="reset").Filter_resetBtn Cancel
+
+block page_bottom
+  script(src="/js/accessories.js")
