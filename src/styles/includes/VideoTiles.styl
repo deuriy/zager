@@ -1,0 +1,29 @@
+.VideoTiles
+  &_title
+    margin-bottom 10px
+    font-weight bold
+    font-size 14px
+    line-height 20px
+    font-family $robotoSlab
+    letter-spacing 0.06em
+    text-transform uppercase
+
+    @media $mdPlus
+      margin-bottom 20px
+      text-align center
+  
+  &_swiper
+    margin-right -25px
+
+    @media $smPlus
+      margin-right -20px
+  
+  &_items
+    @media $mdPlus
+      display grid
+      grid-template-columns repeat(auto-fit, 314px)
+      gap 20px
+    
+    @media $lgPlus
+      grid-template-columns repeat(auto-fit, 344px)
+      gap 48px

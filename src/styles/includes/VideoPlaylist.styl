@@ -1,0 +1,55 @@
+.VideoPlaylist
+  padding 15px 6px 15px 15px
+  background $lightBeige
+  
+  @media $mdPlus
+    padding-right 3px
+    padding-bottom 0
+
+  &_title
+    margin-bottom 16px
+    font-weight bold
+    font-size 18px
+    line-height 26px
+    letter-spacing 0.005em
+    color #000
+  
+  &_itemsWrapper
+    position relative
+
+    &::after
+      content ''
+      position absolute
+      z-index 1
+      right -6px
+      bottom -15px
+      left -15px
+      height 77px
+      background linear-gradient(178.39deg, rgba(255, 251, 246, 0) 20.31%, #FFFBF6 98.63%)
+      pointer-events none
+      @extend .transition
+      
+      @media $mdPlus
+        right 0
+        bottom 0
+        left 0
+    
+    &-scrolled
+      &::after
+        opacity 0
+        visibility hidden
+  
+  &_items
+    position relative
+    height 384px
+    padding-right 17px
+    overflow hidden
+
+    @media $smPlus
+      padding-right 12px
+    
+    @media $mdPlus
+      height 399px
+  
+  &_item:not(:last-child)
+    margin-bottom 8px
