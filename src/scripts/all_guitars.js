@@ -3,6 +3,9 @@ import Swiper, {
   Pagination
 } from 'swiper';
 
+// import $ from 'jquery';
+// console.log($);
+
 Swiper.use([Navigation, Pagination]);
 
 import {
@@ -13,4 +16,16 @@ new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
   autoHeight: true,
+});
+
+$(function () {
+  $(".RangeSlider").slider({
+    range: true,
+    min: 625,
+    max: 2925,
+    values: [625, 2925],
+    slide: function (event, ui) {
+      console.log("Slide");
+    }
+  });
 });

@@ -18,9 +18,6 @@
   &_cardsSwiper
     @media $xs
       margin-right -25px
-
-    // @media $smPlus
-    //   margin-right -20px
   
   &_items
     display grid
@@ -30,5 +27,7 @@
     padding 0
       
     .Products_items
-      @media $smPlus
-        gap 40px
+      gap 40px
+      
+      @media $lgMinus
+        grid-template-columns repeat(auto-fit, minmax(344px, auto))
