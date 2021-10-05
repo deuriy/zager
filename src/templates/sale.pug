@@ -107,7 +107,7 @@ block content
             option(value="popularity") Popularity
             option(value="newest") Newest
             option(value="older") Older
-      .Products.Products-productsWrapper.ProductsWrapper_products
+      .Products.Products-discountVault.ProductsWrapper_products
         .ProductCardsSwiper.Products_cardsSwiper.swiper-container.hidden-smPlus
           .swiper-wrapper
             .swiper-slide.ProductCardsSwiper_slide
@@ -292,9 +292,6 @@ block content
               a(href="#").Pagination_link 35
           a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowRight.Pagination_next next
         a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
-      .InfoLine.InfoLine-discount.InfoLine-centerDesktop.InfoLine-alignIconTop.InfoLine-productsWrapper.ProductsWrapper_infoLine
-        p 30-day 100% money back guarantee that includes shipping fees both ways.
-  
   .NewsLetter
     .Container
       h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
@@ -323,6 +320,54 @@ block content
               img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
             h3.IconAndText_title 100% money back guarantee
             .IconAndText_text including shipping both ways meaning you can try 1 risk free.
+  .AccessoriesSection
+    .Container
+      .AccessoriesSection_wrapper
+        h2.SectionTitle.AccessoriesSection_title Don’t forget your accessories
+        .AccessoriesSwiper.AccessoriesSection_swiper.swiper-container
+          .swiper-wrapper
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
+                  span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title Zager Professional Capo
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title 1/4 inch Amplifier Cable
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title 1/4 inch Amplifier Cable
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        button(type="button").SwiperBtn.SwiperBtn-next.AccessoriesSection_next
+        button(type="button").SwiperBtn.SwiperBtn-prev.AccessoriesSection_prev
+        .SwiperControls
+          .SwiperPagination.SwiperControls_pagination.hidden-xs
+          a(href="/accessories.html").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-more see all accessories
   .MobilePopup#MobilePopupFilter
     .MobilePopup_overlay
     .MobilePopup_wrapper

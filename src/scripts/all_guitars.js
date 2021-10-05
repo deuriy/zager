@@ -3,9 +3,6 @@ import Swiper, {
   Pagination
 } from 'swiper';
 
-// import $ from 'jquery';
-// console.log($);
-
 Swiper.use([Navigation, Pagination]);
 
 import {
@@ -16,6 +13,35 @@ new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
   autoHeight: true,
+});
+
+new Swiper('.AccessoriesSwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  loop: true,
+
+  pagination: {
+    el: '.SwiperPagination',
+    clickable: true,
+    bulletClass: 'SwiperPagination_bullet',
+    bulletActiveClass: 'SwiperPagination_bullet-active',
+  },
+
+  navigation: {
+    prevEl: '.AccessoriesSection_prev',
+    nextEl: '.AccessoriesSection_next',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 34
+    },
+    1024: {
+      spaceBetween: 48,
+      slidesPerView: 4,
+    },
+  },
 });
 
 $(function () {

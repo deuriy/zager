@@ -59,14 +59,14 @@ new Swiper('.VideoSwiper', {
   spaceBetween: 20,
 
   pagination: {
-    el: '.VideoSection_pagination',
+    el: '.SwiperControls_pagination',
     clickable: true,
     bulletClass: 'SwiperPagination_bullet',
     bulletActiveClass: 'SwiperPagination_bullet-active',
   },
 
   navigation: {
-    nextEl: '.VideoSwiper_next',
+    nextEl: '.VideoSection_next',
   },
 
   breakpoints: {

@@ -1,0 +1,46 @@
+.AccessoriesSection
+  padding 40px 0
+  background $grey
+
+  @media $smPlus
+    padding 60px 0
+
+  @media $mdPlus
+    padding 80px 0
+
+  &_wrapper
+    position relative
+
+  &_title
+    margin-bottom 15px
+
+    @media $smPlus
+      margin-bottom 40px
+  
+  &_swiper
+    margin-right -25px
+    margin-bottom 30px
+
+    @media $smPlus
+      margin-right -20px
+      margin-bottom 40px
+    
+    @media $mdPlus
+      margin-right 0
+  
+  &_prev,
+  &_next
+    position absolute
+    z-index 10
+    top 0
+    bottom 0
+    margin auto
+
+    @media $-1280
+      display none
+  
+  &_prev
+    left -60px
+  
+  &_next
+    right -60px
