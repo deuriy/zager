@@ -71,6 +71,17 @@ document.addEventListener('click', function (e) {
   slideToggle(accordionPanel);
 });
 
+document.addEventListener('click', function (e) {
+  let accordionPanelCloseBtn = e.target.closest('.AccordionPanel_closeBtn');
+
+  if (!accordionPanelCloseBtn) return;
+
+  let accordionPanel = accordionPanelCloseBtn.closest('.AccordionPanel');
+  accordionPanel.classList.remove('AccordionPanel-expanded');
+  slideToggle(accordionPanel);
+  e.preventDefault();
+});
+
 // Video Section
 document.addEventListener('click', function (e) {
   let videoTilePlaylist = e.target.closest('.VideoTile-playlist');

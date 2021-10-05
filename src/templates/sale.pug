@@ -1,0 +1,447 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-allGuitars(style="background-image: url('img/bg_banner_guitars.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            a(href="/all_guitars.html").Breadcrumbs_link Guitars
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text All guitars
+      .Banner_textWrapper
+        h1.Banner_title Easy play guitars that will last you generations.
+      .IconsAndTextsSwiper.swiper-container.Banner_iconsAndTextsSwiper.hidden-smPlus
+        .swiper-wrapper
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+              h3.IconAndText_title Easier playability
+              .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+              h3.IconAndText_title Lower price save 50%
+              .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+              h3.IconAndText_title #1 rated components
+              .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .swiper-slide.IconsAndTextsSwiper_slide
+            .IconAndText.IconAndText-highlighted.IconsAndTexts_item
+              .CircleIcon.IconAndText_icon
+                img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+              h3.IconAndText_title 100% money back guarantee
+              .IconAndText_text including shipping both ways meaning you can try 1 risk free
+    .IconsAndTexts.IconsAndTexts-highlighted.IconsAndTexts-allGuitarsBanner.Banner_iconsAndTexts.hidden-xs
+      .Container
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free
+  .ProductsWrapper
+    .LeftSidebar.LeftSidebar-extendedFilter.ProductsWrapper_left.hidden-xs
+      form.Filter
+        h3.Filter_title Filter by
+        .FilterElement.FilterElement-rangeSlider.Filter_item
+          .FilterElement_header
+            h4.FilterElement_label Price
+          .RangeSliderWrapper
+            .RangeSlider
+            .RangeSliderWrapper_numbers
+              .RangeSliderWrapper_number $625
+              .RangeSliderWrapper_number $2925
+        .FilterElement.Filter_item
+          .FilterElement_header
+            h4.FilterElement_label Woods
+            a(href="#").FilterElement_link Woods and sound
+          .FilterElement_content
+            .CheckboxList
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
+                label(for="spruce").Checkbox_label Rosewood + Spruce
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
+                label(for="cedar").Checkbox_label Rosewood + Cedar
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
+                label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
+                .Checkbox_number 6
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
+                label(for="mahogany").Checkbox_label Mahogany
+                .Checkbox_number 3
+        .FilterElement.Filter_item
+          .FilterElement_header
+            h4.FilterElement_label Size
+            a(href="#").FilterElement_link Compare Sizes
+          .FilterElement_content
+            .CheckboxList
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
+                label(for="full_size").Checkbox_label Full Size Dreadnought
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
+                label(for="smaller_size").Checkbox_label Smaller Orchestra size
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
+                label(for="travel_size").Checkbox_label 38” Travel Size
+                .Checkbox_number 6
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
+                label(for="parlor_size").Checkbox_label 36” Parlor Size
+                .Checkbox_number 3
+        .FilterElement.Filter_item
+          .FilterElement_header
+            h4.FilterElement_label Electronics
+            a(href="#").FilterElement_link Compare Electronics
+          .FilterElement_content
+            .CheckboxList
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
+                label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
+                label(for="fishman_presys").Checkbox_label Fishman Presys 80
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
+                label(for="fishman_presys_50").Checkbox_label Fishman presys 50
+                .Checkbox_number 6
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
+                label(for="fishman_presys_20").Checkbox_label Fishman presys 20
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
+                label(for="acoustic").Checkbox_label Acoustic
+                .Checkbox_number 3
+    .ProductsWrapper_content
+      .ProductsWrapper_header
+        ul.ProductsWrapper_buttons.hidden-smPlus
+          li.ProductsWrapper_btnItem
+            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
+          li.ProductsWrapper_btnItem
+            a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
+        h2.SectionTitle.ProductsWrapper_title Zager hand built guitars
+        .Sorting.ProductsWrapper_sorting.hidden-xs
+          .Sorting_label Sort by:
+          select(name="sorting").Select
+            option(value="popularity") Popularity
+            option(value="newest") Newest
+            option(value="older") Older
+      .Products.Products-productsWrapper.ProductsWrapper_products
+        .ProductCardsSwiper.Products_cardsSwiper.swiper-container.hidden-smPlus
+          .swiper-wrapper
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_imgWrapper
+                  img(src="img/product_block_img.webp").ProductCard_img
+                  span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+                .ProductCard_textWrapper
+                  h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                  .ProductCard_description
+                    p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed 
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+                  .ProductCard_prices
+                    .OldPrice.OldPrice-productCard from $2395
+                    .Price.Price-productCard from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_imgWrapper
+                  img(src="img/product_block_img.webp").ProductCard_img
+                  span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+                .ProductCard_textWrapper
+                  h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                  .ProductCard_description
+                    p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed 
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+                  .ProductCard_prices
+                    .OldPrice.OldPrice-productCard from $2395
+                    .Price.Price-productCard from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_imgWrapper
+                  img(src="img/product_block_img.webp").ProductCard_img
+                  span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+                .ProductCard_textWrapper
+                  h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                  .ProductCard_description
+                    p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed 
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+                  .ProductCard_prices
+                    .OldPrice.OldPrice-productCard from $2395
+                    .Price.Price-productCard from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+        .Products_items.hidden-xs
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+              span.Tag.Tag-stars.ProductCard_tag.ProductCard_tag-topLeft On sale
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+          .ProductCard.ProductCard-twoColumnLg.Products_item
+            .ProductCard_imgWrapper
+              img(src="img/product_guitar_page_img.webp").ProductCard_img
+            .ProductCard_textWrapper
+              h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+              .ProductCard_description
+                p Full Size Acoustic Electric with Fishman Aura Pro
+              .ProductCard_tags
+                .ProductCard_tagsLabel Available in
+                ul.ProductCard_tagsList
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Electric
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Full size
+                  li.ProductCard_tagsItem
+                    a(href="#").CategoryTag.CategoryTag-productCard Orchestra Size
+              .ProductCard_prices
+                .OldPrice.OldPrice-productCardTwoColumn $2395.00
+                .Price.Price-productCardTwoColumn $1995.00
+              a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+      .LoadingPosts.LoadingPosts-productsWrapper
+        .Pagination.hidden-smMinus
+          a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowLeft.BtnOutline-disabled.Pagination_prev Previous
+          ul.Pagination_list
+            li.Pagination_item.Pagination_item-current
+              a(href="#").Pagination_link 1
+            li.Pagination_item-more ...
+            li.Pagination_item
+              a(href="#").Pagination_link 35
+          a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowRight.Pagination_next next
+        a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
+      .InfoLine.InfoLine-discount.InfoLine-centerDesktop.InfoLine-alignIconTop.InfoLine-productsWrapper.ProductsWrapper_infoLine
+        p 30-day 100% money back guarantee that includes shipping fees both ways.
+  
+  .NewsLetter
+    .Container
+      h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
+      form.SubscribeForm.NewsLetter_form
+        input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
+        button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      .IconsAndTexts.NewsLetter_iconsAndTexts
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free.
+  .MobilePopup#MobilePopupFilter
+    .MobilePopup_overlay
+    .MobilePopup_wrapper
+      button(type="button" data-action="closeMobilePopup").CloseButton.MobilePopup_closeBtn
+      .MobilePopup_body
+        form.Filter
+          h3.Filter_title Filter by
+          .Filter_items
+            .FilterElement.Filter_item
+              .FilterElement_header
+                h4.FilterElement_label Woods
+                a(href="#").FilterElement_link Woods and sound
+              .FilterElement_content
+                .CheckboxList
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
+                    label(for="spruce").Checkbox_label Rosewood + Spruce
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
+                    label(for="cedar").Checkbox_label Rosewood + Cedar
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
+                    label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
+                    .Checkbox_number 6
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
+                    label(for="mahogany").Checkbox_label Mahogany
+                    .Checkbox_number 3
+            .FilterElement.Filter_item
+              .FilterElement_header
+                h4.FilterElement_label Size
+                a(href="#").FilterElement_link Compare Sizes
+              .FilterElement_content
+                .CheckboxList
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
+                    label(for="full_size").Checkbox_label Full Size Dreadnought
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
+                    label(for="smaller_size").Checkbox_label Smaller Orchestra size
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
+                    label(for="travel_size").Checkbox_label 38” Travel Size
+                    .Checkbox_number 6
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
+                    label(for="parlor_size").Checkbox_label 36” Parlor Size
+                    .Checkbox_number 3
+            .FilterElement.Filter_item
+              .FilterElement_header
+                h4.FilterElement_label Electronics
+                a(href="#").FilterElement_link Compare Electronics
+              .FilterElement_content
+                .CheckboxList
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
+                    label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
+                    label(for="fishman_presys").Checkbox_label Fishman Presys 80
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
+                    label(for="fishman_presys_50").Checkbox_label Fishman presys 50
+                    .Checkbox_number 6
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
+                    label(for="fishman_presys_20").Checkbox_label Fishman presys 20
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
+                    label(for="acoustic").Checkbox_label Acoustic
+                    .Checkbox_number 3
+          .Filter_actions
+            button(type="submit").BtnYellow.Filter_applyBtn Apply
+            button(type="reset").Filter_resetBtn Cancel
+
+block page_bottom
+  script(src="js/jquery-3.6.0.min.js")
+  script(src="js/jquery-ui.min.js")
+  script(src="js/all_guitars.js")

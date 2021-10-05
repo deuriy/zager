@@ -122,6 +122,8 @@ let mobilePopupState = {
 };
 
 function toggleMobilePopup(state, mobilePopup) {
+  if (!mobilePopup) return;
+
   if (mobilePopupState.visibility) {
     mobilePopup.classList.add('MobilePopup-opened');
     document.body.style.overflow = 'hidden';
