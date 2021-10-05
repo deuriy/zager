@@ -1,11 +1,20 @@
 .ProductCard
-  width 280px
-  border-radius 4px
+  &_info
+    margin-bottom 12px
+    color $brown
+    font-weight bold
+    font-size 20px
+    line-height 1.2
 
-  @media $smPlus
-    display grid
-    grid-template-rows auto 1fr
-    width 344px
+  &_wrapper
+    width 280px
+    min-height 100%
+    border-radius 4px
+
+    @media $smPlus
+      display grid
+      grid-template-rows auto 1fr
+      width 344px
 
   &_label,
   &_tag
@@ -108,10 +117,11 @@
   
   &-twoColumnMd
     @media $mdPlus
-      width auto
-      grid-template-columns auto 1fr
-      grid-template-rows auto
-      background $lightBeige
+      .ProductCard_wrapper
+        width auto
+        grid-template-columns auto 1fr
+        grid-template-rows auto
+        background $lightBeige
 
       .ProductCard_imgWrapper
         display block
@@ -144,10 +154,11 @@
   
   &-twoColumnLg
     @media $lgPlus
-      width auto
-      grid-template-columns auto 1fr
-      grid-template-rows auto
-      background $lightBeige
+      .ProductCard_wrapper
+        width auto
+        grid-template-columns auto 1fr
+        grid-template-rows auto
+        background $lightBeige
 
       .ProductCard_imgWrapper
         display block
