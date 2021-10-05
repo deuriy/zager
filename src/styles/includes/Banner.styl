@@ -275,3 +275,31 @@
 
       @media $smPlus
         margin-bottom 74px
+  
+  &-compare
+    padding-bottom 58px
+    background-position 42% 0
+
+    .Banner_textWrapper
+      width 720px
+    
+    @media $xs
+      &::before
+        background linear-gradient(20.96deg, rgba(37, 19, 5, 0.65) 0%, rgba(37, 19, 5, 0.65) 46.4%, rgba(37, 19, 5, 0) 86.04%)
+      
+      .Banner_title
+        font-size 32px
+        line-height 44px
+    
+    @media $smPlus
+      padding 40px 0 68px
+      background-position center
+
+      &::before
+        width 100%
+        background linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+      
+      .Banner_title
+        margin-bottom 40px
+        font-size 48px
+        line-height 60px
