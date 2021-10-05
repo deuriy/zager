@@ -14,33 +14,90 @@ block content
       .Banner_textWrapper
         h1.Banner_title Class aptent taciti sociosqu ad
         a(href="#").BtnYellow.BtnYellow-video.Banner_btn Watch the video
-  .SeriesSection
+  .SeriesSection.SeriesSection-compareModels
     .Container
-      .SeriesSection_items
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
-          h3.SeriesBlock_title ZAD 900 Series
-          .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label Professional
-          h3.SeriesBlock_title ZAD 80 Series
-          .SeriesBlock_description Indian rosewood & Western Caedar Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
-          h3.SeriesBlock_title ZAD 50 Series
-          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
-        .SeriesBlock.SeriesSection_item
-          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
-          h3.SeriesBlock_title ZAD 20 Series
-          .SeriesBlock_description Mahogany and Sitka Spruce Guitars
-          .SeriesBlock_imgWrapper
-            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+      .SeriesSection_wrapper
+        .SeriesSwiper.SeriesSection_swiper.swiper-container.hidden-smPlus
+          .swiper-wrapper
+            .swiper-slide.SeriesSwiper_slide
+              .SeriesBlock.SeriesBlock-extended
+                .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+                h3.SeriesBlock_title ZAD 900 Series
+                .SeriesBlock_imgWrapper
+                  img(src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+                .SeriesBlock_textWrapper
+                  .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+                  .SeriesBlock_price from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare
+            .swiper-slide.SeriesSwiper_slide
+              .SeriesBlock.SeriesBlock-extended
+                .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+                h3.SeriesBlock_title ZAD 80 Series
+                .SeriesBlock_imgWrapper
+                  img(src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+                .SeriesBlock_textWrapper
+                  .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+                  .SeriesBlock_price from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare
+            .swiper-slide.SeriesSwiper_slide
+              .SeriesBlock.SeriesBlock-extended
+                .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+                h3.SeriesBlock_title ZAD 50 Series
+                .SeriesBlock_imgWrapper
+                  img(src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+                .SeriesBlock_textWrapper
+                  .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+                  .SeriesBlock_price from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare
+            .swiper-slide.SeriesSwiper_slide
+              .SeriesBlock.SeriesBlock-extended
+                .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+                h3.SeriesBlock_title ZAD 20 Series
+                .SeriesBlock_imgWrapper
+                  img(src="img/series.jpg", alt="ZAD 20").SeriesBlock_img
+                .SeriesBlock_textWrapper
+                  .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+                  .SeriesBlock_price from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare
+        .SeriesSection_items.hidden-xs
+          .SeriesBlock.SeriesBlock-extended.SeriesSection_item
+            .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+            h3.SeriesBlock_title ZAD 900 Series
+            .SeriesBlock_imgWrapper
+              img(src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+            .SeriesBlock_textWrapper
+              .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+              .SeriesBlock_price from $1995.00
+              a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare Models
+          .SeriesBlock.SeriesBlock-extended.SeriesSection_item
+            .Label.Label-seriesBlock.SeriesBlock_label Professional
+            h3.SeriesBlock_title ZAD 80 Series
+            .SeriesBlock_imgWrapper
+              img(src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+            .SeriesBlock_textWrapper
+              .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+              .SeriesBlock_price from $1995.00
+              a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare Models
+          .SeriesBlock.SeriesBlock-extended.SeriesSection_item
+            .Label.Label-seriesBlock.SeriesBlock_label Original hand made
+            h3.SeriesBlock_title ZAD 50 Series
+            .SeriesBlock_imgWrapper
+              img(src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+            .SeriesBlock_textWrapper
+              .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+              .SeriesBlock_price from $1995.00
+              a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare Models
+          .SeriesBlock.SeriesBlock-extended.SeriesSection_item
+            .Label.Label-seriesBlock.SeriesBlock_label Solid wood
+            h3.SeriesBlock_title ZAD 20 Series
+            .SeriesBlock_imgWrapper
+              img(src="img/series.jpg", alt="ZAD 20").SeriesBlock_img
+            .SeriesBlock_textWrapper
+              .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+              .SeriesBlock_price from $1995.00
+              a(href="#").BtnYellow.BtnYellow-seriesBlock.SeriesBlock_btn Compare Models
+      .InfoLine.InfoLine-discount.InfoLine-halfOverlapBottom.InfoLine-alignIconTop.InfoLine-seriesSection.SeriesSection_infoLine
+        p We're proud to be the only guitar company with a true #[span.Yellow 100% money back guarantee] that includes all shipping fees #[span.Yellow both ways]
   .NewsLetter
     .Container
       h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
@@ -51,22 +108,22 @@ block content
         .IconsAndTexts_wrapper
           .IconAndText.IconsAndTexts_item
             .CircleIcon.IconAndText_icon
-              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+              img(src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
             h3.IconAndText_title Easier playability
             .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
           .IconAndText.IconsAndTexts_item
             .CircleIcon.IconAndText_icon
-              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+              img(src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
             h3.IconAndText_title Lower price save 50%
             .IconAndText_text buying direct from the builder avoiding the retail store price mark up
           .IconAndText.IconsAndTexts_item
             .CircleIcon.IconAndText_icon
-              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+              img(src="img/advantages/star.svg", alt="Star").CircleIcon_img
             h3.IconAndText_title #1 rated components
             .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
           .IconAndText.IconsAndTexts_item
             .CircleIcon.IconAndText_icon
-              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+              img(src="img/advantages/money.svg", alt="Money").CircleIcon_img
             h3.IconAndText_title 100% money back guarantee
             .IconAndText_text including shipping both ways meaning you can try 1 risk free.
   .AccessoriesSection
@@ -117,89 +174,6 @@ block content
         .SwiperControls
           .SwiperPagination.SwiperControls_pagination.hidden-xs
           a(href="/accessories.html").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-more see all accessories
-  .MobilePopup#MobilePopupFilter
-    .MobilePopup_overlay
-    .MobilePopup_wrapper
-      button(type="button" data-action="closeMobilePopup").CloseButton.MobilePopup_closeBtn
-      .MobilePopup_body
-        form.Filter
-          h3.Filter_title Filter by
-          .Filter_items
-            .FilterElement.Filter_item
-              .FilterElement_header
-                h4.FilterElement_label Woods
-                a(href="#").FilterElement_link Woods and sound
-              .FilterElement_content
-                .CheckboxList
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
-                    label(for="spruce").Checkbox_label Rosewood + Spruce
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
-                    label(for="cedar").Checkbox_label Rosewood + Cedar
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
-                    label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
-                    .Checkbox_number 6
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
-                    label(for="mahogany").Checkbox_label Mahogany
-                    .Checkbox_number 3
-            .FilterElement.Filter_item
-              .FilterElement_header
-                h4.FilterElement_label Size
-                a(href="#").FilterElement_link Compare Sizes
-              .FilterElement_content
-                .CheckboxList
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
-                    label(for="full_size").Checkbox_label Full Size Dreadnought
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
-                    label(for="smaller_size").Checkbox_label Smaller Orchestra size
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
-                    label(for="travel_size").Checkbox_label 38” Travel Size
-                    .Checkbox_number 6
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
-                    label(for="parlor_size").Checkbox_label 36” Parlor Size
-                    .Checkbox_number 3
-            .FilterElement.Filter_item
-              .FilterElement_header
-                h4.FilterElement_label Electronics
-                a(href="#").FilterElement_link Compare Electronics
-              .FilterElement_content
-                .CheckboxList
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
-                    label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
-                    label(for="fishman_presys").Checkbox_label Fishman Presys 80
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
-                    label(for="fishman_presys_50").Checkbox_label Fishman presys 50
-                    .Checkbox_number 6
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
-                    label(for="fishman_presys_20").Checkbox_label Fishman presys 20
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
-                    label(for="acoustic").Checkbox_label Acoustic
-                    .Checkbox_number 3
-          .Filter_actions
-            button(type="submit").BtnYellow.Filter_applyBtn Apply
-            button(type="reset").Filter_resetBtn Cancel
 
 block page_bottom
-  script(src="js/jquery-3.6.0.min.js")
-  script(src="js/jquery-ui.min.js")
-  script(src="js/all_guitars.js")
+  script(src="js/compare_models.js")

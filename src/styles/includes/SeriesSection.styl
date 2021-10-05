@@ -1,12 +1,18 @@
 .SeriesSection
-  padding 103px 0 105px
+  padding 40px 0
   background $grey
 
-  @media $smMinus
+  @media $smPlus
     padding 70px 0
 
-  @media $xs
-    padding 40px 0
+  @media $mdPlus
+    padding 103px 0 105px
+  
+  &_swiper
+    margin-right -25px
+    margin-left -25px
+    padding-left 25px
+    margin-bottom 40px
   
   &_title
     margin-bottom 25px
@@ -15,7 +21,7 @@
       margin-bottom 63px
 
     @media $mdPlus
-      margin-bottom 103px
+      margin-bottom 105px
     
     &-smallWidth
       width 900px
@@ -76,3 +82,15 @@
   
   &-largePaddingTop
     padding-top 234px
+  
+  &-compareModels
+    padding 0
+
+    .SeriesSection_wrapper
+      padding 40px 0 0
+      
+      @media $mdPlus
+        padding 60px 0 105px
+
+    .SeriesSection_items
+      margin-bottom 40px
