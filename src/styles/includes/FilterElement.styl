@@ -1,9 +1,24 @@
 .FilterElement
-  &_label
+  &_header
+    display grid
+    grid-template-columns auto auto
+    justify-content space-between
+    align-items center
     margin-bottom 15px
+
+  &_label
     font-weight bold
     font-size 14px
     line-height 1.571428em
   
+  &_link
+    color $brown
+    font-size 12px
+    line-height 22px
+  
   &_content
     margin-left 3px
+  
+  &-rangeSlider
+    .FilterElement_header
+      margin-bottom 29px

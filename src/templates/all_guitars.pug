@@ -66,45 +66,84 @@ block content
     .LeftSidebar.LeftSidebar-extendedFilter.ProductsWrapper_left.hidden-xs
       form.Filter
         h3.Filter_title Filter by
-        .FilterElement
-          h4.FilterElement_label Price
-          .RangeSlider
+        .FilterElement.FilterElement-rangeSlider.Filter_item
+          .FilterElement_header
+            h4.FilterElement_label Price
+          .RangeSliderWrapper
+            .RangeSlider
+            .RangeSliderWrapper_numbers
+              .RangeSliderWrapper_number $625
+              .RangeSliderWrapper_number $2925
         .FilterElement.Filter_item
-          h4.FilterElement_label Type
+          .FilterElement_header
+            h4.FilterElement_label Woods
+            a(href="#").FilterElement_link Woods and sound
           .FilterElement_content
             .CheckboxList
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="cases" id="cases").Checkbox_input
-                label(for="cases").Checkbox_label Cases
-                .Checkbox_number 25
+                input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
+                label(for="spruce").Checkbox_label Rosewood + Spruce
+                .Checkbox_number 3
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="ez_play_strings" id="ez_play_strings").Checkbox_input
-                label(for="ez_play_strings").Checkbox_label EZ-play Strings
-                .Checkbox_number 25
+                input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
+                label(for="cedar").Checkbox_label Rosewood + Cedar
+                .Checkbox_number 3
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="flex_tip_picks" id="flex_tip_picks").Checkbox_input
-                label(for="flex_tip_picks").Checkbox_label Flex tip picks
-                .Checkbox_number 25
+                input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
+                label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
+                .Checkbox_number 6
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="straps" id="straps").Checkbox_input
-                label(for="straps").Checkbox_label Straps
-                .Checkbox_number 25
+                input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
+                label(for="mahogany").Checkbox_label Mahogany
+                .Checkbox_number 3
+        .FilterElement.Filter_item
+          .FilterElement_header
+            h4.FilterElement_label Size
+            a(href="#").FilterElement_link Compare Sizes
+          .FilterElement_content
+            .CheckboxList
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="capos" id="capos").Checkbox_input
-                label(for="capos").Checkbox_label Capos
-                .Checkbox_number 25
+                input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
+                label(for="full_size").Checkbox_label Full Size Dreadnought
+                .Checkbox_number 3
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="tuners" id="tuners").Checkbox_input
-                label(for="tuners").Checkbox_label Tuners
-                .Checkbox_number 25
+                input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
+                label(for="smaller_size").Checkbox_label Smaller Orchestra size
+                .Checkbox_number 3
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="t_shirts" id="t_shirts").Checkbox_input
-                label(for="t_shirts").Checkbox_label T-shirts
-                .Checkbox_number 25
+                input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
+                label(for="travel_size").Checkbox_label 38” Travel Size
+                .Checkbox_number 6
               .Checkbox.CheckboxList_item
-                input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
-                label(for="replacement_parts").Checkbox_label Replacement parts
-                .Checkbox_number 25
+                input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
+                label(for="parlor_size").Checkbox_label 36” Parlor Size
+                .Checkbox_number 3
+        .FilterElement.Filter_item
+          .FilterElement_header
+            h4.FilterElement_label Electronics
+            a(href="#").FilterElement_link Compare Electronics
+          .FilterElement_content
+            .CheckboxList
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
+                label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
+                label(for="fishman_presys").Checkbox_label Fishman Presys 80
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
+                label(for="fishman_presys_50").Checkbox_label Fishman presys 50
+                .Checkbox_number 6
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
+                label(for="fishman_presys_20").Checkbox_label Fishman presys 20
+                .Checkbox_number 3
+              .Checkbox.CheckboxList_item
+                input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
+                label(for="acoustic").Checkbox_label Acoustic
+                .Checkbox_number 3
     .ProductsWrapper_content
       .ProductsWrapper_header
         ul.ProductsWrapper_buttons.hidden-smPlus
@@ -372,48 +411,82 @@ block content
       .MobilePopup_body
         form.Filter
           h3.Filter_title Filter by
-          .FilterElement.Filter_item
-            h4.FilterElement_label Type
-            .FilterElement_content
-              .CheckboxList
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="cases" id="cases").Checkbox_input
-                  label(for="cases").Checkbox_label Cases
-                  .Checkbox_number 25
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="ez_play_strings" id="ez_play_strings").Checkbox_input
-                  label(for="ez_play_strings").Checkbox_label EZ-play Strings
-                  .Checkbox_number 25
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="flex_tip_picks" id="flex_tip_picks").Checkbox_input
-                  label(for="flex_tip_picks").Checkbox_label Flex tip picks
-                  .Checkbox_number 25
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="straps" id="straps").Checkbox_input
-                  label(for="straps").Checkbox_label Straps
-                  .Checkbox_number 25
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="capos" id="capos").Checkbox_input
-                  label(for="capos").Checkbox_label Capos
-                  .Checkbox_number 25
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="tuners" id="tuners").Checkbox_input
-                  label(for="tuners").Checkbox_label Tuners
-                  .Checkbox_number 25
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="t_shirts" id="t_shirts").Checkbox_input
-                  label(for="t_shirts").Checkbox_label T-shirts
-                  .Checkbox_number 25
-                .Checkbox.CheckboxList_item
-                  input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
-                  label(for="replacement_parts").Checkbox_label Replacement parts
-                  .Checkbox_number 25
+          .Filter_items
+            .FilterElement.Filter_item
+              .FilterElement_header
+                h4.FilterElement_label Woods
+                a(href="#").FilterElement_link Woods and sound
+              .FilterElement_content
+                .CheckboxList
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
+                    label(for="spruce").Checkbox_label Rosewood + Spruce
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
+                    label(for="cedar").Checkbox_label Rosewood + Cedar
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
+                    label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
+                    .Checkbox_number 6
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
+                    label(for="mahogany").Checkbox_label Mahogany
+                    .Checkbox_number 3
+            .FilterElement.Filter_item
+              .FilterElement_header
+                h4.FilterElement_label Size
+                a(href="#").FilterElement_link Compare Sizes
+              .FilterElement_content
+                .CheckboxList
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
+                    label(for="full_size").Checkbox_label Full Size Dreadnought
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
+                    label(for="smaller_size").Checkbox_label Smaller Orchestra size
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
+                    label(for="travel_size").Checkbox_label 38” Travel Size
+                    .Checkbox_number 6
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
+                    label(for="parlor_size").Checkbox_label 36” Parlor Size
+                    .Checkbox_number 3
+            .FilterElement.Filter_item
+              .FilterElement_header
+                h4.FilterElement_label Electronics
+                a(href="#").FilterElement_link Compare Electronics
+              .FilterElement_content
+                .CheckboxList
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
+                    label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
+                    label(for="fishman_presys").Checkbox_label Fishman Presys 80
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
+                    label(for="fishman_presys_50").Checkbox_label Fishman presys 50
+                    .Checkbox_number 6
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
+                    label(for="fishman_presys_20").Checkbox_label Fishman presys 20
+                    .Checkbox_number 3
+                  .Checkbox.CheckboxList_item
+                    input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
+                    label(for="acoustic").Checkbox_label Acoustic
+                    .Checkbox_number 3
           .Filter_actions
             button(type="submit").BtnYellow.Filter_applyBtn Apply
             button(type="reset").Filter_resetBtn Cancel
 
 block page_bottom
-  script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-  //- script(src="js/jquery-3.6.0.min.js")
+  script(src="js/jquery-3.6.0.min.js")
   script(src="js/jquery-ui.min.js")
   script(src="js/all_guitars.js")
