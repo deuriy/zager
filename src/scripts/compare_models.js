@@ -5,7 +5,7 @@ import Swiper, {
 
 Swiper.use([Navigation, Pagination]);
 
-new Swiper('.SeriesSwiper', {
+new Swiper('.SeriesSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
 });
@@ -13,7 +13,6 @@ new Swiper('.SeriesSwiper', {
 new Swiper('.AccessoriesSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
-  loop: true,
 
   pagination: {
     el: '.SwiperPagination',
@@ -28,13 +27,10 @@ new Swiper('.AccessoriesSwiper', {
   },
 
   breakpoints: {
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 34
-    },
     1024: {
-      spaceBetween: 48,
       slidesPerView: 4,
+      spaceBetween: 48,
+      loop: true
     },
   },
 });
@@ -145,11 +141,6 @@ document.addEventListener('click', function (e) {
   let expandTableTHStyle = getComputedStyle(expandTableTH);
   let expandTableTHHeight = expandTable.querySelector('.ExpandTable_th').offsetHeight + parseInt(expandTableTHStyle.borderBottomWidth) + parseInt(expandTableTHStyle.borderTopWidth);
 
-  // console.log(`expandTable.offsetHeight ${expandTable.offsetHeight}`);
-  // console.log(`expandTableTH.clientHeight ${expandTableTH.clientHeight}`);
-  // console.log(`expandTableTHHeight ${expandTableTHHeight}`);
-  // console.log('');
-
   if (expandTable.clientHeight != expandTableTHHeight) {
     expandTable.querySelectorAll('.Hint_wrapper').forEach(hintWrapper => {
       hintWrapper.style.display = 'none';
@@ -168,12 +159,7 @@ document.addEventListener('click', function (e) {
     setTimeout(() => {
       expandTable.classList.add('ExpandTable-expanded');
     }, 100);
-
   }
-
-  // expandTable.classList.toggle('ExpandTable-expanded');
-  // expandTableSwitchLink.classList.toggle('SwitchLink-collapsed');
-  // slideToggle(expandTable);
 
   e.preventDefault();
 });

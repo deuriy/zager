@@ -1,0 +1,19 @@
+.ProductCardsSection
+  padding 148px 0 40px
+  background $grey
+
+  @media $mdPlus
+    padding-top 151px
+
+  &_groups
+    @media $mdPlus
+      display grid
+      grid-template-columns repeat(auto-fit, 246px)
+      justify-content space-between
+      gap 20px
+
+  &_group
+    margin-bottom 40px
+
+    &:last-child
+      margin-bottom 0

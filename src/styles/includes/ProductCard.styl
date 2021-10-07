@@ -52,7 +52,6 @@
 
     @media $smPlus
       display grid
-      // grid-template-rows 1fr 100px auto auto
       grid-template-rows 1fr minmax(100px, auto) auto auto
       padding 24px 24px
   
@@ -191,3 +190,26 @@
         align-self end
         width auto
         margin-right -3px
+  
+  &-group
+    @media $mdPlus
+      .ProductCard_wrapper
+        width 246px
+      
+      .ProductCard_imgWrapper
+        max-height 200px
+      
+      .ProductCard_textWrapper
+        grid-template-rows 1fr auto auto auto
+        padding 20px 24px 24px
+      
+      .ProductCard_title
+        font-size 19px
+        line-height 24px
+      
+      .ProductCard_tags
+        margin-bottom 15px
+      
+      .ProductCard_priceFrom
+        font-size 18px
+        line-height 22px

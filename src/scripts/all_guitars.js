@@ -18,7 +18,6 @@ new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
 new Swiper('.AccessoriesSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
-  loop: true,
 
   pagination: {
     el: '.SwiperPagination',
