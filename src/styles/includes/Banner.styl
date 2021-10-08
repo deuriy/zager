@@ -276,7 +276,8 @@
       @media $smPlus
         margin-bottom 74px
   
-  &-compare
+  &-compare,
+  &-foundation
     padding-bottom 58px
     background-position 42% 0
 
@@ -300,6 +301,19 @@
         background linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
       
       .Banner_title
-        margin-bottom 40px
         font-size 48px
         line-height 60px
+
+        &:not(:last-child)
+          margin-bottom 40px
+  
+  &-foundation
+    @media $xs
+      padding-top 52px
+    
+    @media $smPlus
+      padding-top 43px
+      padding-bottom 78px
+
+    .Banner_breadcrumbs
+      margin-bottom 24px

@@ -1,0 +1,143 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-foundation(style="background-image: url('img/bg_banner_guitars.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            a(href="/about.html").Breadcrumbs_link About us
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text Zager Foundation
+      .Banner_textWrapper
+        h1.Banner_title Zager Foundation
+  .Logos
+    .Container
+      h3.Logos_title As seen in
+      .Logos_items
+        img(src="/img/logos/abc.webp", alt="").Logos_img
+        img(src="/img/logos/arthritis.webp", alt="").Logos_img
+        img(src="/img/logos/cbs.webp", alt="").Logos_img
+        img(src="/img/logos/cnn.webp", alt="").Logos_img
+        img(src="/img/logos/ms.webp", alt="").Logos_img
+        img(src="/img/logos/nbc.webp", alt="").Logos_img
+        img(src="/img/logos/newsweek.webp", alt="").Logos_img
+        img(src="/img/logos/time.webp", alt="").Logos_img
+  .SeriesSection.SeriesSection-gradientBg.SeriesSection-smallPTDesktop.SeriesSection-foundation
+    .Container
+      h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Shop Our Acoustic Guitars To Play Longer, Move Faster, And Enjoy A Superior Sound Without Sore Fingers
+      .SeriesSection_items
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+          h3.SeriesBlock_title ZAD 900 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Professional
+          h3.SeriesBlock_title ZAD 80 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
+          h3.SeriesBlock_title ZAD 50 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
+          h3.SeriesBlock_title ZAD 20 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+      ul.SeriesSection_buttons
+        li.SeriesSection_btnItem
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn Shop all guitars
+        li.SeriesSection_btnItem
+          a(href="#").BtnOutline.BtnOutline-more.BtnOutline-darkText.BtnOutline-seriesSection.SeriesSection_btn compare guitars
+  .NewsLetter
+    .Container
+      h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
+      form.SubscribeForm.NewsLetter_form
+        input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
+        button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      .IconsAndTexts.NewsLetter_iconsAndTexts
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free.
+  .AccessoriesSection
+    .Container
+      .AccessoriesSection_wrapper
+        h2.SectionTitle.AccessoriesSection_title Don’t forget your accessories
+        .AccessoriesSwiper.AccessoriesSection_swiper.swiper-container
+          .swiper-wrapper
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_2.webp", alt="Accessory").AccessoryCard_img
+                  span.Tag.Tag-accessoryCard.AccessoryCard_tag On sale
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title Zager Professional Capo
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_3.webp", alt="Accessory").AccessoryCard_img
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title Zager High Accuracy Sonic Guitar Tuner
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title 1/4 inch Amplifier Cable
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+            .swiper-slide.AccessoriesSwiper_slide
+              .AccessoryCard.AccessoryCard-swiper
+                .AccessoryCard_imgWrapper
+                  img(src="img/accessory_img_1.webp", alt="Accessory").AccessoryCard_img
+                .AccessoryCard_textWrapper
+                  h3.AccessoryCard_title 1/4 inch Amplifier Cable
+                  .AccessoryCard_price $39.00
+                  a(href="#").BtnYellow.BtnYellow-accessoryCard.AccessoryCard_btn.AccessoryCard_btn-addToCart Add to cart
+                  a(href="#").BtnOutline.BtnOutline-lightBeigeBg.BtnOutline-darkText.BtnOutline-accessoryCard.AccessoryCard_btn.hidden-xs view details
+        button(type="button").SwiperBtn.SwiperBtn-next.AccessoriesSection_next
+        button(type="button").SwiperBtn.SwiperBtn-prev.AccessoriesSection_prev
+        .SwiperControls
+          .SwiperPagination.SwiperControls_pagination.hidden-xs
+          a(href="/accessories.html").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-more see all accessories
+
+block page_bottom
+  script(src="js/compare_models.js")
