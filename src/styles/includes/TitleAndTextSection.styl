@@ -1,0 +1,78 @@
+.TitleAndTextSection
+  padding 40px 0
+  background $grey
+
+  @media $smPlus
+    padding 60px 0
+
+  @media $mdPlus
+    padding 80px 0
+  
+  &_wrapper
+    @media $smPlus
+      display grid
+      grid-template-columns 1fr 1fr
+      gap 36px
+    
+    @media $mdPlus
+      gap 48px
+
+  &_title
+    margin-bottom 25px
+    font-weight bold
+    font-size 32px
+    line-height 44px
+    font-family $robotoSlab
+
+    @media $smPlus
+      font-size 44px
+      line-height 54px
+
+    @media $mdPlus
+      font-size 56px
+      line-height 64px
+
+  &_text
+    & > p,
+    & > ul
+      &:not(:last-child)
+        margin-bottom 23px
+
+        @media $smPlus
+          margin-bottom 20px
+
+    & > p
+      font-size 18px
+      line-height 32px
+      letter-spacing -0.005em
+
+    & > ul
+      list-style none
+      font-size 16px
+      line-height 26px
+      letter-spacing 0.005em
+
+      & > li
+        position relative
+        padding-left 24px
+
+        @media $smPlus
+          padding-left 26px
+
+          &:not(:last-child)
+            margin-bottom 12px
+
+        &::before
+          content ''
+          position absolute
+          top 12px
+          left 9px
+          width 5px
+          height 5px
+          border-radius 50%
+          background $dark
+
+          @media $smPlus
+            top 10px
+            left 0
+            background $yellow
