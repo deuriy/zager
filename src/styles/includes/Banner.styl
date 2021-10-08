@@ -317,3 +317,29 @@
 
     .Banner_breadcrumbs
       margin-bottom 24px
+  
+  &-lessons
+    @media $xs
+      &::before
+        background linear-gradient(20.96deg, rgba(37, 19, 5, 0.65) 0%, rgba(37, 19, 5, 0.65) 46.4%, rgba(37, 19, 5, 0) 86.04%)
+      
+      .Banner_title
+        margin-bottom 20px
+    
+    @media $smPlus
+      padding 40px 0 81px
+      background-position center
+
+      &::before
+        width 100%
+        background linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+
+      .Banner_title
+        margin-bottom 28px
+    
+    .Banner_textWrapper
+      width 560px
+    
+    .Banner_text
+      @media $xs
+        margin-bottom 30px

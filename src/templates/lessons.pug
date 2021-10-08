@@ -1,0 +1,99 @@
+extends layouts/base
+
+block content
+  .Banner.Banner-lessons(style="background-image: url('img/bg_banner_guitars.webp')")
+    .Container
+      .Breadcrumbs.Banner_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            a(href="/guitars.html").Breadcrumbs_link Guitars
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text Compare models
+      .Banner_textWrapper
+        h1.Banner_title Learn to play-by-ear from a master with Zager pro instruction
+        .Banner_text
+          p Denny guides you finger-by-finger, string-by-string, just as if you were in his studio, and shows you all the secrets he's learned from playing, teaching, and performing over 65 years.
+        a(href="#").BtnYellow.Banner_btn Get access
+  .Logos
+    .Container
+      h3.Logos_title As seen in
+      .Logos_items
+        img(src="/img/logos/abc.webp", alt="").Logos_img
+        img(src="/img/logos/arthritis.webp", alt="").Logos_img
+        img(src="/img/logos/cbs.webp", alt="").Logos_img
+        img(src="/img/logos/cnn.webp", alt="").Logos_img
+        img(src="/img/logos/ms.webp", alt="").Logos_img
+        img(src="/img/logos/nbc.webp", alt="").Logos_img
+        img(src="/img/logos/newsweek.webp", alt="").Logos_img
+        img(src="/img/logos/time.webp", alt="").Logos_img
+  
+  .SeriesSection.SeriesSection-smallPTDesktop.SeriesSection-foundation
+    .Container
+      h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Shop Our Acoustic Guitars To Play Longer, Move Faster, And Enjoy A Superior Sound Without Sore Fingers
+      .SeriesSection_items
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Top of the line
+          h3.SeriesBlock_title ZAD 900 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Indian rosewood & Choice Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 900").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Professional
+          h3.SeriesBlock_title ZAD 80 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Indian rosewood & Western Caedar Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 80").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label #[span.hidden-xs Original] hand made
+          h3.SeriesBlock_title ZAD 50 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+        .SeriesBlock.SeriesSection_item
+          .Label.Label-seriesBlock.SeriesBlock_label Solid wood
+          h3.SeriesBlock_title ZAD 20 Series
+          .SeriesBlock_textWrapper
+            .SeriesBlock_description Mahogany and Sitka Spruce Guitars
+          .SeriesBlock_imgWrapper
+            img(loading="lazy", src="img/series.jpg", alt="ZAD 50").SeriesBlock_img
+      ul.SeriesSection_buttons
+        li.SeriesSection_btnItem
+          a(href="#").BtnYellow.BtnYellow-guitar.BtnYellow-seriesSection.SeriesSection_btn Shop all guitars
+        li.SeriesSection_btnItem
+          a(href="#").BtnOutline.BtnOutline-more.BtnOutline-darkText.BtnOutline-seriesSection.SeriesSection_btn compare guitars
+  .NewsLetter
+    .Container
+      h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
+      form.SubscribeForm.NewsLetter_form
+        input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
+        button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      .IconsAndTexts.NewsLetter_iconsAndTexts
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness. 
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free.
+
+block page_bottom
+  script(src="js/foundation.js")
