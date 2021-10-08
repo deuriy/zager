@@ -1,0 +1,91 @@
+.Beneficiary
+  width 280px
+  max-width 100%
+  padding 20px
+  background $grey
+  
+  @media $mdPlus
+    display grid
+    grid-template-columns 1fr 1fr
+    grid-template-rows auto auto 1fr auto
+    width 880px
+    padding 30px
+
+  &_title
+    margin-bottom 2px
+    font-weight bold
+    font-size 23px
+    line-height 32px
+    font-family $robotoSlab
+
+    @media $mdPlus
+      margin-bottom 5px
+      font-size 28px
+  
+  &_title,
+  &_nomination,
+  &_description,
+  &_btn
+    @media $mdPlus
+      margin-right 31px
+  
+  &_nomination,
+  &_description
+    font-size 18px
+    line-height 32px
+    letter-spacing -0.005em
+  
+  &_nomination
+    display inline-grid
+    grid-template-columns auto auto
+    justify-content start
+    gap 8px
+    margin-bottom 25px
+
+    @media $mdPlus
+      grid-column 1 / 2
+  
+  &_nominationLabel
+    font-weight bold
+  
+  &_imgWrapper
+    display grid
+    place-content center
+    overflow hidden
+
+    @media $smMinus
+      max-height 165px
+      margin-bottom 25px
+    
+    @media $mdPlus
+      grid-row 1 / 5
+      grid-column 2 / 3
+      margin-top -30px
+      margin-right -30px
+      margin-bottom -30px
+  
+  &_img
+    display block
+  
+  &_description
+    margin-bottom 25px
+    font-style italic
+
+    @media $xs
+      display -webkit-box
+      -webkit-line-clamp 5
+      -webkit-box-orient vertical
+      overflow hidden
+      text-overflow ellipsis
+  
+  &_btn
+    @media $smMinus
+      width 100%
+    
+    @media $mdPlus
+      justify-self start
+      align-self end
+  
+  &-slider
+    @media $mdPlus
+      max-height 591px
