@@ -51,3 +51,15 @@ document.addEventListener('click', function (e) {
 
   e.preventDefault();
 });
+
+document.addEventListener('click', function (e) {
+  let studentReviewMoreLink = e.target.closest('.StudentReview_moreLink');
+
+  if (!studentReviewMoreLink) return;
+
+  let studentReview = studentReviewMoreLink.closest('.StudentReview');
+  studentReview.classList.add('StudentReview-expanded');
+  studentReviewMoreLink.remove();
+
+  e.preventDefault();
+});

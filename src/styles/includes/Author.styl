@@ -44,3 +44,31 @@
     @media $smPlus
       font-size 32px
       line-height 1.375
+  
+  &_date
+    color $chocolate
+    font-size 14px
+    line-height 22px
+    opacity 0.8
+  
+  &-studentReview
+    grid-template-columns 60px 1fr
+    row-gap 2px
+
+    @media $smPlus
+      display grid
+      text-align left
+    
+    .Author_photo
+      @media $smPlus
+        margin-bottom 0
+    
+    .Author_photoImg
+      @media $xs
+        width 60px
+    
+    .Author_name
+      font-size 18px
+
+      @media $smPlus
+        margin-bottom 0

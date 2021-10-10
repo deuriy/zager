@@ -1,0 +1,42 @@
+.StudentReviewsSection
+  padding 180px 0 40px
+  background $lightBeige
+
+  @media $smPlus
+    padding-top 167px
+    padding-bottom 60px
+  
+  @media $mdPlus
+    padding-bottom 80px
+
+  &_title
+    margin-bottom 25px
+
+    @media $smPlus
+      margin-bottom 45px
+
+    @media $mdPlus
+      margin-bottom 60px
+  
+  &_items
+    display grid
+    grid-template-columns 100%
+    gap 20px
+    margin-bottom 30px
+
+    @media $smPlus
+      grid-template-columns repeat(auto-fit, minmax(344px, 1fr))
+      gap 30px
+      margin-bottom 45px
+
+    @media $mdPlus
+      gap 60px 48px
+      margin-bottom 60px
+  
+  &_bottom
+    @media $smPlus
+      text-align center
+  
+  &_btn
+    @media $xs
+      width 100%

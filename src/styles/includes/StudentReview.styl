@@ -1,0 +1,32 @@
+.StudentReview
+  padding 23px 18px 23px 20px
+  border-radius 4px
+  background $grey
+
+  @media $smPlus
+    padding 28px 24px 25px 24px
+
+  &_ratingStars
+    margin-bottom 18px
+    margin-left 4px
+
+  &_text
+    margin-bottom 15px
+    font-size 16px
+    line-height 26px
+    letter-spacing 0.005em
+
+    & > p:not(:last-child)
+      margin-bottom 12px
+    
+  &_moreLink
+    font-weight bold
+    color $dark
+    text-decoration none
+  
+  &_otherText
+    display none
+  
+  &-expanded
+    .StudentReview_otherText
+      display block
