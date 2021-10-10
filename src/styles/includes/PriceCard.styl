@@ -1,0 +1,49 @@
+.PriceCard
+  position relative
+  padding 30px 20px 20px
+  background $lightBeige
+  border-radius 4px
+  text-align center
+
+  @media $smPlus
+    padding 38px 25px 25px
+
+  &_tag
+    position absolute
+    z-index 10
+    top 0
+    right 0
+    left 0
+    margin auto
+    width max-content
+    transform translateY(-50%)
+
+  &_title,
+  &_price
+    margin-bottom 15px
+    font-weight bold
+    font-family $robotoSlab
+  
+  &_title
+    font-size 19px
+    line-height 24px
+  
+  &_price
+    font-size 36px
+    line-height 48px
+  
+  &_description
+    margin-bottom 20px
+    font-family $workSans
+    font-size 13px
+    line-height 15px
+    letter-spacing -0.02em
+
+    @media $smPlus
+      margin-bottom 35px
+  
+  &_btn
+    width 325px
+
+    @media $smPlus
+      width 100%
