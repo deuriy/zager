@@ -1,0 +1,32 @@
+.PostsSection
+  padding 40px 0
+  background $lightBeige
+
+  @media $smPlus
+    padding 60px 0
+
+  @media $mdPlus
+    padding-top 80px
+
+  &_title
+    margin-bottom 25px
+
+    @media $smPlus
+      margin-bottom 40px
+
+    @media $mdPlus
+      margin-bottom 60px
+  
+  &_items
+    display grid
+    gap 38px
+    overflow hidden
+    @extend .transition
+
+    @media $xs
+      &:not(:last-child)
+        margin-bottom 35px
+    
+    @media $smPlus
+      grid-template-columns repeat(auto-fit, minmax(344px, 1fr))
+      gap 60px 44px

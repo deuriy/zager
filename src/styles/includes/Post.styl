@@ -1,0 +1,50 @@
+.Post
+  @media $xs
+    padding-bottom 25px
+    border-bottom 1px solid $grey
+  
+  &_imgWrapper
+    margin-bottom 25px
+    border-radius 4px
+
+    @media $xs
+      display grid
+      place-content center
+      width 325px
+      max-height 225px
+      overflow hidden
+    
+    @media $smPlus
+      margin-bottom 20px
+  
+  &_img
+    @media $xs
+      max-width none
+  
+  &_title
+    margin-bottom 25px
+    font-weight bold
+    font-size 23px
+    line-height 32px
+    font-family $robotoSlab
+
+    @media $smPlus
+      margin-bottom 12px
+  
+  &_description
+    font-size 18px
+    line-height 32px
+
+    @media $xs
+      letter-spacing -0.005em
+
+    @media $smPlus
+      font-size 16px
+      line-height 26px
+    
+    & > p:not(:last-child)
+      margin-bottom 12px
+  
+  &-noBorder
+    padding-bottom 0
+    border-bottom none
