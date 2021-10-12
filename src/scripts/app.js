@@ -76,37 +76,37 @@ new Swiper('.VideoSwiper', {
   },
 });
 
-let productImgFullScreenBtn = document.querySelector('.ProductImg_fullScreenBtn');
-let productImgSwiper = new Swiper('.ProductImgSwiper', {
+let productSectionImgFullScreenBtn = document.querySelector('.ProductSectionImg_fullScreenBtn');
+let productSectionImgSwiper = new Swiper('.ProductSectionImgSwiper', {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
   autoHeight: true,
 
   pagination: {
-    el: '.ProductImgSwiper_pagination',
+    el: '.ProductSectionImgSwiper_pagination',
     clickable: true,
     bulletClass: 'SwiperPagination_bullet',
     bulletActiveClass: 'SwiperPagination_bullet-active',
   },
 
   navigation: {
-    prevEl: '.ProductImg_prev',
-    nextEl: '.ProductImg_next',
+    prevEl: '.ProductSectionImg_prev',
+    nextEl: '.ProductSectionImg_next',
   },
 
   on: {
     init: function () {
-      let productImgActiveSlide = document.querySelector(`.ProductImgSwiper .swiper-slide-active`);
-      productImgFullScreenBtn.href = productImgActiveSlide.querySelector('img').src;
+      let productImgActiveSlide = document.querySelector(`.ProductSectionImgSwiper .swiper-slide-active`);
+      productSectionImgFullScreenBtn.href = productImgActiveSlide.querySelector('img').src;
     }
   }
 });
 
-productImgSwiper.on('slideChange', function () {
+productSectionImgSwiper.on('slideChange', function () {
   setTimeout(() => {
-    let productImgActiveSlide = document.querySelector(`.ProductImgSwiper .swiper-slide-active`);
-    productImgFullScreenBtn.href = productImgActiveSlide.querySelector('img').src;
+    let productImgActiveSlide = document.querySelector(`.ProductSectionImgSwiper .swiper-slide-active`);
+    productSectionImgFullScreenBtn.href = productImgActiveSlide.querySelector('img').src;
   }, 0);
 });
 
@@ -189,8 +189,6 @@ document.addEventListener('click', function (e) {
   if (closePopup.closest('.MobilePopup')) {
     mobilePopupID = closePopup.closest('.MobilePopup').id;
   }
-
-  console.log(closePopup);
 
   window.history.back();
   e.preventDefault();

@@ -13,7 +13,7 @@ block content
         h1.Banner_title Easy play guitars that will last you generations.
   .ProductsWrapper
     .LeftSidebar.ProductsWrapper_left.hidden-xs
-      form.Filter
+      form.Filter#Filter
         h3.Filter_title Filter by
         .FilterElement.Filter_item
           .FilterElement_header
@@ -52,11 +52,14 @@ block content
                 input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
                 label(for="replacement_parts").Checkbox_label Replacement parts
                 .Checkbox_number 25
+        .Filter_actions.hidden-smPlus
+          button(type="submit").BtnYellow.Filter_applyBtn Apply
+          button(type="reset").Filter_resetBtn Cancel
     .ProductsWrapper_content
       .ProductsWrapper_header
         ul.ProductsWrapper_buttons.hidden-smPlus
           li.ProductsWrapper_btnItem
-            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
+            a(href="#Filter" data-fancybox="filter").BtnGrey.ProductsWrapper_btn Filter by
           li.ProductsWrapper_btnItem
             a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
         h2.SectionTitle.ProductsWrapper_title Accessories
@@ -219,54 +222,6 @@ block content
               img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
             h3.IconAndText_title 100% money back guarantee
             .IconAndText_text including shipping both ways meaning you can try 1 risk free.
-  .MobilePopup#MobilePopupFilter
-    .MobilePopup_overlay
-    .MobilePopup_wrapper
-      button(type="button" data-action="closeMobilePopup").CloseButton.MobilePopup_closeBtn
-      .MobilePopup_body
-        form.Filter
-          h3.Filter_title Filter by
-          .Filter_items
-            .FilterElement.Filter_item
-              .FilterElement_header
-                h4.FilterElement_label Type
-              .FilterElement_content
-                .CheckboxList
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="cases" id="cases").Checkbox_input
-                    label(for="cases").Checkbox_label Cases
-                    .Checkbox_number 25
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="ez_play_strings" id="ez_play_strings").Checkbox_input
-                    label(for="ez_play_strings").Checkbox_label EZ-play Strings
-                    .Checkbox_number 25
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="flex_tip_picks" id="flex_tip_picks").Checkbox_input
-                    label(for="flex_tip_picks").Checkbox_label Flex tip picks
-                    .Checkbox_number 25
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="straps" id="straps").Checkbox_input
-                    label(for="straps").Checkbox_label Straps
-                    .Checkbox_number 25
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="capos" id="capos").Checkbox_input
-                    label(for="capos").Checkbox_label Capos
-                    .Checkbox_number 25
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="tuners" id="tuners").Checkbox_input
-                    label(for="tuners").Checkbox_label Tuners
-                    .Checkbox_number 25
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="t_shirts" id="t_shirts").Checkbox_input
-                    label(for="t_shirts").Checkbox_label T-shirts
-                    .Checkbox_number 25
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="accessories_type" value="replacement_parts" id="replacement_parts").Checkbox_input
-                    label(for="replacement_parts").Checkbox_label Replacement parts
-                    .Checkbox_number 25
-          .Filter_actions
-            button(type="submit").BtnYellow.Filter_applyBtn Apply
-            button(type="reset").Filter_resetBtn Cancel
 
 block page_bottom
   script(src="/js/accessories.js")

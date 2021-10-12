@@ -9,6 +9,10 @@ import {
   Fancybox
 } from "@fancyapps/ui";
 
+Fancybox.bind("[data-fancybox]", {
+  dragToClose: false
+});
+
 new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,

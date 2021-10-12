@@ -1,0 +1,22 @@
+.ProductSectionImgSwiper
+  @media $xs
+    height 400px
+  
+  &_imgWrapper
+    @media $xs
+      display grid
+      place-content center
+      overflow hidden
+  
+  &_img
+    display block
+    margin-right auto
+    margin-left auto
+
+    @media $xs
+      max-width none
+  
+  .ProductSectionImgSwiper_pagination
+    position absolute
+    z-index 1
+    bottom 32px

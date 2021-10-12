@@ -64,7 +64,7 @@ block content
             .IconAndText_text including shipping both ways meaning you can try 1 risk free
   .ProductsWrapper
     .LeftSidebar.LeftSidebar-extendedFilter.ProductsWrapper_left.hidden-xs
-      form.Filter
+      form.Filter#Filter
         h3.Filter_title Filter by
         .FilterElement.FilterElement-rangeSlider.Filter_item
           .FilterElement_header
@@ -144,11 +144,18 @@ block content
                 input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
                 label(for="acoustic").Checkbox_label Acoustic
                 .Checkbox_number 3
+        .Filter_actions.hidden-smPlus
+          button(type="submit").BtnYellow.Filter_applyBtn Apply
+          button(type="reset").Filter_resetBtn Cancel
     .ProductsWrapper_content
       .ProductsWrapper_header
         ul.ProductsWrapper_buttons.hidden-smPlus
+          //- li.ProductsWrapper_btnItem
+          //-   a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
+          //- li.ProductsWrapper_btnItem
+          //-   a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
           li.ProductsWrapper_btnItem
-            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
+            a(href="#Filter" data-fancybox="filter").BtnGrey.ProductsWrapper_btn Filter by
           li.ProductsWrapper_btnItem
             a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
         h2.SectionTitle.ProductsWrapper_title Zager hand built guitars
@@ -345,44 +352,47 @@ block content
           a(href="https://www.youtube.com/watch?v=-OhTBzpd1yo&feature=emb_title" data-fancybox)
             img(loading="lazy", src="img/video_img.webp", alt="Video").TextAndVideo_img
         a(href="/compare_models.html").BtnYellow.BtnYellow-guitar.TextAndVideo_btn Compare models
-  .Product
+  .ProductSection
     .Container
-      .Product_salePeriod On sale for the next 23hrs 22 min
-      .Product_wrapper
-        .Product_left
-          .ProductImg
-            .ProductImgSwiper.ProductImg_swiper.swiper-container
+      .ProductSection_salePeriod On sale for the next 23hrs 22 min
+      .ProductSection_wrapper
+        .ProductSection_left
+          .ProductSectionImg
+            .ProductSectionImgSwiper.ProductSectionImg_swiper.swiper-container
               .swiper-wrapper
-                .swiper-slide.ProductImgSwiper_slide
-                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
-                .swiper-slide.ProductImgSwiper_slide
-                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
-                .swiper-slide.ProductImgSwiper_slide
-                  img(loading="lazy", src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
-              .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductImgSwiper_pagination.hidden-xs
-            button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImg_prev
-            button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImg_next
-            .Label.ProductImg_label special edition
-            .Tag.Tag-stars.ProductImg_tag On sale
-            a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductImg_fullScreenBtn full screen
-        .Product_right
-          a(href="#").Product_recommendation #[span.HighlightedText #1 Recommended] Guitar. #[span.UnderlinedText 345 reviews]
-          h2.Product_title 50th Anniversary Tobacco Sunburst edition ZAD 900
-          .Product_description
+                .swiper-slide.ProductSectionImgSwiper_slide
+                  .ProductSectionImgSwiper_imgWrapper
+                    img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductSectionImgSwiper_img
+                .swiper-slide.ProductSectionImgSwiper_slide
+                  .ProductSectionImgSwiper_imgWrapper
+                    img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductSectionImgSwiper_img
+                .swiper-slide.ProductSectionImgSwiper_slide
+                  .ProductSectionImgSwiper_imgWrapper
+                    img(loading="lazy", src="img/guitar.jpg", alt="Guitar product").ProductSectionImgSwiper_img
+              .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductSectionImgSwiper_pagination.hidden-xs
+            button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductSectionImg_prev
+            button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductSectionImg_next
+            .Label.ProductSectionImg_label special edition
+            .Tag.Tag-stars.ProductSectionImg_tag On sale
+            a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductSectionImg_fullScreenBtn full screen
+        .ProductSection_right
+          a(href="#").ProductSection_recommendation #[span.HighlightedText #1 Recommended] Guitar. #[span.UnderlinedText 345 reviews]
+          h2.ProductSection_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+          .ProductSection_description
             p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed
-          ul.Product_categoryTags
-            li.Product_categoryTag
+          ul.ProductSection_categoryTags
+            li.ProductSection_categoryTag
               a(href="#").CategoryTag Accostic Electric
-            li.Product_categoryTag
+            li.ProductSection_categoryTag
               a(href="#").CategoryTag Full size
-          .Product_prices
+          .ProductSection_prices
             .OldPrice $2395.00
             .Price $1995.00
-          ul.Product_buttons
-            li.Product_btnItem
-              a(href="#").BtnOutline.BtnOutline-product.Product_btn View options and features
-            li.Product_btnItem
-              a(href="#").BtnYellow.BtnYellow-product.Product_btn View total with shipping and case
+          ul.ProductSection_buttons
+            li.ProductSection_btnItem
+              a(href="#").BtnOutline.BtnOutline-product.ProductSection_btn View options and features
+            li.ProductSection_btnItem
+              a(href="#").BtnYellow.BtnYellow-product.ProductSection_btn View total with shipping and case
   .NewsLetter
     .Container
       h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
@@ -411,87 +421,87 @@ block content
               img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
             h3.IconAndText_title 100% money back guarantee
             .IconAndText_text including shipping both ways meaning you can try 1 risk free.
-  .MobilePopup#MobilePopupFilter
-    .MobilePopup_overlay
-    .MobilePopup_wrapper
-      button(type="button" data-action="closeMobilePopup").CloseButton.MobilePopup_closeBtn
-      .MobilePopup_body
-        form.Filter
-          h3.Filter_title Filter by
-          .Filter_items
-            .FilterElement.Filter_item
-              .FilterElement_header
-                h4.FilterElement_label Woods
-                a(href="#").FilterElement_link Woods and sound
-              .FilterElement_content
-                .CheckboxList
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
-                    label(for="spruce").Checkbox_label Rosewood + Spruce
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
-                    label(for="cedar").Checkbox_label Rosewood + Cedar
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
-                    label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
-                    .Checkbox_number 6
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
-                    label(for="mahogany").Checkbox_label Mahogany
-                    .Checkbox_number 3
-            .FilterElement.Filter_item
-              .FilterElement_header
-                h4.FilterElement_label Size
-                a(href="#").FilterElement_link Compare Sizes
-              .FilterElement_content
-                .CheckboxList
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
-                    label(for="full_size").Checkbox_label Full Size Dreadnought
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
-                    label(for="smaller_size").Checkbox_label Smaller Orchestra size
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
-                    label(for="travel_size").Checkbox_label 38” Travel Size
-                    .Checkbox_number 6
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
-                    label(for="parlor_size").Checkbox_label 36” Parlor Size
-                    .Checkbox_number 3
-            .FilterElement.Filter_item
-              .FilterElement_header
-                h4.FilterElement_label Electronics
-                a(href="#").FilterElement_link Compare Electronics
-              .FilterElement_content
-                .CheckboxList
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
-                    label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
-                    label(for="fishman_presys").Checkbox_label Fishman Presys 80
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
-                    label(for="fishman_presys_50").Checkbox_label Fishman presys 50
-                    .Checkbox_number 6
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
-                    label(for="fishman_presys_20").Checkbox_label Fishman presys 20
-                    .Checkbox_number 3
-                  .Checkbox.CheckboxList_item
-                    input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
-                    label(for="acoustic").Checkbox_label Acoustic
-                    .Checkbox_number 3
-          .Filter_actions
-            button(type="submit").BtnYellow.Filter_applyBtn Apply
-            button(type="reset").Filter_resetBtn Cancel
+  //- .MobilePopup#MobilePopupFilter
+  //-   .MobilePopup_overlay
+  //-   .MobilePopup_wrapper
+  //-     button(type="button" data-action="closeMobilePopup").CloseButton.MobilePopup_closeBtn
+  //-     .MobilePopup_body
+  //-       form.Filter
+  //-         h3.Filter_title Filter by
+  //-         .Filter_items
+  //-           .FilterElement.Filter_item
+  //-             .FilterElement_header
+  //-               h4.FilterElement_label Woods
+  //-               a(href="#").FilterElement_link Woods and sound
+  //-             .FilterElement_content
+  //-               .CheckboxList
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
+  //-                   label(for="spruce").Checkbox_label Rosewood + Spruce
+  //-                   .Checkbox_number 3
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
+  //-                   label(for="cedar").Checkbox_label Rosewood + Cedar
+  //-                   .Checkbox_number 3
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
+  //-                   label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
+  //-                   .Checkbox_number 6
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
+  //-                   label(for="mahogany").Checkbox_label Mahogany
+  //-                   .Checkbox_number 3
+  //-           .FilterElement.Filter_item
+  //-             .FilterElement_header
+  //-               h4.FilterElement_label Size
+  //-               a(href="#").FilterElement_link Compare Sizes
+  //-             .FilterElement_content
+  //-               .CheckboxList
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
+  //-                   label(for="full_size").Checkbox_label Full Size Dreadnought
+  //-                   .Checkbox_number 3
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
+  //-                   label(for="smaller_size").Checkbox_label Smaller Orchestra size
+  //-                   .Checkbox_number 3
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
+  //-                   label(for="travel_size").Checkbox_label 38” Travel Size
+  //-                   .Checkbox_number 6
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
+  //-                   label(for="parlor_size").Checkbox_label 36” Parlor Size
+  //-                   .Checkbox_number 3
+  //-           .FilterElement.Filter_item
+  //-             .FilterElement_header
+  //-               h4.FilterElement_label Electronics
+  //-               a(href="#").FilterElement_link Compare Electronics
+  //-             .FilterElement_content
+  //-               .CheckboxList
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
+  //-                   label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
+  //-                   .Checkbox_number 3
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
+  //-                   label(for="fishman_presys").Checkbox_label Fishman Presys 80
+  //-                   .Checkbox_number 3
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
+  //-                   label(for="fishman_presys_50").Checkbox_label Fishman presys 50
+  //-                   .Checkbox_number 6
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
+  //-                   label(for="fishman_presys_20").Checkbox_label Fishman presys 20
+  //-                   .Checkbox_number 3
+  //-                 .Checkbox.CheckboxList_item
+  //-                   input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
+  //-                   label(for="acoustic").Checkbox_label Acoustic
+  //-                   .Checkbox_number 3
+  //-         .Filter_actions
+  //-           button(type="submit").BtnYellow.Filter_applyBtn Apply
+  //-           button(type="reset").Filter_resetBtn Cancel
 
 block page_bottom
   script(src="js/jquery-3.6.0.min.js")

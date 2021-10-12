@@ -16,15 +16,17 @@
   
   &_item
     width 198px
-    // margin-bottom 40px
-    margin-bottom 21px
 
-    &:last-child
-      margin-bottom 0
+    &:not(:last-child)
+      margin-bottom 21px
   
   &_actions
     display grid
     row-gap 10px
+
+    @media $xs
+      margin-top 22px
+      margin-right -10px
   
   &_resetBtn
     width 100%

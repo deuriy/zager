@@ -68,44 +68,47 @@ block content
       .SwiperControls
         .SwiperPagination.SwiperControls_pagination
         a(href="/artists.html").BtnOutline.BtnOutline-more See all artists reviews
-  .Product
+  .ProductSection
     .Container
-      .Product_salePeriod On sale for the next 23hrs 22 min
-      .Product_wrapper
-        .Product_left
-          .ProductImg
-            .ProductImgSwiper.ProductImg_swiper.swiper-container
+      .ProductSection_salePeriod On sale for the next 23hrs 22 min
+      .ProductSection_wrapper
+        .ProductSection_left
+          .ProductSectionImg
+            .ProductSectionImgSwiper.ProductSectionImg_swiper.swiper-container
               .swiper-wrapper
-                .swiper-slide.ProductImgSwiper_slide
-                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
-                .swiper-slide.ProductImgSwiper_slide
-                  img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductImgSwiper_img
-                .swiper-slide.ProductImgSwiper_slide
-                  img(loading="lazy", src="img/guitar.jpg", alt="Guitar product").ProductImgSwiper_img
-              .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductImgSwiper_pagination.hidden-xs
-            button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImg_prev
-            button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImg_next
-            .Label.ProductImg_label special edition
-            .Tag.Tag-stars.ProductImg_tag On sale
-            a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductImg_fullScreenBtn full screen
-        .Product_right
-          a(href="#").Product_recommendation #[span.HighlightedText #1 Recommended] Guitar. #[span.UnderlinedText 345 reviews]
-          h2.Product_title 50th Anniversary Tobacco Sunburst edition ZAD 900
-          .Product_description
+                .swiper-slide.ProductSectionImgSwiper_slide
+                  .ProductSectionImgSwiper_imgWrapper
+                    img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductSectionImgSwiper_img
+                .swiper-slide.ProductSectionImgSwiper_slide
+                  .ProductSectionImgSwiper_imgWrapper
+                    img(loading="lazy", src="img/product.webp", alt="Guitar product").ProductSectionImgSwiper_img
+                .swiper-slide.ProductSectionImgSwiper_slide
+                  .ProductSectionImgSwiper_imgWrapper
+                    img(loading="lazy", src="img/guitar.jpg", alt="Guitar product").ProductSectionImgSwiper_img
+              .SwiperPagination.SwiperPagination-lightBeige.SwiperPagination-center.ProductSectionImgSwiper_pagination.hidden-xs
+            button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductSectionImg_prev
+            button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductSectionImg_next
+            .Label.ProductSectionImg_label special edition
+            .Tag.Tag-stars.ProductSectionImg_tag On sale
+            a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductSectionImg_fullScreenBtn full screen
+        .ProductSection_right
+          a(href="#").ProductSection_recommendation #[span.HighlightedText #1 Recommended] Guitar. #[span.UnderlinedText 345 reviews]
+          h2.ProductSection_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+          .ProductSection_description
             p Our flagship guitar. Customers have asking Mr. Zager to build this instrument for such a long time that he finally gave in and designed
-          ul.Product_categoryTags
-            li.Product_categoryTag
+          ul.ProductSection_categoryTags
+            li.ProductSection_categoryTag
               a(href="#").CategoryTag Accostic Electric
-            li.Product_categoryTag
+            li.ProductSection_categoryTag
               a(href="#").CategoryTag Full size
-          .Product_prices
+          .ProductSection_prices
             .OldPrice $2395.00
             .Price $1995.00
-          ul.Product_buttons
-            li.Product_btnItem
-              a(href="#").BtnOutline.BtnOutline-product.Product_btn View options and features
-            li.Product_btnItem
-              a(href="#").BtnYellow.BtnYellow-product.Product_btn View total with shipping and case
+          ul.ProductSection_buttons
+            li.ProductSection_btnItem
+              a(href="#").BtnOutline.BtnOutline-product.ProductSection_btn View options and features
+            li.ProductSection_btnItem
+              a(href="#").BtnYellow.BtnYellow-product.ProductSection_btn View total with shipping and case
       .Testimonials.hidden-xs
         .Testimonials_items
           .Testimonial.Testimonials_item
@@ -128,7 +131,7 @@ block content
             .Testimonial_info.Testimonial_info-noAuthor
               .Testimonial_source
                 img(loading="lazy", src="img/testimonials/ultimate_guitar.png", alt="Ultimate guitar")
-      .TestimonialsSwiper.Product_testimonialsSwiper.swiper-container.hidden-smPlus
+      .TestimonialsSwiper.ProductSection_testimonialsSwiper.swiper-container.hidden-smPlus
         .swiper-wrapper
           .swiper-slide.TestimonialsSwiper_slide
             .Testimonial.Testimonial-small.TestimonialsSwiper_item

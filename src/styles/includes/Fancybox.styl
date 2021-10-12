@@ -1,0 +1,27 @@
+.fancybox__container
+  --fancybox-opacity .25
+  --carousel-button-bg $grey
+  --fancybox-color $dark
+  --carousel-button-border-radius 0 4px
+  --carousel-button-shadow none
+  --carousel-button-svg-filter none
+  --carousel-button-svg-stroke-width 2
+
+.carousel__button.is-close
+  opacity 1
+
+.fancybox__content
+  width 325px
+  max-width 100%
+  padding 40px 25px
+
+  @media $smPlus
+    width 836px
+
+  & > .carousel__button.is-close
+    top 0
+
+.fancybox__slide
+  --carousel-button-width 44px
+  --carousel-button-height 44px
+  padding-top 16px
