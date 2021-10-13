@@ -1,0 +1,106 @@
+.Product
+  padding 13px 0 0
+
+  &_offer
+    margin 0 -12px 20px
+  
+  &_breadcrumbs
+    margin-bottom 20px
+  
+  &_tag
+    margin-bottom 25px
+  
+  &_recommendation,
+  &_title
+    font-weight bold
+    font-family $robotoSlab
+  
+  &_recommendation
+    margin-bottom 10px
+    font-size 14px
+    line-height 20px
+    text-transform uppercase
+    letter-spacing 0.06em
+  
+  &_title
+    margin-bottom 19px
+    font-size 28px
+    line-height 38px
+  
+  &_ratingWrapper
+    display grid
+    grid-template-columns 100px auto
+    justify-content start
+    align-items center
+    margin-bottom 33px
+    margin-left 4px
+  
+  &_reviewsLabel
+    @extend .UnderlinedText
+    font-weight bold
+    font-family $robotoSlab
+    font-size 14px
+    line-height 20px
+    letter-spacing 0.06em
+    color $dark
+    text-transform uppercase
+    text-decoration none
+  
+  &_swiperWrapper
+    margin-bottom 35px
+  
+  &_descriptionWrapper
+    margin-bottom 34px
+  
+  &_description
+    margin-bottom 24px
+    font-size 18px
+    line-height 32px
+    letter-spacing -0.005em
+
+    & > p:not(:last-child)
+      margin-bottom 18px
+    
+    &-truncated
+      @media $xs
+        display -webkit-box
+        -webkit-line-clamp 5
+        -webkit-box-orient vertical
+        overflow hidden
+        text-overflow ellipsis
+  
+  &_descToggleLink
+    font-weight bold
+    font-family $robotoSlab
+    font-size 14px
+    line-height 20px
+    letter-spacing 0.06em
+    text-transform uppercase
+    color $dark
+    text-decoration none
+  
+  &_priceCard
+    margin-bottom 38px
+  
+  &_quote
+    margin-bottom 36px
+  
+  &_accordion
+    margin-bottom 40px
+  
+  &_optionsBtnWrapper
+    position fixed
+    z-index 10
+    right 0
+    bottom 0
+    left 0
+    padding 23px 25px
+    background $lightBeige
+    box-shadow 0 -2px 6px -2px rgba(0, 0, 0, 0.1)
+    transition all .3s ease-in-out
+
+    &-invisible
+      transform translateY(100%)
+  
+  &_optionsBtn
+    width 100%

@@ -16,7 +16,7 @@
   "author": "khv2online@gmail.com",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@prettier/plugin-pug": "^1.16.6",
+    "@prettier/plugin-pug": "^1.16.7",
     "gulp-connect": "^5.7.0",
     "gulp-debug": "^4.0.0",
     "gulp-html": "^3.5.0",
@@ -24,13 +24,13 @@
     "gulp-prettier": "^4.0.0",
     "gulp-run-command": "0.0.10",
     "jshint": "^2.13.0",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.13",
     "prettier": "^2.4.1"
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.5",
     "argv": "0.0.2",
-    "autoprefixer": "^10.3.5",
+    "autoprefixer": "^10.3.7",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.3",
     "gulp-clean-css": "^4.3.0",
@@ -44,17 +44,17 @@
     "gulp-stylus": "^2.7.0",
     "gulp-touch-fd": "^2.0.0",
     "jquery": "^3.6.0",
-    "jquery-ui": "^1.12.1",
+    "jquery-ui": "^1.13.0",
     "perfect-scrollbar": "^1.5.2",
     "plyr": "^3.6.8",
-    "postcss": "^8.3.7",
+    "postcss": "^8.3.9",
     "stylelint": "^13.13.1",
     "stylus-supremacy": "^2.15.0",
-    "yargs": "^17.1.1"
+    "yargs": "^17.2.1"
   },
   "optionalDependencies": {
     "bootstrap": "5.0.1",
-    "swiper": "^6.8.4"
+    "swiper": "^7.0.8"
   },
   "jshintConfig": {
     "maxerr": 99,

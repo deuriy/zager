@@ -1,0 +1,63 @@
+.Variation
+  position relative
+
+  &:hover
+    .Variation_label
+      border-color $yellow
+
+  &_input
+    position absolute
+    clip rect(0, 0, 0, 0)
+
+    &:checked ~ .Variation_label::after
+      opacity 1
+      visibility visible
+
+  &_label
+    position relative
+    display grid
+    align-items center
+    padding 18px 25px 18px 18px
+    border 2px solid $beige2
+    border-radius 4px
+    background $beige2
+    font-weight bold
+    font-size 16px
+    line-height 1
+    cursor pointer
+
+    &::after
+      content ''
+      position absolute
+      top 0
+      right 5px
+      bottom 0
+      width 21px
+      height 21px
+      margin auto
+      border-radius 50%
+      background $yellow url("data:image/svg+xml,%3Csvg width='12' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.375 8.363 7.2-7.2L10.45 0 4.375 6.075l-2.85-2.85L.4 4.35l3.975 4.013Z' fill='%2313141A'/%3E%3C/svg%3E") center center no-repeat
+      opacity 0
+      visibility hidden
+  
+  &-fishmanAura,
+  &-acoustic
+    .Variation_label
+      display grid
+      grid-template-columns 16px 1fr
+      gap 10px
+      align-items center
+
+      &::before
+        content ''
+        height 20px
+  
+  &-fishmanAura
+    .Variation_label
+      &::before
+        background url("data:image/svg+xml,%3Csvg width='16' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.895 0C6.02 0 4.21.526 3.159 1.316c-.986.74-1.459 1.95-.79 3.947.03.092.059.174.086.252.205.589.296.85.178 2.117-.056.597-.447 1.157-.911 1.822C.96 10.546 0 11.921 0 14.21 0 18.684 4.21 20 7.895 20m0-20C8.269 0 8.639.02 9 .06v2.263a1 1 0 0 0 1.162.987l1.398-.228c.932-.153 1.925.365 1.97 1.31.013.299-.015.596-.107.871-.03.092-.06.174-.086.252-.206.589-.297.85-.178 2.117.056.597.447 1.157.91 1.822.763 1.092 1.723 2.467 1.723 4.756 0 4.474-4.21 5.79-7.895 5.79' fill='%2313141A'/%3E%3C/svg%3E") 0 0 no-repeat
+  
+  &-acoustic
+    .Variation_label
+      &::before
+        background url("data:image/svg+xml,%3Csvg width='16' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.895 0C6.02 0 4.21.526 3.159 1.316c-.986.74-1.459 1.95-.79 3.947.03.092.059.174.086.252.205.589.296.85.178 2.117-.056.597-.447 1.157-.911 1.822C.96 10.546 0 11.921 0 14.21 0 18.684 4.21 20 7.895 20m0-20c1.876 0 3.685.526 4.737 1.316.986.74 1.458 1.95.79 3.947-.03.092-.06.174-.086.252-.206.589-.297.85-.178 2.117.056.597.447 1.157.91 1.822.763 1.092 1.723 2.467 1.723 4.756 0 4.474-4.21 5.79-7.895 5.79' fill='%2313141A'/%3E%3C/svg%3E") 0 0 no-repeat

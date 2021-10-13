@@ -3,9 +3,8 @@ import Swiper, {
   Pagination
 } from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
-
 new Swiper('.BeneficiariesSwiper', {
+  modules: [Navigation, Pagination],
   slidesPerView: 'auto',
   spaceBetween: 20,
   slideActiveClass: 'BeneficiariesSwiper_slide-active',

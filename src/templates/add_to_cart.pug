@@ -1,7 +1,505 @@
 extends layouts/base
 
 block content
-  
-
+  .Product
+    .Container
+      a(href="#").Offer.Product_offer Try this guitar for 30 days. Includes free #[br]shipping both ways.
+      .Breadcrumbs.Breadcrumbs-product.Product_breadcrumbs
+        ul.Breadcrumbs_list
+          li.Breadcrumbs_item
+            a(href="/").Breadcrumbs_link Home
+          li.Breadcrumbs_item
+            a(href="/all_guitars.html").Breadcrumbs_link Guitars
+          li.Breadcrumbs_item
+            span.Breadcrumbs_text 50th Anniversary Tobacco ...
+      .Tag.Tag-product.Product_tag on sale
+      .Product_recommendation #1 Recommended Guitar
+      h1.Product_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+      .Product_ratingWrapper
+        .RatingStars
+          ul.RatingStars_list
+            li.RatingStars_item.RatingStars_item-filled
+            li.RatingStars_item.RatingStars_item-filled
+            li.RatingStars_item.RatingStars_item-filled
+            li.RatingStars_item.RatingStars_item-filled
+            li.RatingStars_item.RatingStars_item-filled
+        a(href="#ReviewsSection").Product_reviewsLabel 345 reviews
+      .ProductImgSwiper.Product_swiperWrapper
+        .ProductImgSwiper_galleryWrapper
+          .swiper.ProductImgSwiper_gallery
+            .swiper-wrapper
+              .swiper-slide.ProductImgSwiper_gallerySlide
+                a(href="img/product_img.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+                  img(src="img/product_img.webp" alt="Product image").ProductImgSwiper_galleryImg
+              .swiper-slide.ProductImgSwiper_gallerySlide
+                a(href="img/product_img.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+                  img(src="img/product_img.webp" alt="Product image").ProductImgSwiper_galleryImg
+              .swiper-slide.ProductImgSwiper_gallerySlide
+                a(href="img/product_img.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+                  img(src="img/product_img.webp" alt="Product image").ProductImgSwiper_galleryImg
+              .swiper-slide.ProductImgSwiper_gallerySlide
+                a(href="img/product_img.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+                  img(src="img/product_img.webp" alt="Product image").ProductImgSwiper_galleryImg
+              .swiper-slide.ProductImgSwiper_gallerySlide
+                a(href="img/product_img.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+                  img(src="img/product_img.webp" alt="Product image").ProductImgSwiper_galleryImg
+              .swiper-slide.ProductImgSwiper_gallerySlide
+                a(href="img/product_img.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+                  img(src="img/product_img.webp" alt="Product image").ProductImgSwiper_galleryImg
+              //- .swiper-slide.ProductImgSwiper_gallerySlide
+              //-   a(href="img/product_thumb2.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+              //-     img(src="img/product_thumb2.webp" alt="Product image").ProductImgSwiper_galleryImg
+              //- .swiper-slide.ProductImgSwiper_gallerySlide
+              //-   a(href="img/product_thumb3.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+              //-     img(src="img/product_thumb3.webp" alt="Product image").ProductImgSwiper_galleryImg
+              //- .swiper-slide.ProductImgSwiper_gallerySlide
+              //-   a(href="img/product_thumb4.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+              //-     img(src="img/product_thumb4.webp" alt="Product image").ProductImgSwiper_galleryImg
+              //- .swiper-slide.ProductImgSwiper_gallerySlide
+              //-   a(href="img/product_thumb1.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+              //-     img(src="img/product_thumb1.webp" alt="Product image").ProductImgSwiper_galleryImg
+              //- .swiper-slide.ProductImgSwiper_gallerySlide
+              //-   a(href="img/product_thumb2.webp" data-fancybox="gallery").ProductImgSwiper_galleryLink
+              //-     img(src="img/product_thumb2.webp" alt="Product image").ProductImgSwiper_galleryImg
+            button(type="button").SwiperBtn.SwiperBtn-prev.SwiperBtn-transparentDarkBg.ProductImgSwiper_prev.hidden-xs
+            button(type="button").SwiperBtn.SwiperBtn-next.SwiperBtn-transparentDarkBg.ProductImgSwiper_next.hidden-xs
+            a(href="javascript:;" data-fancybox).BtnBlack.BtnBlack-transparent.BtnBlack-fullScreen.ProductImgSwiper_fullScreenBtn full screen
+        .swiper.ProductImgSwiper_thumbs.hidden-xs
+          .swiper-wrapper
+            .swiper-slide.ProductImgSwiper_thumbsSlide
+              img(src="img/product_thumb1.webp" alt="Product image").ProductImgSwiper_galleryImg
+            .swiper-slide.ProductImgSwiper_thumbsSlide
+              img(src="img/product_thumb2.webp" alt="Product image").ProductImgSwiper_galleryImg
+            .swiper-slide.ProductImgSwiper_thumbsSlide
+              img(src="img/product_thumb3.webp" alt="Product image").ProductImgSwiper_galleryImg
+            .swiper-slide.ProductImgSwiper_thumbsSlide
+              img(src="img/product_thumb4.webp" alt="Product image").ProductImgSwiper_galleryImg
+            .swiper-slide.ProductImgSwiper_thumbsSlide
+              img(src="img/product_thumb1.webp" alt="Product image").ProductImgSwiper_galleryImg
+            .swiper-slide.ProductImgSwiper_thumbsSlide
+              img(src="img/product_thumb2.webp" alt="Product image").ProductImgSwiper_galleryImg
+      .Product_descriptionWrapper
+        .Product_description.Product_description-truncated
+          p If you demand the best this is it. When we have a customer come into the shop with a $5000 acoustic who's looking for that type of quality and sound but with easier playability, the 900 is the only guitar we go to. Unlike our 20 and 50 Series guitars Denny uses a special bracing system on the 900 that allows the face to move half a millimeter more giving it more projection and power. When you hit a string on the 900 you feel it resonate through your gut. There's very few guitars today that can do this, especially new guitars, and when you find one it’s usually the price of a small car.
+          //- p If you demand the best this is it. When we have a customer come into the shop with a $5000 acoustic who's looking for that type of quality and sound but with easier playability...
+        a(href="#").Product_descToggleLink Read more
+      .PriceCard.PriceCard-productOptions.Product_priceCard
+        .PriceCard_price $2,595
+        .PriceCard_description
+          p Starting at #[strong $72/mo] with #[img(src="img/affirm_logo.webp" alt="Affirm logo")]
+        a(href="#ProductSizesMobilePopup" data-action="openMobilePopup").BtnYellow.BtnYellow-priceCard.PriceCard_btn See options
+      .Quote.Quote-inlineDesktop.Product_quote
+        .Quote_text "In my opinion Zager is making the best acoustics tn the business today."
+        .Quote_author Time Magazine
+      .Accordion.Product_accordion
+        .AccordionPanel.Accordion_item
+          h3.AccordionPanel_title Features
+          .AccordionPanel_content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+        .AccordionPanel.Accordion_item
+          h3.AccordionPanel_title Specifications
+          .AccordionPanel_content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+        .AccordionPanel.Accordion_item
+          h3.AccordionPanel_title Finance
+          .AccordionPanel_content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+        .AccordionPanel.Accordion_item
+          h3.AccordionPanel_title FAQ
+          .AccordionPanel_content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex rem qui consectetur at quaerat nostrum, commodi esse cumque accusantium dolorum? Saepe reprehenderit laborum earum necessitatibus accusantium molestiae, dolore repellendus!
+      .Product_optionsBtnWrapper
+        a(href="#ProductSizesMobilePopup" data-action="openMobilePopup").BtnYellow.BtnYellow-productOptions.Product_optionsBtn See options
+        //- a(href="#TotalPriceMobilePopup" data-action="openMobilePopup").BtnYellow.BtnYellow-productOptions.Product_optionsBtn See options
+    .VideoSection
+      .Container
+        h2.SectionTitle.SectionTitle-lightBeige.VideoSection_title +135,000 ecstatic players joined the Zager family and never looked back
+        .VideoSection_swiperWrapper
+          .VideoSwiper.VideoSection_swiper.swiper
+            .swiper-wrapper
+              .swiper-slide.VideoSwiper_slide
+                .VideoBlock
+                  a(href="https://www.youtube.com/watch?v=j--qJ6osiQY&feature=emb_title" data-fancybox="gallery").VideoBlock_videoThumb
+                    img(loading="lazy", src="img/video_thumbs/tomy_emmanuel.webp", alt="")
+                  h3.VideoBlock_title Tommy Emmanuel
+                  .VideoBlock_description
+                    p The Best Acoustic Guitarist in the World
+              .swiper-slide.VideoSwiper_slide
+                .VideoBlock
+                  a(href="https://www.youtube.com/watch?v=12QdRwyeucM&feature=emb_title" data-fancybox="gallery").VideoBlock_videoThumb
+                    img(loading="lazy", src="img/video_thumbs/tom_bowes.webp", alt="")
+                  h3.VideoBlock_title Tom Bowes
+                  .VideoBlock_description
+                    p Blood Sweat & Tears Tom Bowes
+              .swiper-slide.VideoSwiper_slide
+                .VideoBlock
+                  a(href="https://www.youtube.com/watch?v=lUf1Ufy6WD0&feature=emb_title" data-fancybox="gallery").VideoBlock_videoThumb
+                    img(loading="lazy", src="img/video_thumbs/tom_bowes2.webp", alt="")
+                  h3.VideoBlock_title Tom Bowes
+                  .VideoBlock_description
+                    p Blood Sweat & Tears Tom Bowes
+              .swiper-slide.VideoSwiper_slide
+                .VideoBlock
+                  a(href="https://www.youtube.com/watch?v=zeyOEiTX_iI&feature=emb_title" data-fancybox="gallery").VideoBlock_videoThumb
+                    img(loading="lazy", src="img/video_thumbs/tomy_emmanuel.webp", alt="")
+                  h3.VideoBlock_title Tom Bowes
+                  .VideoBlock_description
+                    p Blood Sweat & Tears Tom Bowes
+              .swiper-slide.VideoSwiper_slide
+                .VideoBlock
+                  a(href="https://www.youtube.com/watch?v=gVTlRVQTuO4&feature=emb_title" data-fancybox="gallery").VideoBlock_videoThumb
+                    img(loading="lazy", src="img/video_thumbs/tom_bowes.webp", alt="")
+                  h3.VideoBlock_title Tom Bowes
+                  .VideoBlock_description
+                    p Blood Sweat & Tears Tom Bowes
+          button(type="button").SwiperBtn.SwiperBtn-next.VideoSection_next.hidden-xs
+        .SwiperControls
+          .SwiperPagination.SwiperControls_pagination
+          a(href="/artists.html").BtnOutline.BtnOutline-more See all artists reviews
+    .ReviewsSection#ReviewsSection
+      .Container
+        .ReviewsSectionGroup.ReviewsSection_group
+          h3.SectionTitle.SectionTitle-reviewsGroup.ReviewsSectionGroup_title ZAD 900 independent reviews
+          .ReviewsSectionGroup_description
+            p As thousands of reviews have been written about Zager guitars over the last 51 years, we have captured the most prominent and posted them here. You will also find links on this page to the most popular guitar review websites and guitar publications where you will find even more current reviews
+          .RatingTiles
+            a(href="#").RatingTile.RatingTiles_item
+              .Rating.RatingTile_rating 5.0
+              .RatingTile_label YellowPages
+              .RatingTile_text 64+ reviews
+            a(href="#").RatingTile.RatingTiles_item
+              .Rating.RatingTile_rating 5.0
+              .RatingTile_label Sitejabber
+              .RatingTile_text 700+ reviews
+            a(href="#").RatingTile.RatingTiles_item
+              .Rating.RatingTile_rating 5.0
+              .RatingTile_label Harmony Guitar
+              .RatingTile_text 1800+ reviews
+            a(href="#").RatingTile.RatingTiles_item
+              .Rating.RatingTile_rating 5.0
+              .RatingTile_label Ebay power seller 22 years
+              .RatingTile_text 7000+ Reviews
+        .ReviewsSectionGroup.ReviewsSection_group
+          h3.SectionTitle.SectionTitle-reviewsGroup.ReviewsSectionGroup_title Customer reviews for the ZAD 900 Professional
+          .ReviewsSectionGroup_subTitle #[span.ReviewsSectionGroup_result 4.7 out of 5] #[span.ReviewsSectionGroup_resultLabel service rating] #[br.hidden-smPlus](based on 120 reviews)
+          .ReviewsSectionGroup_description
+            p As thousands of reviews have been written about Zager guitars over the last 51 years, we have captured the most prominent and posted them here. You will also find links on this page to the most popular guitar review websites and guitar publications where you will find even more current reviews
+          .Reviews.ReviewsSectionGroup_reviews
+            .Review.Reviews_item
+              .Author.Review_author
+                .Author_photo
+                  img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
+                .Author_name Name Surname
+                .Author_productSeries ZAD 900
+              .Review_info
+                .Review_location Garden Grove, California
+                .Review_date 16 days ago
+              .Review_audio
+                audio(controls id="reviewaudio")
+                  source(src="/audio/voicemail-66.mp3" type="audio/mp3")
+              .QA.Review_qa
+                .QA_items
+                  .QA_item
+                    .QA_answer How does this guitar compare with your old guitar, other guitars, or guitars you've tried in stores?
+                    .QA_question Much easier to finger, both chords and note picking. My hands don't get as tired
+                  .QA_item
+                    .QA_answer What's your favorite part about this guitar?
+                    .QA_question Craftsmanship and sound quality
+                  .QA_item
+                    .QA_answer If you didn't know the price of this guitar what would you estimate the price to be?
+                    .QA_question $1,000+
+                  .QA_item
+                    .QA_answer How would you rate customer support?
+                    .QA_question Excellent! Polite, responsive and informative
+                  .QA_item
+                    .QA_answer Would you recommend this guitar to others...if so why?
+                    .QA_question Without a doubt. There would be no disappointment. It really has a “wow” factor in SO many areas.
+                  .QA_item
+                    .QA_answer Additional comments:
+                    .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
+                .QA_moreLinkWrapper.hidden-smPlus
+                  a(href="#").ArrowLink.QA_moreLink read more
+            .Review.Reviews_item
+              .Author.Review_author
+                .Author_photo
+                  img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
+                .Author_name Name Surname
+                .Author_productSeries ZAD 80
+              .Review_info
+                .Review_location Garden Grove, California
+                .Review_date 16 days ago
+              .Review_audio
+                audio(controls id="reviewaudio")
+                  source(src="/audio/voicemail-66.mp3" type="audio/mp3")
+              .QA.Review_qa
+                .QA_items
+                  .QA_item
+                    .QA_answer How does this guitar compare with your old guitar, other guitars, or guitars you've tried in stores?
+                    .QA_question Much easier to finger, both chords and note picking. My hands don't get as tired
+                  .QA_item
+                    .QA_answer What's your favorite part about this guitar?
+                    .QA_question Craftsmanship and sound quality
+                  .QA_item
+                    .QA_answer If you didn't know the price of this guitar what would you estimate the price to be?
+                    .QA_question $1,000+
+                  .QA_item
+                    .QA_answer How would you rate customer support?
+                    .QA_question Excellent! Polite, responsive and informative
+                  .QA_item
+                    .QA_answer Would you recommend this guitar to others...if so why?
+                    .QA_question Without a doubt. There would be no disappointment. It really has a “wow” factor in SO many areas.
+                  .QA_item
+                    .QA_answer Additional comments:
+                    .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
+                .QA_moreLinkWrapper.hidden-smPlus
+                  a(href="#").ArrowLink.QA_moreLink read more
+            .Review.Reviews_item
+              .Author.Review_author
+                .Author_photo
+                  img(loading="lazy", src="img/review_author.webp", alt="Review author").Author_photoImg
+                .Author_name Name Surname
+                .Author_productSeries ZAD 50
+              .Review_info
+                .Review_location Garden Grove, California
+                .Review_date 16 days ago
+              .Review_audio
+                audio(controls id="reviewaudio")
+                  source(src="/audio/voicemail-66.mp3" type="audio/mp3")
+              .QA.Review_qa
+                .QA_items
+                  .QA_item
+                    .QA_answer How does this guitar compare with your old guitar, other guitars, or guitars you've tried in stores?
+                    .QA_question Much easier to finger, both chords and note picking. My hands don't get as tired
+                  .QA_item
+                    .QA_answer What's your favorite part about this guitar?
+                    .QA_question Craftsmanship and sound quality
+                  .QA_item
+                    .QA_answer If you didn't know the price of this guitar what would you estimate the price to be?
+                    .QA_question $1,000+
+                  .QA_item
+                    .QA_answer How would you rate customer support?
+                    .QA_question Excellent! Polite, responsive and informative
+                  .QA_item
+                    .QA_answer Would you recommend this guitar to others...if so why?
+                    .QA_question Without a doubt. There would be no disappointment. It really has a “wow” factor in SO many areas.
+                  .QA_item
+                    .QA_answer Additional comments:
+                    .QA_question | would have written a positive review sooner, but | honestly can't put the guitar down long enough to write.
+                .QA_moreLinkWrapper.hidden-smPlus
+                  a(href="#").ArrowLink.QA_moreLink read more
+            .LoadingPosts
+              .Pagination.hidden-smMinus
+                a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowLeft.BtnOutline-disabled.Pagination_prev Previous
+                ul.Pagination_list
+                  li.Pagination_item.Pagination_item-current
+                    a(href="#").Pagination_link 1
+                  li.Pagination_item
+                    a(href="#").Pagination_link 2
+                  li.Pagination_item
+                    a(href="#").Pagination_link 3
+                  li.Pagination_item-more ...
+                  li.Pagination_item
+                    a(href="#").Pagination_link 35
+                a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowRight.Pagination_next next
+              a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
+    .IconsAndTexts.IconsAndTexts-brownBg.IconsAndTexts-product
+      .Container
+        .IconsAndTexts_wrapper
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/guitar.svg", alt="Guitar").CircleIcon_img
+            h3.IconAndText_title Easier playability
+            .IconAndText_text move faster and play longer #[br.hidden-smMinus]with less &nbsp;finger pain and #[br.hidden-smMinus]soreness.
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/percent.svg", alt="Percent").CircleIcon_img
+            h3.IconAndText_title Lower price save 50%
+            .IconAndText_text buying direct from the builder avoiding the retail store price mark up
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/star.svg", alt="Star").CircleIcon_img
+            h3.IconAndText_title #1 rated components
+            .IconAndText_text hand made solid wood guitars #[br.hidden-smMinus]w/ bone nuts, Fishman #[br.hidden-smMinus]electronics
+          .IconAndText.IconsAndTexts_item
+            .CircleIcon.IconAndText_icon
+              img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
+            h3.IconAndText_title 100% money back guarantee
+            .IconAndText_text including shipping both ways meaning you can try 1 risk free
+    .ProductCardsSection.ProductCardsSection-productPage
+      .Container
+        h2.SectionTitle.SectionTitle-productCardsSection.ProductCardsSection_title You might also like
+        .ProductCardsSwiper.ProductCardsSection_swiper.swiper.hidden-smPlus
+          .swiper-wrapper
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_wrapper
+                  .ProductCard_imgWrapper
+                    img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
+                    span.Label.Label-productCard.ProductCard_label special edition
+                  .ProductCard_textWrapper
+                    h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                    .ProductCard_tags
+                      .ProductCard_tagsLabel Available in
+                      ul.ProductCard_tagsList
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Electric
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Full size
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
+                    .ProductCard_priceFrom from $2095.00
+                    a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_wrapper
+                  .ProductCard_imgWrapper
+                    img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
+                    span.Label.Label-productCard.ProductCard_label special edition
+                  .ProductCard_textWrapper
+                    h3.ProductCard_title ZAD 900 Professional
+                    .ProductCard_tags
+                      .ProductCard_tagsLabel Available in
+                      ul.ProductCard_tagsList
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Electric
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Full size
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
+                    .ProductCard_priceFrom from $1995.00
+                    a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+            .swiper-slide.ProductCardsSwiper_slide
+              .ProductCard
+                .ProductCard_wrapper
+                  .ProductCard_imgWrapper
+                    img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
+                    span.Label.Label-productCard.ProductCard_label special edition
+                  .ProductCard_textWrapper
+                    h3.ProductCard_title 12 string ZAD 900
+                    .ProductCard_tags
+                      .ProductCard_tagsLabel Available in
+                      ul.ProductCard_tagsList
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Electric
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Full size
+                        li.ProductCard_tagsItem
+                          a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
+                    .ProductCard_priceFrom from $1995.00
+                    a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
+        .ProductCards.hidden-xs
+          .ProductCards_wrapper
+            .ProductCard.ProductCards_item
+              .ProductCard_imgWrapper
+                img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
+                span.Label.Label-productCard.ProductCard_label special edition
+              .ProductCard_textWrapper
+                h3.ProductCard_title 50th Anniversary Tobacco Sunburst edition ZAD 900
+                .ProductCard_tags
+                  .ProductCard_tagsLabel Available in
+                  ul.ProductCard_tagsList
+                    li.ProductCard_tagsItem
+                      a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                    li.ProductCard_tagsItem
+                      a(href="#").CategoryTag.CategoryTag-productCard Electric
+                    li.ProductCard_tagsItem
+                      a(href="#").CategoryTag.CategoryTag-productCard Full size
+                    li.ProductCard_tagsItem
+                      a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
+                .ProductCard_priceFrom from $2095.00
+                a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+            .ProductCard.ProductCards_item
+              .ProductCard_wrapper
+                .ProductCard_imgWrapper
+                  img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
+                  span.Label.Label-productCard.ProductCard_label special edition
+                .ProductCard_textWrapper
+                  h3.ProductCard_title ZAD 900 Professional
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
+                  .ProductCard_priceFrom from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+            .ProductCard.ProductCards_item
+              .ProductCard_wrapper
+                .ProductCard_imgWrapper
+                  img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
+                  span.Label.Label-productCard.ProductCard_label special edition
+                .ProductCard_textWrapper
+                  h3.ProductCard_title 12 string ZAD 900
+                  .ProductCard_tags
+                    .ProductCard_tagsLabel Available in
+                    ul.ProductCard_tagsList
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Acoustic
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Electric
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Full size
+                      li.ProductCard_tagsItem
+                        a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
+                  .ProductCard_priceFrom from $1995.00
+                  a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
+  .MobilePopup#ProductSizesMobilePopup
+    .MobilePopup_overlay
+    .MobilePopup_wrapper
+      .MobilePopup_header
+        a(href="#" data-action="openMobilePopup").MobilePopup_prev.MobilePopup_prev-disabled
+        h3.MobilePopup_title Size
+        a(href="#").MobilePopup_link Compare Sizes
+        a(href="#ElectronicsMobilePopup" data-action="openMobilePopup").MobilePopup_next
+      .MobilePopup_body
+        .Variations
+          .Variation.Variations_item
+            input(type="checkbox" name="product_size" value="full_size" id="full_size").Variation_input
+            label(for="full_size").Variation_label Full-sized Dreadnought
+          .Variation.Variations_item
+            input(type="checkbox" name="product_size" value="orchestra_model" id="orchestra_model").Variation_input
+            label(for="orchestra_model").Variation_label Orchestra Model
+  .MobilePopup#ElectronicsMobilePopup
+    .MobilePopup_overlay
+    .MobilePopup_wrapper
+      .MobilePopup_header
+        a(href="#ProductSizesMobilePopup" data-action="openMobilePopup").MobilePopup_prev
+        h3.MobilePopup_title Electronics
+        a(href="#").MobilePopup_link Compare Electronics
+        a(href="#TotalPriceMobilePopup" data-action="openMobilePopup").MobilePopup_next
+      .MobilePopup_body
+        .Variations
+          .Variation.Variation-fishmanAura.Variations_item
+            input(type="checkbox" name="product_electronics" value="fishman_aura" id="fishman_aura").Variation_input
+            label(for="fishman_aura").Variation_label Fishman Aura pro w/ Sound imaging
+          .Variation.Variation-acoustic.Variations_item
+            input(type="checkbox" name="product_electronics" value="acoustic" id="acoustic").Variation_input
+            label(for="acoustic").Variation_label Acoustic (no electronics)
+  .MobilePopup#TotalPriceMobilePopup
+    .MobilePopup_overlay
+    .MobilePopup_wrapper
+      .MobilePopup_header.MobilePopup_header-singleRow
+        a(href="#ElectronicsMobilePopup" data-action="openMobilePopup").MobilePopup_prev
+        h3.MobilePopup_title Total
+        a(href="#" data-action="openMobilePopup").MobilePopup_next
+      .TotalPrice.MobilePopup_totalPrice
+        .TotalPrice_textWrapper
+          .TotalPrice_price $2,595
+          .TotalPrice_textAndBtn
+            .TotalPrice_label Finance this purchase
+            .TotalPrice_text Starting at #[strong $72/mo] with #[img(src="img/affirm_logo.webp" alt="Affirm logo").TotalPrice_affirmLogo]
+            a(href="#").BtnGrey.BtnGrey-totalPrice.TotalPrice_prequalifyBtn Prequalify now
+        .TotalPrice_buttons
+          a(href="#").BtnYellow.BtnYellow-totalPrice.TotalPrice_btn Add to cart
+          a(href="#").BtnOutline.BtnOutline-totalPrice.BtnOutline-darkText.BtnOutline-lightBeigeBg.TotalPrice_btn Checkout
 block page_bottom
-  script(src="js/lessons.js")
+  script(src="js/product.js")

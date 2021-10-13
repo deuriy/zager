@@ -9,6 +9,20 @@
 	opacity 0
 	@extend .transition
 	
+	&_overlay
+		content ""
+		position fixed
+		z-index 1000
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background rgba($dark, 35%)
+		backdrop-filter blur(3px)
+		visibility hidden
+		opacity 0
+		@extend .transition
+	
 	&_wrapper
 		position absolute
 		z-index 1000
@@ -16,223 +30,70 @@
 		bottom 0
 		left 0
 		max-height 100%
-		padding 16px 19px
-		border-top-right-radius 10px
-		border-top-left-radius 10px
-		background $white
+		background $lightBeige
+		box-shadow 0 -2px 6px -2px rgba(0, 0, 0, 0.1)
 		overflow-y auto
 		transform translateY(100%)
 		transition all .3s ease-in-out
 	
 	&_header
-		margin-bottom 21px
-		padding-right 25px
-		
-		&-center
-			padding-right 30px
-			padding-left 30px
-			text-align center
-		
-		&-left
-			padding-left 35px
-	
-	&_icon
-		margin-bottom 14px
-		
-		&-like,
-		&-bookmark
-			margin-bottom 19px
+		display grid
+		grid-template-columns 9px 1fr 9px
+		align-items center
+		column-gap 12px
+		min-height 72px
+		padding 11px 24px 12px
+		border-bottom 1px solid $grey
+		text-align center
+
+		&-singleRow
+			.MobilePopup_prev,
+			.MobilePopup_next
+				grid-row 1 / 2
 			
-			& > .SvgIco
-				width 40px
-				color $blue
-		
-		&-bookmark
-			& > .SvgIco
-				width auto
-				height 35px
+			.MobilePopup_title
+				margin-bottom 0
+	
+	&_prev,
+	&_next
+		grid-row 1 / 3
+		width 9px
+		height 15px
+
+		&-disabled
+			opacity 0.25
+	
+	&_prev
+		background url("data:image/svg+xml,%3Csvg width='9' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.417 13.834 1 7.417l6.417-6.416' stroke='%23111013' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat
+	
+	&_next
+		grid-column 3 / 4
+		background url("data:image/svg+xml,%3Csvg width='9' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.001 1 6.417 6.417-6.417 6.416' stroke='%23111013' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat
 	
 	&_title
+		margin-bottom -9px
 		font-weight 600
 		font-size 18px
+		line-height 32px
+		letter-spacing -0.005em
 		white-space nowrap
 		overflow hidden
 		text-overflow ellipsis
 	
-	&_close
-		position absolute
-		top 10px
-		right 10px
-		width 34px
-		height 34px
-		padding 10px
-		color $blue2
+	&_link
+		grid-column 2 / 3
+		color $red
+		font-size 12px
+		line-height 22px
 	
-	&_contactsMenu
-		margin-bottom 42px
-	
-	&_text
-		margin-bottom 52px
-		color #404040
-		font-size 16px
-		line-height 1.5
-		text-align center
-		
-		a
-			color $blue
-			font-weight 500
-			text-decoration underline
-			
-			&:hover
-				text-decoration none
-		
-		&-smallIndent
-			margin-bottom 26px
-	
-	&_notificationSettings
-		margin-bottom 30px
-	
-	&_notificationSettingsItem
-		margin-bottom 25px
-		
-		&:last-child
-			margin-bottom 0
-	
-	&_menu
-		margin-bottom 41px
-	
-	&_uploadFiles
-		margin-bottom 20px
-	
-	&_btnWrapper
-		display flex
-		justify-content center
-		align-items center
-	
-	&_btn
-		margin-right 10px
-		
-		&:last-child
-			margin-right 0
-	
-	&_servicesIcons
-		margin-bottom 34px
-	
-	&_menu
-		margin-right -19px
-		margin-bottom 16px
-		margin-left -19px
-	
-	&_squareButtons
-		margin-bottom 40px
-	
-	&_contactLinks
-		margin-bottom 18px
+	&_body
+		padding 25px 28px 23px 22px
 	
 	&-opened
-		visibility visible
-		opacity 1
+		&,
+		.MobilePopup_overlay
+			visibility visible
+			opacity 1
 		
 		.MobilePopup_wrapper
 			transform translateY(0)
-	
-	&-largeIndent
-		.MobilePopup_wrapper
-			padding-bottom 24px
-			
-		.MobilePopup_header
-			margin-bottom 34px
-	
-	&-submit
-		.MobilePopup_wrapper
-			padding 35px 15px 26px
-		
-		.MobilePopup_icon
-			& > .SvgIco
-				max-width 38px
-				color $blue
-	
-	&-like,
-	&-bookmark
-		.MobilePopup_wrapper
-			padding-top 28px
-			padding-bottom 24px
-		
-		.MobilePopup_header
-			margin-bottom 10px
-	
-	&-auth
-		.MobilePopup_wrapper
-			padding-top 27px
-			padding-bottom 25px
-		
-		.MobilePopup_header
-			margin-bottom 10px
-		
-		.MobilePopup_icon
-			margin-bottom 10px
-	
-	&-uploadFiles
-		.MobilePopup_header
-			margin-bottom 34px
-			
-		.MobileHeader_btnBack
-			top 18px
-		
-		.MobilePopup_close
-			top 12px
-			
-		.MobilePopup_btn
-			flex-grow 1
-	
-	&-services
-		.MobilePopup_header
-			margin-bottom 31px
-			
-		.MobilePopup_title
-			font-size 22px
-		
-		.MobilePopup_close
-			right 17px
-
-		.MobilePopup_wrapper
-			padding-bottom 110px
-	
-	&-phoneReplenishment,
-	&-remmitance
-		.MobilePopup_wrapper
-			padding-bottom 35px
-		
-		.MobilePopup_text
-			margin-bottom 20px
-	
-	&-commentSwitch
-		.MobilePopup_wrapper
-			padding-top 19px
-		
-		.MobilePopup_header
-			margin-bottom 13px
-	
-	&-contactLinks
-		.MobilePopup_wrapper
-			padding-top 24px
-			
-		.MobilePopup_btnWrapper
-			margin-top 22px
-	
-	&-confirmDeletePost
-		.MobilePopup_text
-			margin-bottom 20px
-			font-weight 500
-			text-align left
-	
-	&-booking
-		.MobilePopup_text
-			margin-bottom 30px
-		
-		.MobilePopup_squareButtons
-			margin-bottom 25px
-	
-	&-requestCall
-		.MobileHeader_btnBack
-			top 22px

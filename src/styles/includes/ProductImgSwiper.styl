@@ -1,0 +1,37 @@
+.ProductImgSwiper
+  &_gallery
+    @media $xs
+      margin-right -25px
+      margin-left -25px
+      padding-right 25px
+      padding-left 25px
+  
+  &_gallerySlide
+    display grid
+    width 280px
+    min-height 194px
+    background $white
+    border-radius 4px
+  
+  &_galleryLink
+    display grid
+    align-items center
+    justify-content center
+    height 100%
+    padding 15px
+  
+  &_galleryImg
+    width 248px
+  
+  &_fullScreenBtn
+    position absolute
+    z-index 1
+    right 20px
+    bottom 20px
+
+    @media $xs
+      right 0
+      bottom 0
+      left 0
+      margin-right auto
+      margin-left auto
