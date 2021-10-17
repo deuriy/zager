@@ -1,6 +1,20 @@
 .Accordion
-  display grid
-  gap 10px
+  &_title
+    margin-bottom 40px
+    font-weight bold
+    font-size 32px
+    line-height 44px
+    font-family $robotoSlab
 
-  @media $smPlus
-    gap 20px
+  &_item:not(:last-child)
+    margin-bottom 10px
+
+    @media $smPlus
+      margin-bottom 20px
+  
+  &-faqTab
+    .Accordion_items
+      background $grey
+    
+    .Accordion_item:not(:last-child)
+      margin-bottom 2px

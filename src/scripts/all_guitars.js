@@ -12,7 +12,7 @@ import {
 Fancybox.bind(`[data-fancybox="filter"]`, {
   dragToClose: false,
   showClass: 'fancybox-fadeIn',
-  mainClass: 'fancybox__container--popup'
+  mainClass: 'fancybox__container--filter-popup'
 });
 
 Fancybox.bind("[data-fancybox]", {

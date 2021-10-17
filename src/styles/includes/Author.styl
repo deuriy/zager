@@ -4,14 +4,16 @@
   gap 4px 20px
 
   @media $smPlus
-    display block
-    text-align center
+    grid-template-columns 1fr
+    column-gap 0
+    justify-items center
 
   &_photo
     grid-row 1 / 3
 
     @media $smPlus
-      margin-bottom 40px
+      grid-column 1 / 3
+      margin-bottom 37px
   
   &_photoImg
     display block
@@ -30,18 +32,58 @@
     font-size 19px
     line-height 24px
   
+  &_location,
+  &_date
+    font-size 14px
+    line-height 22px
+  
+  &_location
+    font-weight bold
+
+    @media $smPlus
+      margin-bottom 5px
+  
+  &_date
+    color rgba($chocolate, .8)
+  
   &_name
     align-self end
     
     @media $smPlus
-      margin-bottom 16px
+      grid-column 1 / 3
+      margin-bottom 12px
       font-size 23px
       line-height 1.392
+  
+  &_info
+    grid-column 1 / 3
+    font-size 14px
+    line-height 22px
+    text-align center
+    
+    @media $xs
+      margin 25px 0 27px
+      padding 3px 0
+      border-top 2px solid $grey
+      border-bottom 2px solid $grey
+    
+    @media $smPlus
+      order 1
+      margin-top 85px
+  
+  &_audio
+    @media $xs
+      grid-column 1 / 3
+    
+    @media $smPlus
+      margin-top 35px
+      justify-self stretch
   
   &_productSeries
     align-self start
 
     @media $smPlus
+      grid-column 1 / 3
       font-size 32px
       line-height 1.375
   
@@ -72,3 +114,38 @@
 
       @media $smPlus
         margin-bottom 0
+  
+  &-customerReview
+    @media $smPlus
+      grid-template-columns 80px 1fr 250px
+      grid-template-rows auto 1fr
+      justify-items start
+      gap 0 21px
+      
+      .Author_photo
+        grid-column 1 / 2
+        margin-bottom 0
+
+      .Author_photoImg
+        width 80px
+      
+      .Author_name
+        margin-bottom 10px
+        grid-column 2 / 3
+        align-self start
+        font-size 19px
+        line-height 24px
+      
+      .Author_info
+        margin-top 0
+        order 0
+        grid-row 2 / 3
+        grid-column 2 / 3
+        text-align left
+      
+      .Author_location
+        margin-bottom 0
+      
+      .Author_audio
+        grid-row 1 / 3
+        margin-top 0

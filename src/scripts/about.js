@@ -1,18 +1,18 @@
-function checkInfoLineHeight(infoLine) {
-  if (infoLine.classList.contains('InfoLine-halfOverlapTop')) {
-    infoLine.style.marginBottom = `-${infoLine.offsetHeight / 2}px`;
-  } else if (infoLine.classList.contains('InfoLine-halfOverlapBottom')) {
-    infoLine.style.marginTop = `-${infoLine.offsetHeight / 2}px`;
+function checkInfoBlockHeight(InfoBlock) {
+  if (InfoBlock.classList.contains('InfoBlock-halfOverlapTop')) {
+    InfoBlock.style.marginBottom = `-${InfoBlock.offsetHeight / 2}px`;
+  } else if (InfoBlock.classList.contains('InfoBlock-halfOverlapBottom')) {
+    InfoBlock.style.marginTop = `-${InfoBlock.offsetHeight / 2}px`;
   }
 }
 
-let infoLinesHalfOverlap = document.querySelectorAll('.InfoLine-halfOverlapTop, .InfoLine-halfOverlapBottom');
-infoLinesHalfOverlap.forEach(infoLine => {
-  checkInfoLineHeight(infoLine);
+let InfoBlocksHalfOverlap = document.querySelectorAll('.InfoBlock-halfOverlapTop, .InfoBlock-halfOverlapBottom');
+InfoBlocksHalfOverlap.forEach(InfoBlock => {
+  checkInfoBlockHeight(InfoBlock);
 });
 
 window.addEventListener('resize', function () {
-  infoLinesHalfOverlap.forEach(infoLine => {
-    checkInfoLineHeight(infoLine);
+  InfoBlocksHalfOverlap.forEach(InfoBlock => {
+    checkInfoBlockHeight(InfoBlock);
   });
 });

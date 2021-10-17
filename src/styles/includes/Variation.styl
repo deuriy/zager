@@ -9,9 +9,12 @@
     position absolute
     clip rect(0, 0, 0, 0)
 
-    &:checked ~ .Variation_label::after
-      opacity 1
-      visibility visible
+    &:checked ~ .Variation_label
+      border-color $yellow
+
+      &::after
+        opacity 1
+        visibility visible
 
   &_label
     position relative
@@ -26,6 +29,12 @@
     line-height 1
     cursor pointer
 
+    @media $mdPlus
+      min-height 48px
+      padding 5px 50px 7px 10px
+      font-size 14px
+      line-height 16px
+
     &::after
       content ''
       position absolute
@@ -39,6 +48,9 @@
       background $yellow url("data:image/svg+xml,%3Csvg width='12' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.375 8.363 7.2-7.2L10.45 0 4.375 6.075l-2.85-2.85L.4 4.35l3.975 4.013Z' fill='%2313141A'/%3E%3C/svg%3E") center center no-repeat
       opacity 0
       visibility hidden
+
+      @media $mdPlus
+        right 19px
   
   &-fishmanAura,
   &-acoustic
@@ -47,6 +59,9 @@
       grid-template-columns 16px 1fr
       gap 10px
       align-items center
+      
+      @media $mdPlus
+        gap 12px
 
       &::before
         content ''

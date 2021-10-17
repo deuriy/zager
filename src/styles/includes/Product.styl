@@ -1,14 +1,42 @@
 .Product
-  padding 13px 0 0
+  &_wrapper
+    @media $mdPlus
+      display grid
+      grid-template-columns 1fr 322px
+
+  &_content
+    padding 13px 0 0
+
+    @media $smPlus
+      padding 41px 0 0
+    
+    @media $mdPlus
+      overflow hidden
 
   &_offer
     margin 0 -12px 20px
   
   &_breadcrumbs
     margin-bottom 20px
+
+    @media $smPlus
+      margin-bottom 28px
+
+    @media $xs
+      margin-right 20px
+  
+  &_info
+    @media $smPlus
+      display grid
+      grid-template-columns auto 1fr auto
+      justify-content space-between
+      align-items baseline
+      gap 21px 16px
+      margin-right 4px
   
   &_tag
-    margin-bottom 25px
+    @media $xs
+      margin-bottom 25px
   
   &_recommendation,
   &_title
@@ -16,24 +44,42 @@
     font-family $robotoSlab
   
   &_recommendation
-    margin-bottom 10px
     font-size 14px
     line-height 20px
     text-transform uppercase
     letter-spacing 0.06em
+
+    @media $xs
+      margin-bottom 10px
   
   &_title
     margin-bottom 19px
     font-size 28px
     line-height 38px
+
+    @media $smPlus
+      grid-row 2 / 3
+      grid-column 1 / 4
+      font-size 38px
+      line-height 49px
+    
+    @media $mdPlus
+      margin-bottom 40px
+      font-size 48px
+      line-height 60px
   
   &_ratingWrapper
     display grid
     grid-template-columns 100px auto
     justify-content start
     align-items center
-    margin-bottom 33px
-    margin-left 4px
+
+    @media $xs
+      margin-bottom 33px
+      margin-left 4px
+    
+    @media $mdPlus
+      align-items baseline
   
   &_reviewsLabel
     @extend .UnderlinedText
@@ -48,9 +94,15 @@
   
   &_swiperWrapper
     margin-bottom 35px
+
+    @media $mdPlus
+      margin-bottom 40px
   
   &_descriptionWrapper
     margin-bottom 34px
+
+    @media $mdPlus
+      margin-bottom 96px
   
   &_description
     margin-bottom 24px
@@ -58,16 +110,18 @@
     line-height 32px
     letter-spacing -0.005em
 
+    @media $mdPlus
+      margin-bottom 31px
+
     & > p:not(:last-child)
       margin-bottom 18px
     
     &-truncated
-      @media $xs
-        display -webkit-box
-        -webkit-line-clamp 5
-        -webkit-box-orient vertical
-        overflow hidden
-        text-overflow ellipsis
+      display -webkit-box
+      -webkit-line-clamp 5
+      -webkit-box-orient vertical
+      overflow hidden
+      text-overflow ellipsis
   
   &_descToggleLink
     font-weight bold
@@ -84,8 +138,17 @@
   
   &_quote
     margin-bottom 36px
+
+    @media $smPlus
+      margin-bottom 84px
+
+    @media $mdPlus
+      margin-bottom 130px
   
   &_accordion
+    margin-bottom 40px
+  
+  &_tabs
     margin-bottom 40px
   
   &_optionsBtnWrapper

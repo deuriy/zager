@@ -1,4 +1,4 @@
-.InfoLine
+.InfoBlock
   padding 25px
   border-radius 4px
   background $dark
@@ -12,6 +12,19 @@
     padding 40px 42px
     font-size 28px
     line-height 32px
+  
+  &_title
+    margin-bottom 12px
+    font-size 23px
+    line-height 32px
+  
+  &_text
+    margin-bottom 20px
+    font-weight normal
+    font-family $baseFont
+    font-size 16px
+    line-height 26px
+    letter-spacing 0.005em
   
   &-discount
     display grid
@@ -31,6 +44,14 @@
       width 32px
       height 32px
       background url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m11.811 4.606 2.17-2.168v-.002a2.857 2.857 0 0 1 4.039 0l2.167 2.17a.937.937 0 0 0 .663.274h3.413a2.856 2.856 0 0 1 2.857 2.857v3.413c0 .248.1.486.274.66l2.17 2.17a2.857 2.857 0 0 1 0 4.04l-2.17 2.167a.94.94 0 0 0-.274.662v3.414a2.856 2.856 0 0 1-2.857 2.857H20.85c-.248 0-.486.099-.66.274l-2.17 2.17a2.856 2.856 0 0 1-4.04 0l-2.167-2.17a.94.94 0 0 0-.662-.274H7.737a2.856 2.856 0 0 1-2.857-2.857v-3.414c0-.247-.099-.485-.274-.66l-2.17-2.17a2.857 2.857 0 0 1 0-4.039l2.17-2.167a.94.94 0 0 0 .274-.663V7.737A2.856 2.856 0 0 1 7.737 4.88h3.414c.247 0 .485-.099.66-.274Zm10.59 7.925-8.248 8.248L9.6 16.183l1.289-1.289 3.264 3.264 6.958-6.958 1.29 1.332Z' fill='%23FFFBF6'/%3E%3C/svg%3E") 0 0 no-repeat
+  
+  &-extended
+    display grid
+    grid-template-rows auto 1fr auto
+    text-align center
+
+    @media $smPlus
+      padding 24px
   
   &-smallFontDesktop
     @media $smPlus
@@ -71,3 +92,10 @@
     @media $xs
       font-size 22px
       line-height 26px
+  
+  &-featuresTab
+    padding-top 36px
+    padding-bottom 36px
+
+    .InfoBlock_btn
+      justify-self center

@@ -1,6 +1,19 @@
 .ReviewsSection
   padding 40px 0
   background $grey
+
+  @media $smPlus
+    padding-top 56px
   
-  &_group:not(:last-child)
-    margin-bottom 40px
+  &_group
+    &:not(:last-child)
+      margin-bottom 40px
+
+      @media $mdPlus
+        margin-bottom 60px
+
+      @media $lgPlus
+        margin-bottom 81px
+  
+    &-independentReviews
+      max-width 736px

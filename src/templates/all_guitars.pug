@@ -63,8 +63,8 @@ block content
             h3.IconAndText_title 100% money back guarantee
             .IconAndText_text including shipping both ways meaning you can try 1 risk free
   .ProductsWrapper
-    .LeftSidebar.LeftSidebar-extendedFilter.ProductsWrapper_left.hidden-xs
-      form.Filter#Filter
+    .Sidebar.Sidebar-extendedFilter.ProductsWrapper_sidebar.hidden-xs
+      form.Filter.Sidebar_filter.Sidebar_filter-extended#Filter
         h3.Filter_title Filter by
         .FilterElement.FilterElement-rangeSlider.Filter_item
           .FilterElement_header
@@ -150,10 +150,6 @@ block content
     .ProductsWrapper_content
       .ProductsWrapper_header
         ul.ProductsWrapper_buttons.hidden-smPlus
-          //- li.ProductsWrapper_btnItem
-          //-   a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
-          //- li.ProductsWrapper_btnItem
-          //-   a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
           li.ProductsWrapper_btnItem
             a(href="#Filter" data-fancybox="filter").BtnGrey.ProductsWrapper_btn Filter by
           li.ProductsWrapper_btnItem
@@ -342,7 +338,7 @@ block content
               a(href="#").Pagination_link 35
           a(href="#").BtnOutline.BtnOutline-darkText.BtnOutline-lightBeigeBg.BtnOutline-arrowRight.Pagination_next next
         a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
-      .InfoLine.InfoLine-discount.InfoLine-centerDesktop.InfoLine-alignIconTop.InfoLine-productsWrapper.ProductsWrapper_infoLine
+      .InfoBlock.InfoBlock-discount.InfoBlock-centerDesktop.InfoBlock-alignIconTop.InfoBlock-productsWrapper.ProductsWrapper_infoBlock
         p 30-day 100% money back guarantee that includes shipping fees both ways.
   .TextAndVideo
     .Container
@@ -421,87 +417,6 @@ block content
               img(loading="lazy", src="img/advantages/money.svg", alt="Money").CircleIcon_img
             h3.IconAndText_title 100% money back guarantee
             .IconAndText_text including shipping both ways meaning you can try 1 risk free.
-  //- .MobilePopup#MobilePopupFilter
-  //-   .MobilePopup_overlay
-  //-   .MobilePopup_wrapper
-  //-     button(type="button" data-action="closeMobilePopup").CloseButton.MobilePopup_closeBtn
-  //-     .MobilePopup_body
-  //-       form.Filter
-  //-         h3.Filter_title Filter by
-  //-         .Filter_items
-  //-           .FilterElement.Filter_item
-  //-             .FilterElement_header
-  //-               h4.FilterElement_label Woods
-  //-               a(href="#").FilterElement_link Woods and sound
-  //-             .FilterElement_content
-  //-               .CheckboxList
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="woods" value="spruce" id="spruce").Checkbox_input
-  //-                   label(for="spruce").Checkbox_label Rosewood + Spruce
-  //-                   .Checkbox_number 3
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="woods" value="cedar" id="cedar").Checkbox_input
-  //-                   label(for="cedar").Checkbox_label Rosewood + Cedar
-  //-                   .Checkbox_number 3
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="woods" value="mahogany_spruce" id="mahogany_spruce").Checkbox_input
-  //-                   label(for="mahogany_spruce").Checkbox_label Mahogany + Spruce
-  //-                   .Checkbox_number 6
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="woods" value="mahogany" id="mahogany").Checkbox_input
-  //-                   label(for="mahogany").Checkbox_label Mahogany
-  //-                   .Checkbox_number 3
-  //-           .FilterElement.Filter_item
-  //-             .FilterElement_header
-  //-               h4.FilterElement_label Size
-  //-               a(href="#").FilterElement_link Compare Sizes
-  //-             .FilterElement_content
-  //-               .CheckboxList
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="size" value="full_size" id="full_size").Checkbox_input
-  //-                   label(for="full_size").Checkbox_label Full Size Dreadnought
-  //-                   .Checkbox_number 3
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="size" value="smaller_size" id="smaller_size").Checkbox_input
-  //-                   label(for="smaller_size").Checkbox_label Smaller Orchestra size
-  //-                   .Checkbox_number 3
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="size" value="travel_size" id="travel_size").Checkbox_input
-  //-                   label(for="travel_size").Checkbox_label 38” Travel Size
-  //-                   .Checkbox_number 6
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="size" value="parlor_size" id="parlor_size").Checkbox_input
-  //-                   label(for="parlor_size").Checkbox_label 36” Parlor Size
-  //-                   .Checkbox_number 3
-  //-           .FilterElement.Filter_item
-  //-             .FilterElement_header
-  //-               h4.FilterElement_label Electronics
-  //-               a(href="#").FilterElement_link Compare Electronics
-  //-             .FilterElement_content
-  //-               .CheckboxList
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="electronics" value="fishman_aura" id="fishman_aura").Checkbox_input
-  //-                   label(for="fishman_aura").Checkbox_label Fishman Aura pro 900
-  //-                   .Checkbox_number 3
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="electronics" value="fishman_presys" id="fishman_presys").Checkbox_input
-  //-                   label(for="fishman_presys").Checkbox_label Fishman Presys 80
-  //-                   .Checkbox_number 3
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="electronics" value="fishman_presys_50" id="fishman_presys_50").Checkbox_input
-  //-                   label(for="fishman_presys_50").Checkbox_label Fishman presys 50
-  //-                   .Checkbox_number 6
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="electronics" value="fishman_presys_20" id="fishman_presys_20").Checkbox_input
-  //-                   label(for="fishman_presys_20").Checkbox_label Fishman presys 20
-  //-                   .Checkbox_number 3
-  //-                 .Checkbox.CheckboxList_item
-  //-                   input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
-  //-                   label(for="acoustic").Checkbox_label Acoustic
-  //-                   .Checkbox_number 3
-  //-         .Filter_actions
-  //-           button(type="submit").BtnYellow.Filter_applyBtn Apply
-  //-           button(type="reset").Filter_resetBtn Cancel
 
 block page_bottom
   script(src="js/jquery-3.6.0.min.js")

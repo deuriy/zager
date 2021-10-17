@@ -1,3 +1,10 @@
 .RatingTiles
   display grid
   gap 10px
+
+  @media $smPlus
+    grid-template-columns 1fr 1fr
+    gap 24px
+  
+  @media $mdPlus
+    gap 24px 49px

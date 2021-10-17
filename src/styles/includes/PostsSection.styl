@@ -18,15 +18,9 @@
       margin-bottom 60px
   
   &_items
-    display grid
-    gap 38px
     overflow hidden
     @extend .transition
 
     @media $xs
       &:not(:last-child)
         margin-bottom 35px
-    
-    @media $smPlus
-      grid-template-columns repeat(auto-fit, minmax(344px, 1fr))
-      gap 60px 48px

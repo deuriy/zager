@@ -12,8 +12,8 @@ block content
       .Banner_textWrapper
         h1.Banner_title Easy play guitars that will last you generations.
   .ProductsWrapper
-    .LeftSidebar.LeftSidebar-extendedFilter.ProductsWrapper_left.hidden-xs
-      form.Filter
+    .Sidebar.Sidebar-extendedFilter.ProductsWrapper_sidebar.hidden-xs
+      form.Filter.Sidebar_filter.Sidebar_filter-extended#Filter
         h3.Filter_title Filter by
         .FilterElement.FilterElement-rangeSlider.Filter_item
           .FilterElement_header
@@ -93,11 +93,14 @@ block content
                 input(type="checkbox" name="electronics" value="acoustic" id="acoustic").Checkbox_input
                 label(for="acoustic").Checkbox_label Acoustic
                 .Checkbox_number 3
+        .Filter_actions.hidden-smPlus
+          button(type="submit").BtnYellow.Filter_applyBtn Apply
+          button(type="reset").Filter_resetBtn Cancel
     .ProductsWrapper_content
       .ProductsWrapper_header
         ul.ProductsWrapper_buttons.hidden-smPlus
           li.ProductsWrapper_btnItem
-            a(href="#MobilePopupFilter" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Filter by
+            a(href="#Filter" data-fancybox="filter").BtnGrey.ProductsWrapper_btn Filter by
           li.ProductsWrapper_btnItem
             a(href="#MobilePopupSorting" data-action="openMobilePopup").BtnGrey.ProductsWrapper_btn Sort by
         h2.SectionTitle.ProductsWrapper_title Discount Vault

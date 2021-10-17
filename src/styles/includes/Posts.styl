@@ -1,0 +1,11 @@
+.Posts
+  display grid
+  gap 38px
+  
+  @media $smPlus
+    grid-template-columns repeat(auto-fit, minmax(344px, 1fr))
+    gap 60px 48px
+  
+  &-tabs
+    @media $smPlus
+      gap 47px 48px

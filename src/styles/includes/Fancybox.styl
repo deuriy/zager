@@ -1,5 +1,5 @@
 .fancybox__container
-  &--popup
+  &--filter-popup
     --fancybox-opacity .25
     --carousel-button-bg $grey
     --fancybox-color $dark
@@ -29,3 +29,28 @@
       --carousel-button-width 44px
       --carousel-button-height 44px
       padding-top 16px
+  
+  &--popup
+    --fancybox-opacity .6
+    --carousel-button-bg $grey
+    --fancybox-color $dark
+    --carousel-button-border-radius 0 4px
+    --carousel-button-shadow none
+    --carousel-button-svg-filter none
+    --carousel-button-svg-stroke-width 2
+
+    backdrop-filter blur(4px)
+    @extend .transition
+
+    .carousel__button.is-close
+      opacity 1
+
+    .fancybox__content
+      padding 40px 49px
+
+      & > .carousel__button.is-close
+        top 0
+    
+    .fancybox__slide
+      --carousel-button-width 44px
+      --carousel-button-height 44px

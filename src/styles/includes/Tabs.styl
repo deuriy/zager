@@ -8,6 +8,50 @@
   &_seriesImgWrapper
     padding 40px 20px 32px
     text-align center
+  
+  &_specifications
+    margin-top 37px
+  
+  &_posts
+    margin-bottom 48px
+  
+  &_paymentSystems
+    margin-top 36px
+    margin-bottom 23px
+  
+  &_accessoryTiles
+    margin-top 36px
+    margin-bottom 60px
+  
+  &-defaultStyle
+    .Tabs_list
+      list-style none
+      display grid
+      grid-template-columns repeat(auto-fit, minmax(120px, 1fr))
+      column-gap 4px
+    
+    .Tabs_item
+      padding 12px 28px
+      background rgba($lightBeige, 0.45)
+      border-radius 4px 4px 0 0
+      font-weight bold
+      font-size 14px
+      line-height 20px
+      font-family $robotoSlab
+      letter-spacing 0.06em
+      text-align center
+      text-transform uppercase
+      cursor pointer
+      @extend .transition
+
+      &:hover,
+      &-active
+        background $lightBeige
+    
+    .Tabs_content
+      // padding 60px 49px 48px
+      padding 24px 49px
+      background $lightBeige
 
   &-seriesStyle
     .Tabs_list

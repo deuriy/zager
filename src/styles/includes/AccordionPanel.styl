@@ -89,3 +89,20 @@
           height 16px
           background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.414' height='16.414'%3E%3Cg data-name='Сгруппировать 217' fill='none' stroke='%2313141a' stroke-width='2'%3E%3Cpath data-name='Линия 46' d='m15.707.707-15 15'/%3E%3Cpath data-name='Линия 47' d='m.707.707 15 15'/%3E%3C/g%3E%3C/svg%3E")
           transform none
+  
+  &-small
+    @media $smPlus
+      max-height 56px
+
+    .AccordionPanel_title
+      @media $smPlus
+        min-height 56px
+        padding 16px 24px 16px 20px
+        font-size 19px
+        line-height 24px
+    
+    .AccordionPanel_content
+      @media $smPlus
+        padding 16px 24px 16px 20px
+        font-size 16px
+        line-height 26px

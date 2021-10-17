@@ -38,13 +38,40 @@
     margin-bottom 4px
     font-weight bold
   
-  // &_moreLinkWrapper
-  //   position relative
-  //   z-index 1
-  //   text-align center
-  
   &_moreLink
     position relative
     z-index 1
     width 100%
     margin-bottom -12px
+  
+  &-customerReview
+    @media $smPlus
+      .QA_items
+        max-height 197px
+        margin-bottom -28px
+        overflow hidden
+        
+        &-expanded
+          margin-bottom 10px
+          
+          &::after
+            display none
+
+      .QA_moreLinkWrapper
+        position relative
+        text-align center
+
+        &::before
+          content ''
+          position absolute
+          z-index 1
+          top 0
+          right 0
+          bottom 0
+          left 0
+          background linear-gradient(180deg, rgba($lightBeige, 0) -71.79%, $lightBeige 100%)
+          pointer-events none
+
+      .QA_moreLink
+        width auto
+        margin-bottom 0

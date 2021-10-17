@@ -14,46 +14,35 @@
     padding 60px
 
   &_author
-    margin-bottom 30px
-
-    @media $smPlus
-      margin-bottom 40px
-  
-  &_info
-    font-size 14px
-    line-height 22px
-    text-align center
-    
     @media $xs
-      margin-bottom 31px
-      padding 3px 0
-      border-top 2px solid $grey
-      border-bottom 2px solid $grey
-    
-    @media $smPlus
-      grid-row 3 / 4
-      grid-column 1 / 2
-      margin-top 42px
+      margin-bottom 30px
   
-  &_location
-    margin-bottom -2px
-    font-weight bold
+  // &_location
+  //   margin-bottom -2px
+  //   font-weight bold
 
-    @media $smPlus
-      margin-bottom 4px
+  //   @media $smPlus
+  //     margin-bottom 4px
   
-  &_date
-    color $chocolate
-    opacity 0.8
-  
-  &_audio
-    margin-bottom 29px
-
-    @media $smPlus
-      grid-column 1 / 2
-      margin-bottom 46px
+  // &_date
+  //   color $chocolate
+  //   opacity 0.8
   
   &_qa
     @media $smPlus
       grid-row 1 / 4
       grid-column 2 / 3
+  
+  &-customer
+    @media $smPlus
+      grid-template-columns none
+
+      .Review_author
+        margin-bottom 38px
+      
+      .Review_qa
+        grid-row 2 / 3
+        grid-column 1 / 2
+    
+    @media $mdPlus
+      padding 48px

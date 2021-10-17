@@ -1,6 +1,7 @@
 .RatingTile
   display grid
   grid-template-columns auto 1fr 19px
+  grid-template-rows auto 1fr
   column-gap 17px
   align-items center
   padding 8px 16px
@@ -8,6 +9,9 @@
   background $lightBeige
   color $dark
   text-decoration none
+
+  &:hover
+    background darken($lightBeige, 7)
 
   &::after,
   &_rating

@@ -71,3 +71,21 @@
         grid-column 2 / 3
         align-self start
         gap 8px
+  
+  &-product
+    @media $smPlus
+      display grid
+      grid-template-columns 60px 480px
+      column-gap 36px
+
+      &::before
+        margin-bottom 0
+      
+      .Quote_text
+        width auto
+        margin-top 4px
+        margin-bottom 32px
+      
+      .Quote_author
+        grid-column 2 / 3
+        margin-left 3px

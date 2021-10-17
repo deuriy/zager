@@ -21,9 +21,15 @@ Fancybox.bind(`[data-fancybox="gallery"]`, {
   placeFocusBack: false
 });
 
+Fancybox.bind(`.FancyboxPopupLink`, {
+  dragToClose: false,
+  showClass: 'fancybox-fadeIn',
+  mainClass: 'fancybox__container--popup'
+});
+
 let productThumbs = new Swiper(".ProductImgSwiper_thumbs", {
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 8,
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
@@ -36,12 +42,21 @@ let productGallery = new Swiper(".ProductImgSwiper_gallery", {
   slidesPerView: 'auto',
   // autoHeight: true,
   centeredSlides: true,
+
   navigation: {
     nextEl: ".ProductImgSwiper_next",
     prevEl: ".ProductImgSwiper_prev",
   },
+
   thumbs: {
     swiper: productThumbs,
+    slideThumbActiveClass: 'ProductImgSwiper_thumbsSlide-active'
+  },
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+    },
   },
 
   on: {
@@ -169,4 +184,39 @@ window.addEventListener('scroll', function () {
   } else {
     productOptionsBtnWrapper.classList.add('Product_optionsBtnWrapper-invisible');
   }
+});
+
+document.querySelectorAll('.Tabs_list').forEach(tabList => {
+  tabList.querySelectorAll('.Tabs_item').forEach((tab, tabIndex) => {
+    tab.dataset.tabIndex = tabIndex;
+
+    tab.onclick = () => {
+      let activeTab = tab.parentNode.querySelector('.Tabs_item-active');
+
+      if (activeTab) {
+        activeTab.classList.remove('Tabs_item-active');
+      }
+
+      tab.classList.add('Tabs_item-active');
+
+      let parent = tab.closest('.Tabs');
+      let tabsContent = parent.querySelectorAll('.Tabs_content');
+
+      parent.querySelectorAll('.Tabs_list').forEach(tabsList => {
+        tabsList.querySelector(`.Tabs_item:nth-child(${tabIndex + 1})`).click();
+      })
+
+      tabsContent.forEach(function (tabContent, tabContentIndex) {
+        tabContent.style.display = 'none';
+      });
+
+      tabsContent[tabIndex].style.display = 'block';
+    }
+  });
+});
+
+document.querySelectorAll('.Tabs').forEach(tabs => {
+  tabs.querySelectorAll('.Tabs_content').forEach((tabContent, tabIndex) => {
+    tabContent.dataset.tabIndex = tabIndex;
+  });
 });
