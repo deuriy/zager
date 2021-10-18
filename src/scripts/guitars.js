@@ -23,6 +23,30 @@ function slideToggle(elem) {
   }
 }
 
+new Swiper('.VideoSwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+
+  modules: [Navigation, Pagination],
+
+  pagination: {
+    el: '.SwiperControls_pagination',
+    clickable: true,
+    bulletClass: 'SwiperPagination_bullet',
+    bulletActiveClass: 'SwiperPagination_bullet-active',
+  },
+
+  navigation: {
+    nextEl: '.VideoSection_next',
+  },
+
+  breakpoints: {
+    768: {
+      spaceBetween: 48
+    },
+  },
+});
+
 new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
