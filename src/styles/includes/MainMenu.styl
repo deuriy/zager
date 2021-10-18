@@ -11,30 +11,37 @@
     justify-content center
     list-style none
 
-    @media $xs
+    @media $smMinus
       grid-template-columns 1fr
       grid-auto-flow row
       justify-content start
       row-gap 5px
   
   &_item
+    @media $sm
+      border-bottom 1px solid $grey
+
     &-parent
       position relative
       
-      @media $smPlus
+      @media $mdPlus
         &:hover
           .MainMenu_subMenu
             top 100%
             visibility visible
             opacity 1
 
-      @media $xs
+      @media $smMinus
         max-height 40px
         overflow hidden
         transition all .2s ease-in-out
 
-        .MainMenu_subMenu .MainMenu_link
-          font-size 12px
+      .MainMenu_subMenu .MainMenu_link
+        @media $sm
+          padding 13px 8px 12px 0
+          // border-bottom none
+          text-transform none
+          letter-spacing 0.03em
 
       & > .MainMenu_link
         display grid
@@ -42,7 +49,8 @@
         align-items center
         column-gap 0.28571em
 
-        @media $xs
+        @media $smMinus
+          grid-template-columns 1fr auto
           column-gap 6px
 
         &::after
@@ -52,7 +60,7 @@
           background url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.414 1h3.172L4 2.586 2.414 1Z' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") 0 0 / cover no-repeat
           @extend .transition
 
-          @media $xs
+          @media $smMinus
             margin-top 2px
     
     &-expanded
@@ -71,32 +79,52 @@
     color $dark
     text-decoration none
     transition all .2s ease-in-out
-
-    @media $sm
-      font-size 12px
     
-    @media $xs
+    @media $smMinus
       padding-right 0
       padding-left 0
+      font-size 14px
+
+    @media $sm
+      padding 14px 8px 13px 0
+      // border-bottom 1px solid $grey
 
     &:hover
-      @media $smPlus
+      @media $mdPlus
         background $grey
   
   &_subMenu
     list-style none
     transition all .2s ease-in-out
 
-    @media $smPlus
+    @media $mdPlus
       position absolute
       z-index 100
       top calc(100% + 15px)
+      right -8px
       left 0
-      min-width 200px
-      padding 5px 0
+      min-width 150px
+      padding 8px 17px 2px 20px
+      border-bottom-right-radius 4px
+      border-bottom-left-radius 5px
       background $lightBeige
       visibility hidden
       opacity 0
+
+      .MainMenu_link
+        padding 12px 0
+        border-bottom 1px solid $grey
+        text-transform none
+        letter-spacing .03em
+
+        &:hover
+          background transparent
+          color rgba($dark, .5)
     
-    @media $xs
+    @media $smMinus
       padding-left 20px
+    
+    @media $sm
+      margin-top -7px
+      margin-bottom 7px
+      padding-left 38px

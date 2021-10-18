@@ -2,12 +2,12 @@
   &_list
     display grid
     grid-template-columns repeat(2, auto)
+    align-items center
     list-style none
     column-gap 25px
 
-    @media $xs
-      grid-template-columns auto
-      row-gap 8px
+    @media $smMinus
+      column-gap 20px
   
   &_item
     position relative
@@ -23,3 +23,9 @@
     
     &:last-child::after
       display none
+  
+  &-mobileNavigation
+    @media $smMinus
+      .ContactLinks_list
+        grid-template-columns auto
+        row-gap 10px

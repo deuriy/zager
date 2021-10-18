@@ -7,6 +7,9 @@
     padding 15px 0 12px
     border-bottom 1px solid $grey
 
+    @media $sm
+      padding 8px 0 10px
+
     @media $xs
       padding 13px 0
       border-bottom none
@@ -21,16 +24,40 @@
       align-items center
   
   &_logoImg
-    @media $xs
-      width 65px
+    @media $smMinus
+      // width 65px
+      width 75px
   
   &_right
     display grid
     grid-template-columns repeat(2, auto)
     align-items center
     column-gap 45px
-    padding-top 3px
+    // column-gap 36px
 
     @media $xs
-      column-gap 10px
+      column-gap 0
       padding-top 0
+    
+    @media $sm
+      column-gap 9px
+
+    @media $mdPlus
+      padding-top 3px
+  
+  &_contacts
+    @media $smMinus
+      margin-top 3px
+  
+  &_buttons
+    display grid
+    grid-template-columns auto auto
+    align-items center
+    gap 10px
+  
+  &_mobileNavigation
+    @media $sm
+      position absolute
+      z-index 1
+      top 100%
+      right 25px

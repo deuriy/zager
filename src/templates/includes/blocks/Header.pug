@@ -9,28 +9,73 @@
           .ContactLinks.Header_contacts.hidden-xs
             ul.ContactLinks_list
               li.ContactLinks_item
-                a(href="tel:+4027707747").ContactLink.ContactLinks_link
-                  include ../../includes/SvgIco/phone
-                  .ContactLink_text 402-770-7747
+                a(href="tel:+4027707747").ContactLink.ContactLink-phone.ContactLinks_link 402-770-7747
               li.ContactLinks_item
-                a(href="mailto:help@zager.com").ContactLink.ContactLinks_link
-                  include ../../includes/SvgIco/email
-                  .ContactLink_text help@zager.com
-          a(href="/cart.html").CartBtn
-            include ../../includes/SvgIco/cart
-            span.CartBtn_text cart
-          button(type="button").MenuHamburger.hidden-smPlus
-            include ../../includes/SvgIco/hamburger
-  .Header_bottom.hidden-xs
+                a(href="mailto:help@zager.com").ContactLink.ContactLink-email.ContactLinks_link help@zager.com
+          .Header_buttons
+            a(href="/cart.html").CartBtn
+              span.CartBtn_text.hidden-xs cart
+            a(href="#").MenuHamburger.hidden-mdPlus
+              span.MenuHamburger_text.hidden-xs menu
+            .MobileNavigation.Header_mobileNavigation.hidden-mdPlus
+              .MobileNavigation_header.hidden-sm
+                button(type="button").CloseButton.MobileNavigation_closeBtn
+              .Container.Container-mobileNavigation
+                .MainMenu.MobileNavigation_mainMenu
+                  h3.MainMenu_title.hidden-sm Menu
+                  ul.MainMenu_menu
+                    li.MainMenu_item.MainMenu_item-parent
+                      a(href="/guitars.html").MainMenu_link Guitars
+                      ul.MainMenu_subMenu
+                        li.MainMenu_subItem
+                          a(href="/all_guitars.html").MainMenu_link All guitars
+                        li.MainMenu_subItem
+                          a(href="/guitars.html").MainMenu_link Guitars
+                        li.MainMenu_subItem
+                          a(href="/900.html").MainMenu_link 900
+                        li.MainMenu_subItem
+                          a(href="/80.html").MainMenu_link 80
+                        li.MainMenu_subItem
+                          a(href="/50.html").MainMenu_link 50
+                        li.MainMenu_subItem
+                          a(href="/discount_vault.html").MainMenu_link Discount vault
+                        li.MainMenu_subItem
+                          a(href="/compare.html").MainMenu_link Compare
+                    li.MainMenu_item
+                      a(href="/accessories.html").MainMenu_link Accessories
+                    li.MainMenu_item
+                      a(href="/artists_reviews.html").MainMenu_link Artists & Reviews
+                    li.MainMenu_item.MainMenu_item-parent
+                      a(href="/about.html").MainMenu_link About &nbsp;us
+                      ul.MainMenu_subMenu
+                        li.MainMenu_subItem
+                          a(href="/story.html").MainMenu_link Story
+                        li.MainMenu_subItem
+                          a(href="/foundation.html").MainMenu_link Foundation
+                        li.MainMenu_subItem
+                          a(href="/contact.html").MainMenu_link Contact
+                        li.MainMenu_subItem
+                          a(href="/guarantee.html").MainMenu_link Guarantee
+                        li.MainMenu_subItem
+                          a(href="/faq.html").MainMenu_link FAQs
+                    li.MainMenu_item
+                      a(href="/warranty.html").MainMenu_link Lifetime warranty
+                .ContactLinks.ContactLinks-mobileNavigation.MobileNavigation_contacts
+                  ul.ContactLinks_list
+                    li.ContactLinks_item
+                      a(href="tel:+4027707747").ContactLink.ContactLink-phone.ContactLinks_link 402-770-7747
+                    li.ContactLinks_item
+                      a(href="mailto:help@zager.com").ContactLink.ContactLink-email.ContactLinks_link help@zager.com
+  .Header_bottom.hidden-smMinus
     .MainMenu
       ul.MainMenu_menu
         li.MainMenu_item.MainMenu_item-parent
           a(href="/guitars.html").MainMenu_link Guitars
           ul.MainMenu_subMenu
             li.MainMenu_subItem
-              a(href="/guitars.html").MainMenu_link Guitars
-            li.MainMenu_subItem
               a(href="/all_guitars.html").MainMenu_link All guitars
+            li.MainMenu_subItem
+              a(href="/guitars.html").MainMenu_link Guitars
             li.MainMenu_subItem
               a(href="/900.html").MainMenu_link 900
             li.MainMenu_subItem
@@ -38,11 +83,9 @@
             li.MainMenu_subItem
               a(href="/50.html").MainMenu_link 50
             li.MainMenu_subItem
-              a(href="/discount_vault.html").MainMenu_link Discount vault
+              a(href="/discount_vault.html").MainMenu_link Discount Vault
             li.MainMenu_subItem
-              a(href="/leftys.html").MainMenu_link Leftys
-            li.MainMenu_subItem
-              a(href="/compare.html").MainMenu_link Compare
+              a(href="/compare_models.html").MainMenu_link Compare
         li.MainMenu_item
           a(href="/accessories.html").MainMenu_link Accessories
         li.MainMenu_item
@@ -62,58 +105,3 @@
               a(href="/faq.html").MainMenu_link FAQs
         li.MainMenu_item
           a(href="/warranty.html").MainMenu_link Lifetime warranty
-  .MobileNavigation
-    .MobileNavigation_header
-      button(type="button").CloseButton.MobileNavigation_closeBtn
-    .Container
-      .MainMenu.MobileNavigation_mainMenu
-        h3.MainMenu_title Menu
-        ul.MainMenu_menu
-          li.MainMenu_item.MainMenu_item-parent
-            a(href="/guitars.html").MainMenu_link Guitars
-            ul.MainMenu_subMenu
-              li.MainMenu_subItem
-                a(href="/guitars.html").MainMenu_link Guitars
-              li.MainMenu_subItem
-                a(href="/all_guitars.html").MainMenu_link All guitars
-              li.MainMenu_subItem
-                a(href="/900.html").MainMenu_link 900
-              li.MainMenu_subItem
-                a(href="/80.html").MainMenu_link 80
-              li.MainMenu_subItem
-                a(href="/50.html").MainMenu_link 50
-              li.MainMenu_subItem
-                a(href="/discount_vault.html").MainMenu_link Discount vault
-              li.MainMenu_subItem
-                a(href="/leftys.html").MainMenu_link Leftys
-              li.MainMenu_subItem
-                a(href="/compare.html").MainMenu_link Compare
-          li.MainMenu_item
-            a(href="/accessories.html").MainMenu_link Accessories
-          li.MainMenu_item
-            a(href="/artists_reviews.html").MainMenu_link Artists & Reviews
-          li.MainMenu_item.MainMenu_item-parent
-            a(href="/about.html").MainMenu_link About &nbsp;us
-            ul.MainMenu_subMenu
-              li.MainMenu_subItem
-                a(href="/story.html").MainMenu_link Story
-              li.MainMenu_subItem
-                a(href="/foundation.html").MainMenu_link Foundation
-              li.MainMenu_subItem
-                a(href="/contact.html").MainMenu_link Contact
-              li.MainMenu_subItem
-                a(href="/guarantee.html").MainMenu_link Guarantee
-              li.MainMenu_subItem
-                a(href="/faq.html").MainMenu_link FAQs
-          li.MainMenu_item
-            a(href="/warranty.html").MainMenu_link Lifetime warranty
-      .ContactLinks.MobileNavigation_contacts
-        ul.ContactLinks_list
-          li.ContactLinks_item
-            a(href="tel:+4027707747").ContactLink.ContactLinks_link
-              include ../../includes/SvgIco/phone
-              .ContactLink_text 402-770-7747
-          li.ContactLinks_item
-            a(href="mailto:help@zager.com").ContactLink.ContactLinks_link
-              include ../../includes/SvgIco/email
-              .ContactLink_text help@zager.com

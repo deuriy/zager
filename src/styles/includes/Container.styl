@@ -14,9 +14,18 @@
     width 1320px
   
   &-header
+    @media $sm
+      padding-right 25px
+      padding-left 25px
+
     @media $xs
       padding-right 13px
       padding-left 13px
+  
+  &-mobileNavigation
+    @media $sm
+      padding-right 0
+      padding-left 0
   
   &-product
     @media $lgPlus

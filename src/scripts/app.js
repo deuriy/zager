@@ -12,11 +12,25 @@ function slideToggle(elem) {
 }
 
 menuHamburger.addEventListener('click', function (e) {
-  mobileNavigation.classList.add('MobileNavigation-opened');
-  document.body.style.overflow = 'hidden';
+  menuHamburger.classList.toggle('MenuHamburger-active');
+  mobileNavigation.classList.toggle('MobileNavigation-opened');
+
+  document.body.style.overflow = document.documentElement.clientWidth < 768 ? 'hidden' : '';
+
+  e.preventDefault();
+});
+
+document.addEventListener('click', function (e) {
+  if (document.documentElement.clientWidth > 767) {
+    if (!mobileNavigation.contains(e.target) && !menuHamburger.contains(e.target)) {
+      menuHamburger.classList.remove('MenuHamburger-active');
+      mobileNavigation.classList.remove('MobileNavigation-opened');
+    }
+  }
 });
 
 closeMobileNavigation.addEventListener('click', function (e) {
+  menuHamburger.classList.remove('MenuHamburger-active');
   mobileNavigation.classList.remove('MobileNavigation-opened');
   document.body.style.overflow = '';
 });
