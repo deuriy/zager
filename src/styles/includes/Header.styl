@@ -53,7 +53,9 @@
     display grid
     grid-template-columns auto auto
     align-items center
-    gap 10px
+
+    @media $smMinus
+      gap 10px
   
   &_mobileNavigation
     @media $sm
