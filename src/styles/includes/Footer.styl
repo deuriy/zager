@@ -13,7 +13,8 @@
 
   &_topWrapper
     display grid
-    grid-template-columns 29.3% 17.8% 19.1% 20.6% 1fr
+    grid-template-columns calc(29.3% - 25px) calc(17.8% - 25px) calc(19.1% - 25px) calc(20.6% - 25px) 1fr
+    column-gap 25px
 
     @media $lgMinus
       grid-template-columns calc(22.5% - 15px) calc(17.8% - 15px) calc(19.1% - 15px) calc(20.6% - 15px) 1fr
