@@ -1,13 +1,25 @@
 .NewsLetter
+  position relative
   padding 80px 0 60px
-  background linear-gradient(0deg, rgba(59, 48, 42, 0.5), rgba(59, 48, 42, 0.5)), url('../img/bg_newsletter.webp') center 80% / cover no-repeat
+  background-position center 80%
+  background-size cover
+  background-repeat no-repeat
+  
+  &::before
+    content ""
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background linear-gradient(0deg, rgba(59, 48, 42, 0.5), rgba(59, 48, 42, 0.5))
 
   @media $xs
     padding 60px 0
 
   @media $xxs
     padding 40px 0
-    background linear-gradient(0deg, rgba(59, 48, 42, 0.5), rgba(59, 48, 42, 0.5)), url('../img/bg_newsletter_mob.webp') center 0 / cover no-repeat
+    // background linear-gradient(0deg, rgba(59, 48, 42, 0.5), rgba(59, 48, 42, 0.5)), url('../img/bg_newsletter_mob.webp') center 0 / cover no-repeat
 
   &_title
     margin-bottom 40px
