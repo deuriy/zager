@@ -17,13 +17,6 @@
     font-size 23px
     line-height 1.392
     font-family $robotoSlab
-
-    &-greyBg
-      .Quote_textInner
-        box-shadow -5px 0 0 0 $grey, 5px 0 0 0 $grey
-        background-color $grey
-        box-decoration-break clone
-        line-height 1
   
   &_author
     display inline-grid
@@ -39,15 +32,24 @@
       height 4px
       background $yellow
     
-    &-greyBg
-      padding-right 7px
-      background $grey
-    
   &::before
     content ''
     width 60px
     height 47px
     background url("data:image/svg+xml,%3Csvg width='60' height='47' viewBox='0 0 60 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.059 31.598C32.059 39.855 35.492 47 47.044 47c6.868 0 11.707-2.858 11.707-11.115 0-7.94-3.434-11.75-11.395-12.544 0-6.351 7.805-12.861 12.644-15.56L52.663 0C43.453 4.922 32.06 17.307 32.06 31.598ZM0 31.598C0 39.855 3.434 47 14.985 47c6.869 0 11.708-2.858 11.708-11.115 0-7.94-3.434-11.75-11.395-12.544 0-6.351 7.804-12.861 12.644-15.56L20.605 0C11.395 4.922 0 17.307 0 31.598Z' fill='%23FEBD70'/%3E%3C/svg%3E") 0 0 no-repeat
+  
+  &-greyBg
+    .Quote_textInner,
+    .Quote_text > p
+      display inline
+      box-shadow -5px 0 0 0 $grey, 5px 0 0 0 $grey
+      background-color $grey
+      box-decoration-break clone
+      line-height 1
+    
+    .Quote_author
+      padding-right 7px
+      background $grey
   
   &-textAndQuoteSection
     &::before
