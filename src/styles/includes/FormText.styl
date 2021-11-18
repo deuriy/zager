@@ -10,7 +10,9 @@
   font-size 18px
   font-family $baseFont
   letter-spacing -0.005em
-  color rgba($dark, .6)
+  color $dark
+  +placeholder()
+    color rgba($dark, .6)
 
   @media $smPlus
     height 64px

@@ -22,19 +22,33 @@
       margin-bottom 20px
   
   &_description
-    margin-bottom 51px
+    // margin-bottom 51px
+    margin-bottom 25px
     font-size 18px
     line-height 1.78
     letter-spacing -0.005em
 
     @media $smPlus
       width 540px
-      margin-bottom 60px
+      // margin-bottom 60px
+      margin-bottom 33px
       text-align center
   
   &_items
+    position relative
     display grid
     row-gap 24px
+    padding-top 26px
+    
+    @media $xs
+      &::before
+        content ""
+        position absolute
+        top 0
+        right 0
+        left 0
+        height 2px
+        background $lightBeige
 
     @media $smPlus
       row-gap 60px
@@ -61,6 +75,17 @@
   
   &-lightBeigeBg
     background $lightBeige
+    
+    .TextBlocks_items::before
+      @media $xs
+        background $grey
+    
+    .TextBlocks_item
+      @media $xs
+        padding-bottom 42px
+        
+        &::after
+          background $grey
   
   &-guitarsPage
     @media $smPlus
@@ -70,20 +95,20 @@
       padding 80px 0
   
   &-seriesPage
-    padding-bottom 132px
+    // padding-bottom 132px
+    padding-bottom 86px
     
     @media $smPlus
-      // padding 79px 0 80px
       padding 79px 0 174px
 
     .TextBlocks_title
-      margin-bottom 52px
+      margin-bottom 24px
 
       @media $smPlus
-        margin-bottom 72px
+        margin-bottom 45px
     
     .TextBlocks_items
-      row-gap 38px
+      row-gap 25px
 
       @media $smPlus
         row-gap 50px

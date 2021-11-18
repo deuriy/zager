@@ -585,41 +585,48 @@ block content
                   a(href="#").BtnYellow.BtnYellow-loadMore.LoadingPosts_btn Load more
       .Sidebar.Sidebar-product.Product_sidebar.hidden-smMinus
         .ProductOptions.Sidebar_productOptions
-          a(href="#").Offer.ProductOptions_offer Try this guitar for 30 days. Includes free shipping both ways.
-          .ProductOptions_variationsBlocks
-            .VariationsBlock.ProductOptions_variationsBlock
-              .VariationsBlock_header
-                h3.VariationsBlock_title Size
-                a(href="#" data-src="#CompareSizesPopup").FancyboxPopupLink.VariationsBlock_link Compare Sizes
-              .VariationsBlock_body
-                .Variations.VariationsBlock_items
-                  .Variation.Variations_item
-                    input(type="radio" name="product_size" value="full_size" id="full_size").Variation_input
-                    label(for="full_size").Variation_label Full-sized #[br]Dreadnought
-                  .Variation.Variations_item
-                    input(type="radio" name="product_size" value="orchestra_model" id="orchestra_model").Variation_input
-                    label(for="orchestra_model").Variation_label Orchestra #[br]Model
-            .VariationsBlock.ProductOptions_variationsBlock
-              .VariationsBlock_header
-                h3.VariationsBlock_title Electronics
-                a(href="#" data-src="#CompareSizesPopup").FancyboxPopupLink.VariationsBlock_link Compare Electronics
-              .VariationsBlock_body
-                .Variations.VariationsBlock_items
-                  .Variation.Variation-fishmanAura.Variations_item
-                    input(type="radio" name="product_electronics" value="fishman_aura" id="fishman_aura").Variation_input
-                    label(for="fishman_aura").Variation_label Fishman Aura pro w/ Sound imaging
-                  .Variation.Variation-acoustic.Variations_item
-                    input(type="radio" name="product_electronics" value="acoustic" id="acoustic").Variation_input
-                    label(for="acoustic").Variation_label Acoustic #[br](no electronics)
-          .TotalPrice.TotalPrice-productOptions.ProductOptions_totalPrice
-            .TotalPrice_textWrapper
-              .TotalPrice_price $2,595
-              .TotalPrice_textAndBtn
-                .TotalPrice_text Starting at #[strong $72/mo] with #[img(src="img/affirm_logo.webp" alt="Affirm logo").TotalPrice_affirmLogo]
-                a(href="#").BtnGrey.BtnGrey-totalPrice.TotalPrice_prequalifyBtn Prequalify now
-            .TotalPrice_buttons
-              a(href="#").BtnYellow.BtnYellow-totalPrice.TotalPrice_btn Try this guitar now!
-              a(href="#").BtnOutline.BtnOutline-totalPrice.BtnOutline-darkText.BtnOutline-lightBeigeBg.TotalPrice_btn View total with shipping
+          .ProductOptions_inner
+            a(href="#").Offer.ProductOptions_offer Try this guitar for 30 days. Includes free shipping both ways.
+            .ProductOptions_variationsBlocks
+              .VariationsBlock.ProductOptions_variationsBlock
+                .VariationsBlock_header
+                  h3.VariationsBlock_title Size
+                  a(href="#" data-src="#CompareSizesPopup").FancyboxPopupLink.VariationsBlock_link Compare Sizes
+                .VariationsBlock_body
+                  .Variations.VariationsBlock_items
+                    .Variation.Variations_item
+                      input(type="radio" name="product_size" value="full_size" id="full_size").Variation_input
+                      label(for="full_size").Variation_label Full-sized #[br]Dreadnought
+                    .Variation.Variations_item
+                      input(type="radio" name="product_size" value="orchestra_model" id="orchestra_model").Variation_input
+                      label(for="orchestra_model").Variation_label Orchestra #[br]Model
+              .VariationsBlock.ProductOptions_variationsBlock
+                .VariationsBlock_header
+                  h3.VariationsBlock_title Electronics
+                  a(href="#" data-src="#CompareSizesPopup").FancyboxPopupLink.VariationsBlock_link Compare Electronics
+                .VariationsBlock_body
+                  .Variations.VariationsBlock_items
+                    .Variation.Variation-hasIcon.Variations_item
+                      input(type="radio" name="product_electronics" value="fishman_aura" id="fishman_aura").Variation_input
+                      label(for="fishman_aura").Variation_label
+                        img(src="/img/electric_acoustic_icon.svg" alt="Acoustic").Variation_labelIcon
+                        .
+                          Fishman Aura pro w/ Sound imaging
+                    .Variation.Variation-hasIcon.Variations_item
+                      input(type="radio" name="product_electronics" value="acoustic" id="acoustic").Variation_input
+                      label(for="acoustic").Variation_label
+                        img(src="/img/acoustic_icon.svg" alt="Acoustic").Variation_labelIcon
+                        .
+                          Acoustic #[br](no electronics)
+            .TotalPrice.TotalPrice-productOptions.ProductOptions_totalPrice
+              .TotalPrice_textWrapper
+                .TotalPrice_price $2,595
+                .TotalPrice_textAndBtn
+                  .TotalPrice_text Starting at #[strong $72/mo] with #[img(src="img/affirm_logo.webp" alt="Affirm logo").TotalPrice_affirmLogo]
+                  a(href="#").BtnGrey.BtnGrey-totalPrice.TotalPrice_prequalifyBtn Prequalify now
+              .TotalPrice_buttons
+                a(href="#").BtnYellow.BtnYellow-totalPrice.TotalPrice_btn Try this guitar now!
+                a(href="#").BtnOutline.BtnOutline-totalPrice.BtnOutline-darkText.BtnOutline-lightBeigeBg.TotalPrice_btn View total with shipping
     .IconsAndTexts.IconsAndTexts-brownBg.IconsAndTexts-product
       .Container
         .IconsAndTexts_wrapper

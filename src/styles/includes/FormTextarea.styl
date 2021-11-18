@@ -10,8 +10,10 @@
   line-height 32px
   font-family $baseFont
   letter-spacing -0.005em
-  color rgba($dark, .6)
+  color $dark
   resize none
+  +placeholder()
+    color rgba($dark, .6)
   
   &-lightBeigeBg
     background $lightBeige
