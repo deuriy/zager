@@ -12,8 +12,8 @@
     border-radius 4px
 
     @media $smPlus
-      display grid
-      grid-template-rows auto 1fr
+      // display grid
+      // grid-template-rows auto 1fr
       width 344px
 
   &_label,
@@ -64,7 +64,8 @@
     font-family $robotoSlab
 
     @media $smPlus
-      align-self center
+      // align-self center
+      align-self start
       margin-bottom 15px
   
   &_description
@@ -98,6 +99,13 @@
     font-size 19px
     line-height 1.263157
     font-family $robotoSlab
+  
+  &_priceFrom
+    del
+      margin-right 7px
+      
+      &:last-child
+        margin-right 0
   
   &_prices
     display grid

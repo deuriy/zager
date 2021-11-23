@@ -26,7 +26,8 @@
     padding 62px 0 90px
     background-position center 0
   
-  &_breadcrumbs
+  &_breadcrumbs,
+  .Breadcrumbs
     position relative
     margin-bottom 20px
 
@@ -86,13 +87,13 @@
     align-items center
     list-style none
 
-    &:last-child
-      margin-bottom 0
-
     @media $xxs
       grid-auto-flow row
       justify-content stretch
       row-gap 10px
+
+    &:last-child
+      margin-bottom 0
   
   &_btn
     @media $xxs
@@ -100,10 +101,54 @@
   
   &_iconsAndTexts
     position relative
+    margin-top 90px
   
   &_iconsAndTextsSwiper
     @media $xs
+      margin-top 45px
       margin-right -25px
+  
+  &-secondaryPage
+    @media $xs
+      padding-bottom 52px
+      background-position 0 0
+      
+      &::before
+        background linear-gradient(20.96deg, rgba(37, 19, 5, 0.65) 0%, rgba(37, 19, 5, 0.65) 46.4%, rgba(37, 19, 5, 0) 86.04%)
+    
+    @media $smPlus
+      // padding 41px 0 0
+      padding 41px 0 90px
+      background-position center
+      
+      &::before
+        width 100%
+        background linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+    
+    .Banner_textWrapper
+      width 730px
+    
+    .Banner_title
+      font-size 32px
+      line-height 1.375
+
+      @media $smPlus
+        margin-bottom 40px
+        font-size 48px
+        line-height 1.25
+    
+    .Banner_buttons
+      margin-bottom 44px
+
+      @media $smPlus
+        margin-bottom 90px
+
+      &:last-child
+        margin-bottom 0
+  
+  &-noPaddingBottomDesktop
+    @media $smPlus
+      padding-bottom 0
   
   &-guitars,
   &-allGuitars
@@ -138,6 +183,9 @@
 
       @media $smPlus
         margin-bottom 90px
+
+      &:last-child
+        margin-bottom 0
   
   &-accessories
     padding-bottom 64px
