@@ -24,21 +24,22 @@ block content
             li.ContactInfo_item #[a(href="mailto:help@zager.com") help@zager.com]
             li.ContactInfo_item
               a(href="#").ContactInfo_link Live Chat
-        form.ContactForm.ContactsSection_form
-          h3.ContactForm_title Contact us
-          .ContactForm_items
-            .ContactForm_item
-              input(type="text" name="name" placeholder="Name").FormText.FormText-lightBeigeBg.FormText-contactForm
-            .ContactForm_item
-              input(type="email" name="email" placeholder="Email address").FormText.FormText-lightBeigeBg.FormText-contactForm
-            .ContactForm_item
-              textarea(name="message" placeholder="Message").FormTextarea.FormTextarea-lightBeigeBg.FormText-contactForm
-          .ContactForm_actions
-            button(type="submit").BtnYellow.BtnYellow-email.BtnYellow-contactForm.ContactForm_btn Send email
+        .ContactsSection_formWrapper
+          form.ContactForm.ContactsSection_form
+            h3.ContactForm_title Contact us
+            .ContactForm_items
+              .ContactForm_item
+                input(type="text" name="name" placeholder="Name").FormText.FormText-lightBeigeBg.FormText-contactForm
+              .ContactForm_item
+                input(type="email" name="email" placeholder="Email address").FormText.FormText-lightBeigeBg.FormText-contactForm
+              .ContactForm_item
+                textarea(name="message" placeholder="Message").FormTextarea.FormTextarea-lightBeigeBg.FormText-contactForm
+            .ContactForm_actions
+              button(type="submit").BtnYellow.BtnYellow-email.BtnYellow-contactForm.ContactForm_btn Send email
   .TextSection.TextSection-reverse.TextSection-article
     .Container
       .TextSection_wrapper
-        h2.SectionTitle.SectionTitle-articleSection.TextSection_title Our Story
+        h2.SectionTitle.SectionTitle-mediumDesktop.TextSection_title Our Story
         .TextSection_imgWrapper
           img(src="img/our_story_img.webp", alt="").TextSection_img
           a(href="img/our_story_img.webp" data-fancybox).BtnYellow.BtnYellow-video.TextSection_mediaBtn play 2525
@@ -47,7 +48,7 @@ block content
   .TextSection.TextSection-article.TextSection-lightBeigeBg.TextSection-largePaddingDesktop
     .Container
       .TextSection_wrapper
-        h2.SectionTitle.SectionTitle-articleSection.TextSection_title Dennys Story
+        h2.SectionTitle.SectionTitle-mediumDesktop.TextSection_title Dennys Story
         .TextSection_imgWrapper
           img(src="img/text_section_img_about.webp", alt="").TextSection_img
         .TextSection_text
@@ -57,18 +58,20 @@ block content
   .TextSection.TextSection-article.TextSection-reverse
     .Container
       .TextSection_wrapper
-        h2.SectionTitle.SectionTitle-articleSectionSmallDekstop.TextSection_title Denny simply loved playing guitar and performing was an avenue that allowed him to do it. 
+        h2.SectionTitle.SectionTitle-smallDesktop.TextSection_title Denny simply loved playing guitar and performing was an avenue that allowed him to do it. 
         .TextSection_imgWrapper
           img(src="img/our_story_img.webp", alt="").TextSection_img
         .TextSection_text
           p Unfortunately Denny was never comfortable in the spotlight which is why he retired from performing and began doing what he loved most ...creating music and showing others how to do it.
           p In 1972 Denny began teaching his son how to play and decided there had to be a better way to learn guitar then using the old boring notes and scales routines. Denny was never able to grasp those methods because he suffered from dyslexia. (A condition in which the brain reads things out of order) He wanted to create a system that was exciting and focused around playing by ear...the same way pro musicians played.
-      .InfoBlock.InfoBlock-smallFontDesktop.InfoBlock-centerDesktop.InfoBlock-largePaddingDesktop.InfoBlock-offsetHalfDown.TextSection_infoBlock
+  .InfoBlockSection
+    .Container
+      .InfoBlock.InfoBlock-smallFontDesktop.InfoBlock-centerDesktop.InfoBlock-largePaddingDesktop.InfoBlock-offsetHalfDown
         p #[span.Yellow Denny created a system that was unlike anything ever seen before.] Instead of tedious hours of reciting notes and scales Denny’s system focused on showing the student how to play a song right away.
-  .TextSection.TextSection-article.TextSection-lightBeigeBg.TextSection-largePaddingTop
+  .TextSection.TextSection-article.TextSection-lightBeigeBg
     .Container
       .TextSection_wrapper
-        h2.SectionTitle.SectionTitle-articleSection.TextSection_title Dennys System
+        h2.SectionTitle.SectionTitle-mediumDesktop.TextSection_title Dennys System
         .TextSection_imgWrapper
           img(src="img/our_story_img.webp", alt="").TextSection_img
         .TextSection_text
@@ -76,9 +79,11 @@ block content
           p Denny’s guitar system focuses on learning by ear (like pros play) but he simplified it similar to the paint by number coloring books you used as a child. The spaces labeled 1 you painted yellow, the spaces labeled 2 you painted blue, and so on, and when you finished you didn't know exactly how you did it but you had a beautiful picture that was far beyond your natural abilities.
           p Denny’s Guitar system is the same in that it can show anyone how to play guitar and sound far beyond their natural abilities in a very short period of time.
           p Students often say “The music's flowing naturally from my fingers... but | don’t know how I’m doing it!” Denny‘s guitar system taps into that part of our brain that scientists say we gain all our power from but rarely use.
-      .InfoBlock.InfoBlock-smallFontDesktop.InfoBlock-centerDesktop.InfoBlock-largePaddingDesktop.InfoBlock-offsetHalfDown.TextSection_infoBlock
+  .InfoBlockSection
+    .Container
+      .InfoBlock.InfoBlock-smallFontDesktop.InfoBlock-centerDesktop.InfoBlock-largePaddingDesktop.InfoBlock-offsetHalfUp
         p #[span.Yellow From 1972 to 2000 (almost 3 decades)] Denny taught thousands of people how to play using his revolutionary guitar method, constantly tweaking his system making it easier to use. If you were a resident of Nebraska or the tri state area and played guitar during that time there was a very high likelihood that you learned to play using the Zager Guitar method.
-  .SeriesSection.SeriesSection-largePaddingTop
+  .SeriesSection
     .Container
       h2.SectionTitle.SectionTitle-center.SectionTitle-seriesSection.SeriesSection_title Why are more pro guitarists choosing Zager hand #[br]made guitars over Martin, Taylor, Fender and Gibson?
       .SeriesSection_items
