@@ -16,7 +16,7 @@
     line-height 26px
     letter-spacing 0.005em
 
-    & > p:not(:last-child)
+    p:not(:last-child)
       margin-bottom 12px
     
   &_moreLink
@@ -24,9 +24,12 @@
     color $dark
     text-decoration none
   
-  &_otherText
+  &_fullText
     display none
   
   &-expanded
-    .StudentReview_otherText
+    .StudentReview_excerpt
+      display none
+      
+    .StudentReview_fullText
       display block

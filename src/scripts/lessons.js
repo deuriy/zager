@@ -6,21 +6,21 @@ function slideToggle(elem) {
   }
 }
 
-function checkInfoBlockHeight(InfoBlock) {
-  if (InfoBlock.classList.contains('InfoBlock-halfOverlapTop')) {
-    InfoBlock.style.marginBottom = `-${InfoBlock.offsetHeight / 2}px`;
-  } else if (InfoBlock.classList.contains('InfoBlock-halfOverlapBottom')) {
-    InfoBlock.style.marginTop = `-${InfoBlock.offsetHeight / 2}px`;
+function checkInfoBlockHeight(infoBlock) {
+  if (infoBlock.classList.contains('InfoBlock-halfOverlapTop')) {
+    infoBlock.style.marginBottom = `-${infoBlock.offsetHeight / 2}px`;
+  } else if (infoBlock.classList.contains('InfoBlock-halfOverlapBottom')) {
+    infoBlock.style.marginTop = `-${infoBlock.offsetHeight / 2}px`;
   }
 }
 
-let InfoBlocksHalfOverlap = document.querySelectorAll('.InfoBlock-halfOverlapTop, .InfoBlock-halfOverlapBottom');
-InfoBlocksHalfOverlap.forEach(InfoBlock => {
-  checkInfoBlockHeight(InfoBlock);
+let infoBlocksHalfOverlap = document.querySelectorAll('.InfoBlock-halfOverlapTop, .InfoBlock-halfOverlapBottom');
+infoBlocksHalfOverlap.forEach(infoBlock => {
+  checkInfoBlockHeight(infoBlock);
 });
 
 window.addEventListener('resize', function () {
-  InfoBlocksHalfOverlap.forEach(InfoBlock => {
+  infoBlocksHalfOverlap.forEach(InfoBlock => {
     checkInfoBlockHeight(InfoBlock);
   });
 });
