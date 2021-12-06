@@ -6,10 +6,12 @@
 
   @media $smPlus
     display grid
-    grid-template-columns 280px 1fr
+    // grid-template-columns 280px 1fr
+    grid-template-columns 280px calc(100% - 280px)
 
   @media $lgPlus
-    grid-template-columns 355px 1fr
+    // grid-template-columns 355px 1fr
+    grid-template-columns 355px calc(100% - 355px)
   
   &_accessoriesCards,
   &_products

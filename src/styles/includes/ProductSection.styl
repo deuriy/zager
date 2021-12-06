@@ -29,6 +29,9 @@
     @media $smMinus
       grid-template-columns 100%
       margin-bottom 35px
+    
+    &:last-child
+      margin-bottom 0
   
   &_left
     @media $smMinus
@@ -69,10 +72,11 @@
   
   &_categoryTags
     list-style none
-    display grid
+    display flex
+    flex-wrap wrap
     grid-auto-flow column
     justify-content start
-    column-gap 9px
+    gap 9px
     margin-bottom 33px
 
     @media $xs
