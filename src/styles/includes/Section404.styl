@@ -1,0 +1,56 @@
+.Section404
+	position relative
+	margin-bottom -319px
+	padding 30px 0 273px
+	background-position center 0
+	background-size cover
+	background-repeat no-repeat
+	text-align center
+	
+	@media $xs
+		margin-bottom 0
+		padding 15px 0 40px
+	
+	&::before
+		content ""
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		background rgba(59, 48, 42, .5)
+	
+	&_container
+		position relative
+		z-index 10
+	
+	&_title,
+	&_subtitle
+		color $yellow
+		font-weight 900
+		font-family $robotoSlab
+	
+	&_title
+		margin-bottom -22px
+		font-size 120px
+		line-height normal
+		
+		@media $xs
+			margin-bottom -12px
+			font-size 80px
+	
+	&_subtitle
+		margin-bottom 23px
+		font-size 36px
+		
+		@media $xs
+			margin-bottom 14px
+			font-size 28px
+	
+	&_description
+		color $white
+		font-size 22px
+		line-height 1.46
+		
+		@media $xs
+			font-size 17px
