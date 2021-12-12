@@ -5,6 +5,15 @@
   @media $smPlus
     width 344px
   
+  &_imgWrapper,
+  &_videoWrapper
+    display grid
+    max-height 192px
+    overflow hidden
+  
+  &_imgWrapper
+    place-content center
+  
   &_img
     display block
     border-top-right-radius 4px

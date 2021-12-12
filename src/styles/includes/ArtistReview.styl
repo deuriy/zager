@@ -50,16 +50,20 @@
     @media $mdPlus
       margin-bottom 19px
   
-  &_imgWrapper
+  &_imgWrapper,
+  &_videoWrapper
     margin-bottom 23px
 
     @media $mdPlus
       display grid
-      justify-content end
       grid-row 1 / 4
       grid-column 2 / 3
       align-self center
       margin-bottom -11px
+  
+  &_imgWrapper
+    @media $mdPlus
+      justify-content end
   
   &_img
     display block
