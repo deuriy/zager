@@ -3,13 +3,19 @@
     height 400px
   
   &_imgWrapper
+    display grid
+    justify-content center
+    min-height 447px
+    overflow hidden
+    
     @media $xs
-      display grid
-      place-content center
-      overflow hidden
+      align-content center
   
   &_img
     display block
+    height 100%
+    width auto
+    max-width none
     margin-right auto
     margin-left auto
 

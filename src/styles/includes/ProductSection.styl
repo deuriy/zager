@@ -40,13 +40,21 @@
   &_right
     padding-top 2px
   
-  &_recommendation,
+  &_specialLabel,
   &_title
     font-family $robotoSlab
   
-  &_recommendation
-    display block
+  &_labelWrapper
+    display grid
+    grid-template-columns auto auto
+    justify-content start
+    gap 7px
     margin-bottom 30px
+    margin-left -3px
+  
+  &_specialLabel
+    display block
+    // margin-bottom 30px
     font-weight bold
     font-size 14px
     text-transform uppercase
