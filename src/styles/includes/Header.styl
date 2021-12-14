@@ -1,20 +1,23 @@
 .Header
   position relative
   background $lightBeige
-  box-shadow 0 2px 4px rgba(0, 0, 0, 0.2)
+  padding 15px 0 12px
+  border-bottom 1px solid $grey
+  
+  @media $smMinus
+    position sticky
+    top 0
+    z-index 10
+    box-shadow 0 2px 4px rgba(0, 0, 0, 0.2)
 
-  &_top
-    padding 15px 0 12px
-    border-bottom 1px solid $grey
+  @media $sm
+    padding 8px 0 10px
 
-    @media $sm
-      padding 8px 0 10px
+  @media $xs
+    padding 13px 0
+    border-bottom none
 
-    @media $xs
-      padding 13px 0
-      border-bottom none
-
-  &_topWrapper
+  &_container
     display grid
     grid-template-columns repeat(2, auto)
     justify-content space-between
@@ -66,3 +69,7 @@
       z-index 1
       top 100%
       right 25px
+  
+  &_bottom
+    position sticky
+    top 0
