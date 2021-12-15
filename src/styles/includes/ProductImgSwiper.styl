@@ -19,14 +19,20 @@
   &_gallerySlide
     display grid
     width 280px
-    min-height 194px
+    // min-height 194px
+    // height 194px
+    height 314px
     background $white
     border-radius 4px
+    
+    @media $smMinus
+      height 194px
   
   &_galleryLink
     display grid
-    align-items center
-    justify-content center
+    place-content center
+    // align-items center
+    // justify-content center
     height 100%
     padding 15px
 
