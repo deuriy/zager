@@ -1,10 +1,84 @@
 .AccordionPanel
   max-height 82px
+  background $lightBeige
   overflow hidden
   @extend .transition
   
+  @media $xs
+    border-radius 5px
+    filter drop-shadow(0 3px 3.5px rgba(0, 0, 0, .16))
+  
   @media $smPlus
     max-height 96px
+  
+  .PaymentSystems
+    margin-top 10px
+  
+  .PaymentSystem
+    &_btn
+      @media $xs
+        width 100%
+        padding 11px 22px 11px 22px
+        font-size 13px
+  
+  .AccessoryTiles
+    @media $xs
+      &_title
+        font-size 25px
+    
+      &_items
+        grid-template-columns 100%
+        gap 12px 48px
+    
+      .AccessoryTile
+        grid-template-columns 88px 1fr
+    
+      &:not(:last-child)
+        margin-bottom 40px
+  
+  .Accordion
+    @media $xs
+      margin-right -20px
+      margin-left -20px
+      
+      &_title
+        padding-right 20px
+        padding-left 20px
+        font-size 25px
+        line-height 1
+  
+  .AccordionPanel
+    @media $xs
+      filter none
+      
+      &-expanded
+        background #fff5e8
+  
+  .InfoBlock
+    @media $xs
+      padding 27px 15px
+      
+      &_title
+        font-size 20px
+        line-height 22px
+      
+      &_text
+        font-size 14px
+        line-height 20px
+        
+      &_btn
+        padding 11px 19px
+        font-size 14px
+        letter-spacing 0
+      
+      &-featuresTab
+        padding-top 27px
+        padding-bottom 27px
+  
+  .Specifications
+    @media $xs
+      &:not(:last-child)
+        margin-bottom 40px
 
   &_title
     display grid
@@ -13,13 +87,19 @@
     column-gap 14px
     min-height 82px
     padding 10px 22px 10px 20px
+    border-bottom 1px solid transparent
     border-radius 4px
-    background $lightBeige
     font-weight bold
     font-size 18px
     line-height 22px
     font-family $robotoSlab
     cursor pointer
+    
+    @media $xs
+      margin-right 22px
+      margin-left 20px
+      padding-right 0
+      padding-left 0
 
     @media $smPlus
       min-height 96px
@@ -36,7 +116,6 @@
   
   &_content
     padding 20px
-    background $lightBeige
 
     @media $smPlus
       padding 37px
@@ -79,9 +158,15 @@
     position relative
     
   &-expanded
-    .AccordionPanel_title
+    & > .AccordionPanel_title
+      @media $xs
+        border-bottom-color #dbd5cd
+        
       &::after
         transform rotate(180deg)
+      
+        @media $xs
+          background-image url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 1 8 8 1 1' stroke='%23febd70' stroke-width='2'/%3E%3C/svg%3E")
 
         @media $mdPlus
           width 16px
@@ -93,14 +178,14 @@
     @media $smPlus
       max-height 56px
 
-    .AccordionPanel_title
+    & > .AccordionPanel_title
       @media $smPlus
         min-height 56px
         padding 16px 24px 16px 20px
         font-size 19px
         line-height 24px
     
-    .AccordionPanel_content
+    & > .AccordionPanel_content
       @media $smPlus
         padding 16px 24px 16px 20px
         font-size 16px

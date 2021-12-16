@@ -1,5 +1,10 @@
 .Characteristics
   &_groups
     display grid
-    grid-template-columns 1fr 1fr
-    gap 61px 53px
+    
+    @media $xs
+      gap 25px
+    
+    @media $smPlus
+      grid-template-columns 1fr 1fr
+      gap 61px 53px

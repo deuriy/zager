@@ -1,30 +1,58 @@
 .PaymentSystem
-  display grid
-  grid-template-columns 212px 1fr
-  grid-template-rows auto 1fr
-  gap 16px 33px
-  align-items center
+  @media $smPlus
+    display grid
+    grid-template-columns 212px 1fr
+    grid-template-rows auto 1fr
+    gap 16px 33px
+    align-items center
 
   &_imgWrapper
-    grid-row 1 / 3
     text-align center
+    
+    @media $xs
+      margin-bottom 2px
+    
+    @media $smPlus
+      grid-row 1 / 3
+  
+  &_img
+    @media $xs
+      width auto
+      height 40px
   
   &_title
     font-weight bold
     font-size 23px
     line-height 32px
     font-family $robotoSlab
+    
+    @media $xs
+      margin-bottom 16px
+      font-size 16px
+      line-height 20px
 
   &_description
-    grid-column 2 / 3
-    font-size 18px
-    line-height 32px
-    letter-spacing -0.005em
+    font-size 14px
+    line-height 20px
+    
+    @media $xs
+      color #181818
+    
+    @media $smPlus
+      grid-column 2 / 3
+      font-size 18px
+      line-height 32px
+      letter-spacing -0.005em
   
   &_btn
-    grid-column 2 / 3
-    justify-self start
+    @media $xs
+      margin-top 24px
+      
+    @media $smPlus
+      grid-column 2 / 3
+      justify-self start
   
   &-extended
     .PaymentSystem_imgWrapper
-      grid-row 1 / 4
+      @media $smPlus
+        grid-row 1 / 4

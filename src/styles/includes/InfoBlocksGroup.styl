@@ -1,7 +1,10 @@
 .InfoBlocksGroup
   display grid
-  grid-template-columns repeat(auto-fit, minmax(320px, 1fr))
+  grid-template-columns 100%
   gap 28px
+  
+  @media $smPlus
+    grid-template-columns repeat(auto-fit, minmax(320px, 1fr))
 
   @media $lgPlus
     gap 48px

@@ -146,11 +146,10 @@
     @media $mdPlus
       margin-bottom 89px
   
-  &_accordion
-    margin-bottom 40px
-  
-  &_tabs
-    margin-bottom 40px
+  .Accordion,
+  .Tabs
+    &:not(:last-child)
+      margin-bottom 40px
   
   &_optionsBtnWrapper
     position fixed
