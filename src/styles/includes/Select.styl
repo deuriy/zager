@@ -1,23 +1,27 @@
-// .Select
-//   appearance none
-//   display inline-grid
-//   padding 3px 24px 4px 11px
-//   border 2px solid $yellow
-//   outline none
-//   border-radius 4px
-//   background rgba($lightBeige, .45) url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.414 9h3.172L10 10.586 8.414 9Z' stroke='%2313141A' stroke-width='2'/%3E%3C/svg%3E") calc(100% - 5px) center no-repeat
-//   cursor pointer
-//   font-weight bold
-//   font-size 14px
-//   line-height 22px
-//   font-family $baseFont
-//   @extend .transition
+.select2-sorting.select2-container
+	.select2-dropdown
+		background $lightBeige
+		filter drop-shadow(0 3px 3.5px rgba(0, 0, 0, .16))
 
-//   &:focus
-//     border-color darken($yellow, 15)
-  
-//   &::after
-//     content ''
-//     width 20px
-//     height 20px
-//     
+	&.select2-container--default .select2-results>.select2-results__options
+		padding 5px 0
+
+	&.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+		background transparent
+		color $yellow
+
+	&.select2-container--default .select2-results__option
+		padding 10px
+		font-weight 700
+		transition all .2s ease-in-out
+		
+		&--selected
+			background transparent
+			color $yellow
+
+body.admin-bar
+	.select2-sorting.select2-container
+		margin-top 32px
+		
+		@media $xs
+			margin-top 46px

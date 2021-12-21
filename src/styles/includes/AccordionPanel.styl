@@ -49,7 +49,14 @@
   
   .AccordionPanel
     @media $xs
+      max-height 54px
       filter none
+      
+      .AccordionPanel
+        &_title
+          min-height 54px
+          font-size 16px
+          line-height 20px
       
       &-expanded
         background #fff5e8
@@ -70,6 +77,7 @@
         padding 11px 19px
         font-size 14px
         letter-spacing 0
+        white-space normal
       
       &-featuresTab
         padding-top 27px
@@ -79,6 +87,23 @@
     @media $xs
       &:not(:last-child)
         margin-bottom 40px
+  
+  .Posts
+    @media $xs
+      gap 20px
+  
+  .Post
+    @media $xs
+      padding-bottom 10px
+      
+      .Post_title
+        margin-bottom 10px
+        font-size 16px
+        line-height 20px
+      
+      .Post_description
+        font-size 14px
+        line-height 20px
 
   &_title
     display grid
