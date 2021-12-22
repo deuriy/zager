@@ -31,9 +31,14 @@
         &:hover
           background darken($yellow, 15)
     
-    &-more
-      margin-right 14px
-      margin-left 14px
+    &-prev,
+    &-next
+      width auto
+      height auto
+  
+  &_more
+    margin-right 14px
+    margin-left 14px
   
   &_link
     display grid
@@ -48,3 +53,7 @@
 
     &:hover
       background $yellow
+    
+    &-prev,
+    &-next
+      border-radius 0

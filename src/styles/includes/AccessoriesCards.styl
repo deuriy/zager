@@ -1,11 +1,16 @@
 .AccessoriesCards
   display grid
-  grid-template-columns repeat(auto-fit, minmax(156px, 1fr))
-  gap 15px 10px
+  grid-template-columns 100%
+  gap 30px
+  
+  &_items
+    display grid
+    grid-template-columns repeat(auto-fit, minmax(156px, 1fr))
+    gap 15px 10px
 
-  @media $smPlus
-    grid-template-columns repeat(auto-fit, minmax(246px, 1fr))
-    gap 30px
+    @media $smPlus
+      grid-template-columns repeat(auto-fit, minmax(246px, 1fr))
+      gap 30px
 
-  @media $mdPlus
-    gap 60px 46px
+    @media $mdPlus
+      gap 60px 46px

@@ -1,26 +1,59 @@
 .Sorting
-  display grid
-  grid-template-columns repeat(2, auto)
-  align-items center
-  gap 12px
+  @media $smPlus
+    display grid
+    grid-template-columns auto 1fr
+    align-items center
+    gap 12px
 
   &_label
     font-size 14px
     line-height 22px
 
   .select2-container
+    @media $xs
+      width 100%
+    
+    @media $mdPlus
+      width 160px
+      
     .select2-selection--single
       height 33px
+      
+      @media $xs
+        height auto
 
-  .select2-container--default .select2-selection--single
-    border 2px solid #F3B25D
-    background rgba(255, 251, 246, 0.45)
-    
-    .select2-selection__rendered
-      font-size 14px
-      line-height 33px
-      font-weight bold
+  .select2-container--default
+    .select2-selection--single
+      border 2px solid #F3B25D
+      background rgba(255, 251, 246, 0.45)
+      transition all .2s ease-in-out
+      
+      @media $xs
+        border none
+        background $grey3
+      
+      .select2-selection__rendered
+        font-size 14px
+        line-height 33px
+        font-weight bold
+        
+        @media $xs
+          padding 10px
+          font-family $robotoSlab
+          line-height normal
+          text-transform uppercase
+          letter-spacing .06em 
+          text-align center
+          white-space normal
 
-    .select2-selection__arrow
-      top 4px
-      right 8px
+      .select2-selection__arrow
+        top 4px
+        right 8px
+        
+        @media $xs
+          display none
+          
+    &.select2-container--open
+      .select2-selection--single
+        @media $xs
+          background $yellow

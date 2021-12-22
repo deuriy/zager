@@ -1,6 +1,10 @@
 .Sidebar
   padding 38px 45px 38px 32px
   background $lightBeige
+  
+  &_inner
+    position sticky
+    top 30px
 
   &_filter
     margin-top 12px
@@ -14,11 +18,24 @@
       @media $lgPlus
         margin-top 22px
   
-  // &_productOptions
-  //   position sticky
-  //   top 10px
-  
   &-product
     @media $mdPlus
-      // padding 36px 68px 38px 32px
       padding 0
+  
+  &-cartPage
+    .Sidebar_inner
+      top 56px
+  
+  &-extendedFilter
+    .Sidebar_inner
+      top 60px
+
+body.admin-bar
+  .Sidebar    
+    &-cartPage
+      .Sidebar_inner
+        top 86px
+    
+    &-extendedFilter
+      .Sidebar_inner
+        top 92px
