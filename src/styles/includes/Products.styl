@@ -9,6 +9,10 @@
   &_reload
     margin-top 150px
     margin-bottom 150px
+    
+    @media $xs
+      margin-top 20px
+      margin-bottom 20px
   
   &_cardsSwiper
     @media $xs
@@ -30,6 +34,13 @@
       
       @media $lgMinus
         grid-template-columns repeat(auto-fit, minmax(344px, auto))
+  
+  &-productsWrapper
+    .Products_items
+      margin-bottom 30px
+
+      @media $mdPlus
+        margin-bottom 60px
   
   &-discountVault
     .Products_items
