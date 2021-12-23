@@ -1,6 +1,56 @@
 .AccessoryCard
   display grid
   grid-template-rows auto 1fr
+  
+  .add-to-cart-container
+    text-align center
+  
+  .added_to_cart
+    display inline-grid
+    grid-auto-flow column
+    justify-content center
+    align-items center
+    column-gap 0.5625em
+    width 100%
+    padding 10px
+    font-weight bold
+    font-family $robotoSlab
+    font-size 14px
+    line-height 20px
+    border none
+    border-radius 4px
+    background $yellow
+    color $dark
+    letter-spacing 0.06em
+    text-transform uppercase
+    text-align center
+    text-decoration none
+    // white-space nowrap
+    cursor pointer
+    @extend .transition
+    
+    &:hover
+      background darken($yellow, 15)
+
+    @media $smPlus
+      margin-bottom 8px
+      padding-top 12px
+      padding-bottom 12px
+      column-gap 10px
+      
+      &::before
+        content ''
+        width 17px
+        height 16px
+        background url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.068 3.833A1.667 1.667 0 0 0 14.651 3H3.985L3.5 1.117A.833.833 0 0 0 2.668.5H1.001a.833.833 0 0 0 0 1.667h1.034l2.3 8.55a.833.833 0 0 0 .833.616h7.5a.832.832 0 0 0 .742-.458l2.733-5.467a1.667 1.667 0 0 0-.075-1.575ZM4.75 15.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM13.086 15.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z' fill='%2313141A'/%3E%3C/svg%3E") 0 0 no-repeat
+    // @extend .BtnYellow-addToCart
+    // display inline-block
+    // margin-bottom 8px
+    // color $red
+    // font-weight bold
+    
+    // &:hover
+    //   text-decoration none
 
   &_imgWrapper
     position relative
