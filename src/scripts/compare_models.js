@@ -128,7 +128,12 @@ setTabsVisibility(false);
 
 
 window.addEventListener('resize', function () {
-  expandedTables.forEach(expandTable => setMaxHeight(expandTable));
+  // expandedTables.forEach(expandTable => setMaxHeight(expandTable));
+  expandedTables.forEach(expandTable => {
+    setTimeout(() => {
+      setMaxHeight(expandTable)
+    });
+  });
 });
 
 document.addEventListener('click', function (e) {
