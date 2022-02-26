@@ -23,7 +23,8 @@
       margin-bottom 28px
 
     @media $xs
-      margin-right 20px
+      &:not(:last-child)
+        margin-right 20px
   
   &_info
     @media $smPlus

@@ -3,8 +3,8 @@
     height 400px
   
   &_imgWrapper
-    display grid
-    justify-content center
+    position relative
+    display block
     min-height 447px
     overflow hidden
     
@@ -12,7 +12,10 @@
       align-content center
   
   &_img
-    display block
+    position absolute
+    top 0
+    left 50%
+    transform translateX(-50%)
     height 100%
     width auto
     max-width none

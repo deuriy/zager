@@ -11,17 +11,20 @@
   &_swiper
     margin-right -25px
     margin-left -25px
+    padding-right 25px
     padding-left 25px
     margin-bottom 40px
     
     @media $smPlus
       margin-right -20px
       margin-left -20px
-      padding-left 0
+      // padding-right 0
+      // padding-left 0
     
     @media $mdPlus
       margin-right 0
       margin-left 0
+      padding-right 0
       padding-left 0
   
   &_title
@@ -99,6 +102,11 @@
     @media $mdPlus
       // padding 60px 0 105px
       padding 60px 0 144px
+    
+    .SeriesSection_items
+      @media $xs
+        grid-template-columns repeat(auto-fit, minmax(200px, 1fr))
+        
       
     // padding 0
 
