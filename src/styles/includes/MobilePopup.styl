@@ -38,7 +38,7 @@
 	
 	&_header
 		display grid
-		grid-template-columns 9px 1fr 9px
+		grid-template-columns 50px 1fr 50px
 		align-items center
 		column-gap 12px
 		min-height 72px
@@ -57,18 +57,23 @@
 	&_prev,
 	&_next
 		grid-row 1 / 3
-		width 9px
-		height 15px
+		width 50px
+		height 50px
+		// width 9px
+		// height 15px
 
 		&-disabled
 			opacity 0.25
 	
 	&_prev
-		background url("data:image/svg+xml,%3Csvg width='9' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.417 13.834 1 7.417l6.417-6.416' stroke='%23111013' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat
+		margin-left -20px
+		background url("data:image/svg+xml,%3Csvg width='9' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.417 13.834 1 7.417l6.417-6.416' stroke='%23111013' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center center no-repeat
 	
 	&_next
+		position relative
+		left 20px
 		grid-column 3 / 4
-		background url("data:image/svg+xml,%3Csvg width='9' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.001 1 6.417 6.417-6.417 6.416' stroke='%23111013' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat
+		background url("data:image/svg+xml,%3Csvg width='9' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.001 1 6.417 6.417-6.417 6.416' stroke='%23111013' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center center no-repeat
 	
 	&_title
 		margin-bottom -9px
