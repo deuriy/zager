@@ -45,6 +45,14 @@
           letter-spacing .06em 
           text-align center
           white-space normal
+          @extend .transition
+          
+          &:hover
+            background darken($grey3, 5)
+      
+      .select2-selection__placeholder
+        @media $xs
+          color $dark
 
       .select2-selection__arrow
         top 4px

@@ -27,8 +27,7 @@ import {
 
 new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
   slidesPerView: 'auto',
-  spaceBetween: 20,
-  autoHeight: true,
+  spaceBetween: 20
 });
 
 let infoBlocksOffsetHalf = document.querySelectorAll('.InfoBlock-offsetHalfUp, .InfoBlock-offsetHalfDown');

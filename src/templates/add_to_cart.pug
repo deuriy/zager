@@ -656,7 +656,7 @@ block content
         .ProductCardsSwiper.ProductCardsSection_swiper.swiper.hidden-mdPlus
           .swiper-wrapper
             .swiper-slide.ProductCardsSwiper_slide
-              .ProductCard
+              .ProductCard.ProductCard-slide
                 .ProductCard_wrapper
                   .ProductCard_imgWrapper
                     img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
@@ -675,7 +675,7 @@ block content
                     .ProductCard_priceFrom from $2095.00
                     a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
             .swiper-slide.ProductCardsSwiper_slide
-              .ProductCard
+              .ProductCard.ProductCard-slide
                 .ProductCard_wrapper
                   .ProductCard_imgWrapper
                     img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
@@ -696,7 +696,7 @@ block content
                     .ProductCard_priceFrom from $1995.00
                     a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
             .swiper-slide.ProductCardsSwiper_slide
-              .ProductCard
+              .ProductCard.ProductCard-slide
                 .ProductCard_wrapper
                   .ProductCard_imgWrapper
                     img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
@@ -718,7 +718,7 @@ block content
                     a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options
         .ProductCards.ProductCards-productPage.hidden-smMinus
           .ProductCards_wrapper
-            .ProductCard.ProductCards_item
+            .ProductCard.ProductCard-related.ProductCards_item
               .ProductCard_wrapper
                 .ProductCard_imgWrapper
                   img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
@@ -738,7 +738,7 @@ block content
                         a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
                   .ProductCard_priceFrom from $2095.00
                   a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
-            .ProductCard.ProductCards_item
+            .ProductCard.ProductCard-related.ProductCards_item
               .ProductCard_wrapper
                 .ProductCard_imgWrapper
                   img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
@@ -758,7 +758,7 @@ block content
                         a(href="#").CategoryTag.CategoryTag-productCard Orchestra size
                   .ProductCard_priceFrom from $1995.00
                   a(href="#").BtnYellow.BtnYellow-productCard.ProductCard_btn View options and features
-            .ProductCard.ProductCards_item
+            .ProductCard.ProductCard-related.ProductCards_item
               .ProductCard_wrapper
                 .ProductCard_imgWrapper
                   img(loading="lazy", src="img/product_block_img.webp").ProductCard_img
@@ -853,6 +853,8 @@ block content
           .Variation.Variations_item
             input(type="radio" name="product_size" value="orchestra_model" id="orchestra_model").Variation_input
             label(for="orchestra_model").Variation_label Orchestra Model
+      .MobilePopup_footer
+        a(href="#ElectronicsMobilePopup" data-action="openMobilePopup").BtnYellow.BtnYellow-mobilePopup Next
   .MobilePopup#ElectronicsMobilePopup
     .MobilePopup_overlay
     .MobilePopup_wrapper
@@ -860,7 +862,6 @@ block content
         a(href="#ProductSizesMobilePopup" data-action="openMobilePopup").MobilePopup_prev
         h3.MobilePopup_title Electronics
         a(href="#").MobilePopup_link Compare Electronics
-        a(href="#TotalPriceMobilePopup" data-action="openMobilePopup").MobilePopup_next
       .MobilePopup_body
         .Variations
           .Variation.Variation-fishmanAura.Variations_item
@@ -869,6 +870,8 @@ block content
           .Variation.Variation-acoustic.Variations_item
             input(type="radio" name="product_electronics" value="acoustic" id="acoustic").Variation_input
             label(for="acoustic").Variation_label Acoustic (no electronics)
+      .MobilePopup_footer
+        a(href="#TotalPriceMobilePopup" data-action="openMobilePopup").BtnYellow.BtnYellow-mobilePopup Next
   .MobilePopup#TotalPriceMobilePopup
     .MobilePopup_overlay
     .MobilePopup_wrapper

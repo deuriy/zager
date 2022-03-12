@@ -2,7 +2,7 @@
   @media $mdPlus
     position sticky
     top 0
-    z-index 10
+    z-index 100
     background $lightBeige
     box-shadow 0 2px 4px rgba(0, 0, 0, 0.2)
   
@@ -95,6 +95,13 @@
     @media $sm
       padding 14px 8px 13px 0
       // border-bottom 1px solid $grey
+    
+    @media $md
+      padding-right 0.75em
+      padding-left 0.75em
+    
+    @media $mdPlus
+      text-align center
 
     &:hover
       @media $mdPlus
@@ -124,6 +131,9 @@
         border-bottom 1px solid $grey
         text-transform none
         letter-spacing .03em
+        
+        @media $mdPlus
+          text-align left
 
         &:hover
           background transparent

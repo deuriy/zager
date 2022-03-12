@@ -25,6 +25,10 @@
   
   &_label
     left 0
+    
+    &-topRight
+      left auto
+      right 0
   
   &_tag
     right 0
@@ -218,16 +222,19 @@
         width auto
         margin-right -3px
   
-  &-group
+  &-group,
+  &-grid
     @media $mdPlus
       .ProductCard_wrapper
         width 246px
       
       .ProductCard_imgWrapper
-        max-height 200px
+        height 200px
+        background $white
       
       .ProductCard_textWrapper
         grid-template-rows 1fr auto auto auto
+        // min-height 290px
         padding 20px 24px 24px
       
       .ProductCard_title
@@ -245,3 +252,47 @@
     @media $xs
       .ProductCard_imgWrapper
         max-height 200px
+  
+  &-productsSection
+    @media $smMinus
+      .ProductCard_imgWrapper
+        height 260px
+  
+  &-grid,
+  &-series
+    @media $mdPlus
+      .ProductCard_wrapper
+        display grid
+        grid-template-columns 100%
+        grid-template-rows auto 1fr
+  
+  &-slide
+    height 100%
+    
+    .ProductCard_wrapper
+      display grid
+      grid-template-columns 100%
+      grid-template-rows auto 1fr
+      
+    img
+      display block
+    
+    .ProductCard_textWrapper
+      display grid
+      grid-template-columns 100%
+      grid-template-rows 1fr minmax(100px, auto) auto auto
+      align-items end
+    
+    .ProductCard_title
+      align-self start
+  
+  &-related
+    .ProductCard_wrapper
+      @media $smPlus
+        display grid
+        grid-template-columns 100%
+        grid-template-rows auto 1fr
+        
+        img
+          display block
+    

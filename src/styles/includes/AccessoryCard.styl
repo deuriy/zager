@@ -43,37 +43,24 @@
         width 17px
         height 16px
         background url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.068 3.833A1.667 1.667 0 0 0 14.651 3H3.985L3.5 1.117A.833.833 0 0 0 2.668.5H1.001a.833.833 0 0 0 0 1.667h1.034l2.3 8.55a.833.833 0 0 0 .833.616h7.5a.832.832 0 0 0 .742-.458l2.733-5.467a1.667 1.667 0 0 0-.075-1.575ZM4.75 15.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM13.086 15.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z' fill='%2313141A'/%3E%3C/svg%3E") 0 0 no-repeat
-    // @extend .BtnYellow-addToCart
-    // display inline-block
-    // margin-bottom 8px
-    // color $red
-    // font-weight bold
-    
-    // &:hover
-    //   text-decoration none
 
   &_imgWrapper
     position relative
     display grid
-    // place-content center
-    max-height 192px
+    place-content center
+    height 160px
     border-top-right-radius 4px
     border-top-left-radius 4px
     overflow hidden
-
-    @media $xs
-      display grid
-      place-content center
-      overflow hidden
   
   &_img
     display block
     max-width none
+    min-width 200px
 
     @media $smPlus
-      width 100%
-      // min-height 160px
-      min-height 130px
+      min-width 246px
+      min-height 160px
   
   &_tag
     position absolute
@@ -101,7 +88,8 @@
     line-height 19px
   
   &_title
-    align-self center
+    // align-self center
+    align-self start
     
     a
       color $dark
@@ -113,6 +101,10 @@
       line-height 24px
   
   &_price
+    display flex
+    align-items center
+    gap 4px
+    
     @media $smPlus
       margin-bottom 24px
       font-size 18px
@@ -126,6 +118,8 @@
         margin-bottom 8px
   
   &-swiper
+    height 100%
+    
     @media $smMinus
       width 200px
       max-width 100%

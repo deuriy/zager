@@ -47,10 +47,15 @@ new Swiper('.VideoSwiper', {
   },
 });
 
-new Swiper('.IconsAndTextsSwiper, .ProductCardsSwiper', {
+new Swiper('.IconsAndTextsSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
   autoHeight: true,
+});
+
+new Swiper('.ProductCardsSwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
 });
 
 new Swiper('.FilterTabsListSwiper', {
