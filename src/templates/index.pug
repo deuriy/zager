@@ -275,9 +275,11 @@ block content
   .NewsLetter(style="background-image: url('img/bg_newsletter.webp')")
     .Container
       h2.SectionTitle.SectionTitle-lightBeige.SectionTitle-center.NewsLetter_title Join the news letter to get #[span.Yellow 5% OFF]
-      form.SubscribeForm.NewsLetter_form
-        input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
-        button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      //- form.SubscribeForm.NewsLetter_form
+      //-   input(type="email" name="email" placeholder="Email address").FormText.SubscribeForm_textInput
+      //-   button(type="submit").BtnYellow.BtnYellow-email.SubscribeForm_submitBtn Join
+      ._form_7.SubscribeForm#SubscribeForm.NewsLetter_form
+      script(src="https://zagerguitar.activehosted.com/f/embed.php?id=7" type="text/javascript" charset="utf-8")
       .IconsAndTexts.NewsLetter_iconsAndTexts
         .IconsAndTexts_wrapper
           .IconAndText.IconsAndTexts_item
