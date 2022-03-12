@@ -1,32 +1,34 @@
 .affirm-as-low-as
 	font-size 14px
 	line-height 22px
-	
-.affirm-modal-trigger
-	position relative
-	display grid
-	width 111px
-	height 32px
-	padding 5px 10px
-	border-radius 4px
-	font-size 14px
-	line-height 22px
-	text-indent 99999em
-	overflow hidden
-	color $dark
-	background $grey3
-	@extend .transition
-		
-	&::after
-		content "Prequalify now"
-		position absolute
-		top 5px
-		left 12px
-		font-weight bold
-		text-indent 0
-		
-	&:hover
-		background darken($grey, 8%)
+
+.FinancingPurchase,
+.TotalPrice
+	.affirm-modal-trigger
+		position relative
+		display grid
+		width 111px
+		height 32px
+		padding 5px 10px
+		border-radius 4px
+		font-size 14px
+		line-height 22px
+		text-indent 99999em
+		overflow hidden
+		color $dark
+		background $grey3
+		@extend .transition
+			
+		&::after
+			content "Prequalify now"
+			position absolute
+			top 5px
+			left 12px
+			font-weight bold
+			text-indent 0
+			
+		&:hover
+			background darken($grey, 8%)
 	
 .FinancingPurchase
 	.affirm-as-low-as
