@@ -98,6 +98,38 @@
 	&_footer
 		padding 0 28px 23px 22px
 	
+	.TotalPrice
+		.woocommerce-variation-price
+			margin-bottom 21px
+			
+			.price
+				justify-content center
+				gap 10px
+		
+		del .woocommerce-Price-amount,
+		ins .woocommerce-Price-amount
+			font-size 36px
+			line-height 48px
+		
+		.affirm-as-low-as
+			display grid
+			grid-template-columns 1fr auto
+			align-items center
+			gap 15px
+			margin-bottom 25px
+			padding-bottom 31px
+			border-bottom 1px solid $grey
+			font-weight 700
+			font-size 14px
+			line-height 18px
+		
+		.affirm-modal-trigger
+			margin 0
+		
+		.TotalPrice_textWrapper .TotalPrice_buttons,
+		.TotalPrice_textWrapper .TotalPrice_textWrapper
+			padding 0
+	
 	&-opened
 		&,
 		.MobilePopup_overlay
