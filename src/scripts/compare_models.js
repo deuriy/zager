@@ -146,6 +146,24 @@ document.addEventListener('click', function (e) {
   let expandTableTHStyle = getComputedStyle(expandTableTH);
   let expandTableTHHeight = expandTable.querySelector('.ExpandTable_th').offsetHeight + parseInt(expandTableTHStyle.borderBottomWidth) + parseInt(expandTableTHStyle.borderTopWidth);
 
+  let openedTable = expandTable.closest('.ExpandTables').querySelector('.ExpandTable-expanded');
+
+  if (openedTable != null && openedTable != expandTable) {
+    let openedTableSwitchLink = openedTable.querySelector('.ExpandTable_switchLink');
+    let openedTableTH = openedTable.querySelector('.ExpandTable_th');
+    let openedTableTHStyle = getComputedStyle(openedTableTH);
+    let openedTableTHHeight = openedTable.querySelector('.ExpandTable_th').offsetHeight + parseInt(openedTableTHStyle.borderBottomWidth) + parseInt(openedTableTHStyle.borderTopWidth);
+
+    openedTable.querySelectorAll('.Hint_wrapper').forEach(hintWrapper => {
+      hintWrapper.style.display = 'none';
+    });
+    openedTableSwitchLink.classList.add('SwitchLink-collapsed');
+    openedTable.classList.remove('ExpandTable-expanded');
+    setTimeout(() => {
+      openedTable.style.maxHeight = `${openedTableTHHeight}px`;
+    });
+  }
+
   if (expandTable.clientHeight != expandTableTHHeight) {
     expandTable.querySelectorAll('.Hint_wrapper').forEach(hintWrapper => {
       hintWrapper.style.display = 'none';
