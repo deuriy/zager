@@ -48,6 +48,16 @@
     @media $smPlus
       width 100%
   
+  .TotalPrice_buttons
+    padding 0
+    border-top none
+    
+    .sold-out-text
+      padding-bottom 30px
+      
+      @media $xs
+        padding-bottom 25px
+  
   &_buttons
     list-style none
     display grid
@@ -64,6 +74,9 @@
     .PriceCard_description
       padding-bottom 23px
       border-bottom 2px dashed $grey2
+      
+      @media $smPlus
+        margin-bottom 25px
     
     .PriceCard_btn
       @media $sm
