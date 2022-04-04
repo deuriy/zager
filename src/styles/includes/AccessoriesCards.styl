@@ -5,11 +5,13 @@
   
   &_items
     display grid
-    grid-template-columns repeat(auto-fit, minmax(156px, 1fr))
+    // grid-template-columns repeat(auto-fit, minmax(156px, 1fr))
+    grid-template-columns repeat(auto-fill, minmax(156px, 1fr))
     gap 15px 10px
 
     @media $smPlus
-      grid-template-columns repeat(auto-fit, minmax(246px, 1fr))
+      // grid-template-columns repeat(auto-fit, minmax(246px, 1fr))
+      grid-template-columns repeat(auto-fill, minmax(246px, 1fr))
       gap 30px
 
     @media $mdPlus
