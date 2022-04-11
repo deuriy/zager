@@ -112,7 +112,7 @@ function styles() {
   return src(CONFIG.stylesSrc, { since: lastRun(styles) })
     .pipe(progeny())
     .pipe(filter(CONFIG.stylesMainFilesFilter))
-    .pipe(gulpif(IS_DEV_MODE, sourcemaps.init()))
+    .pipe(gulpif(IS_DEV_MODE, sourcemaps.init({loadMaps: true})))
     .pipe(
       stylus({
         compress: true,
@@ -120,7 +120,7 @@ function styles() {
       })
     )
     .pipe(postcss([autoprefixer()]))
-    .pipe(gulpif(IS_DEV_MODE, sourcemaps.write()))
+    .pipe(gulpif(IS_DEV_MODE, sourcemaps.write('', {addComment: false})))
     .pipe(
       gulpif(
         IS_PROD_MODE,
