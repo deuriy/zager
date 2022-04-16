@@ -47,7 +47,7 @@
   
   &_img
     display block
-    max-width none
+    // max-width none
 
   &_textWrapper
     padding 20px 20px 23px
@@ -68,6 +68,9 @@
     font-size 23px
     line-height 1.392
     font-family $robotoSlab
+    
+    @media $xs
+      font-size 18px
     
     a
       color $dark
@@ -117,12 +120,25 @@
       &:last-child
         margin-right 0
   
+  &_pricesWrapper
+    display grid
+    grid-template-columns 100%
+    justify-items end
+  
   &_prices
     display grid
     grid-auto-flow column
     justify-content start
     align-items center
     gap 10px
+  
+  &_affirm
+    margin-bottom 16px
+    
+    .Product_title,
+    .Product_swiperWrapper,
+    .affirm-modal-trigger
+      display none
   
   &_btn
     width 100%
@@ -188,6 +204,7 @@
       .ProductCard_wrapper
         display grid
         width auto
+        max-width 1130px
         min-height 0
         // grid-template-columns auto 1fr
         // grid-template-columns 45.4% 54.6%
@@ -198,9 +215,10 @@
       .ProductCard_imgWrapper
         // display block
         border-radius 4px 0 0 4px
+        background $white
       
         img
-          height 432px
+          // height 432px
           width auto
           // max-width 100%
 
@@ -210,17 +228,24 @@
         padding 36px 30px 39px
       
       .ProductCard_title
-        margin-bottom 8px
+        // margin-bottom 8px
+        margin-bottom 20px
       
       .ProductCard_description
-        margin-bottom 12px
+        // margin-bottom 12px
+        margin-bottom 24px
       
       .ProductCard_tags
-        margin-bottom 15px
+        // margin-bottom 15px
+        margin-bottom 30px
       
       .ProductCard_prices
         justify-content end
-        margin-bottom 12px
+        // margin-bottom 12px
+        margin-bottom 20px
+      
+      .ProductCard_affirm
+        max-width 238px
       
       .ProductCard_btn
         justify-self end
@@ -259,10 +284,10 @@
       .ProductCard_imgWrapper
         max-height 200px
   
-  &-productsSection
-    @media $smMinus
-      .ProductCard_imgWrapper
-        height 260px
+  // &-productsSection
+  //   @media $smMinus
+  //     .ProductCard_imgWrapper
+  //       height 260px
   
   &-grid,
   &-series

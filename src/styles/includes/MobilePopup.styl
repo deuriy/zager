@@ -112,19 +112,34 @@
 			line-height 48px
 		
 		.affirm-as-low-as
+			// display grid
+			// grid-template-columns 1fr auto
+			// align-items center
+			// gap 15px
 			display grid
-			grid-template-columns 1fr auto
-			align-items center
-			gap 15px
+			position relative
+			min-height 68px
+			grid-template-columns auto auto auto auto auto
+			// gap 0
+			justify-content start
+			align-items baseline
+			align-content center
+			padding-right 110px
 			margin-bottom 20px
 			padding-bottom 31px
 			border-bottom 1px solid $grey
 			font-weight 700
 			font-size 14px
 			line-height 18px
+			
+			.__affirm-logo
+				margin-left 4px
 		
 		.affirm-modal-trigger
-			margin 0
+			position absolute
+			top 0
+			right 0
+			// margin 0
 		
 		.TotalPrice_textWrapper .TotalPrice_buttons,
 		.TotalPrice_textWrapper .TotalPrice_textWrapper
